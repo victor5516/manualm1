@@ -1,0 +1,910 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2004  GENERAL DESCRIPTION AND SYSTEM OPERATION</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="5U2_4F04.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Tacuma-Rezzo</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="5U2_4F03.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="5U2_4G.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_Tacuma-Rezzo.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_Tacuma-Rezzo_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	<P></P>
+<DIV align="left" id="U4F0GDSO"><B><FONT size="5">GENERAL DESCRIPTION AND SYSTEM OPERATION</FONT></B></DIV>
+<P></P>
+	
+		<P></P>
+<DIV align="left" id="U4F0GSD"><font size="4"><b>GENERAL SYSTEM DESCRIPTION </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">The purpose of the MGH-25 Antilock Brake System (ABS) is to minimize wheel slip during heavy braking. MGH-25 performs this function by monitoring the speed of each wheel and controlling the brake fluid pressure to each wheel independently during a braking event. This allows the driver to retain directional stability and better steering capability.</div>
+		
+	
+	
+		<P></P>
+<DIV align="left" id="U4F0BKR"><font size="4"><b>BASIC KNOWLEDGE REQUIRED </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">Before using this section, it is important that you have a basic knowledge of the following items. Without this basic knowledge, it will be difficult to use the diagnostic procedures contained in this section.</div>
+			<UL>
+				<Li>Basic Electrical Circuits : You should understand the basic theory of electricity and know the meaning of potential (voltage), current (amperes) and resistance (ohms). You should understand what happens in a circuit with open or shorted wire. You should be able to read and understand a wiring diagram.</Li>
+				<Li>Use of Circuit Test Tools : You should be familiar with a Digital Multimeter (DMM), and be familiar with the meter controls and how to use them correctly. You should be able to measure voltage, resistance and current. You should know how to use jumper wire to bypass components for testing circuits.</Li>
+			</UL>
+		
+	
+	
+		<P></P>
+<DIV align="left" id="U4F0ASC"><font size="4"><b>ABS SYSTEM COMPONENTS </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">The MGH-25 Antilock Brake System (ABS) consists of a conventional hydraulic brake system plus antilock components. The conventional brake system includes a vacuum booster, master cylinder, front disc brakes, rear drum brakes, interconnecting hydraulic brake pipes and hoses, brake fluid level sensor and the brake warning lamp indicator.</div>
+			<div class="T1" align="left">The ABS components include a hydraulic unit, an HECU (Hydraulic Electronic Control Unit), system fuse, four wheel speed sensor (one at each wheel), interconnecting wiring, ABS indicator, the DDRP (De-coupled Dynamic Rear Proportioning) indicator (which is connected to the parking lamp) and the rear drum brakes. See "ABS Component Locator" in this section for the general layout of this system.</div>
+			<div class="T1" align="left">The hydraulic unit with the attached EBCM (Electronic Brake Control Module) is located between the surge tank and the fire wall on the left side of the vehicle.</div>
+			<div class="T1" align="left">The basic hydraulic unit configuration consists of hydraulic check valves, two solenoid valves for each wheel, a hydraulic pump, two accumulators. The hydraulic unit controls hydraulic pressure to the front calipers and the rear wheel cylinders by modulating hydraulic pressure to prevent wheel lockup.</div>
+		
+	
+	
+		<P></P>
+<DIV align="left" id="U4F0BBM"><font size="4"><b>BASE BRAKING MODE </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">The baseline braking mode of MGH-25 Antilock Braking System (ABS) system used in this vehicle is a diagonal split system. In this system, one master cylinder circuit supplies pressure to the right front and the left rear brakes; the other circuit supplies pressure to the left front and the right rear brakes. All valves in the hydraulic modulator are in their normal, non-energized positions as shown in the drawings found in "ABS System Components" in this section.</div>
+			<BR><div align="center">
+<IMG alt="T4B34F50" src="../../../../graphic-pool/T/4B/3/T4B34F50.png"><BR><A target="_blank" href="../../../../graphic-pool/T/4B/3/T4B34F50.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+			<DT>
+				<DD>MCP : Master Cylinder Primary</DD>
+				<DD>M : Electric Motor</DD>
+				<DD>MCS : Master Cylinder Secondary</DD>
+				<DD>LPA : Low Pressure Accumulator</DD>
+				<DD>NO : Normal Open Solenoid Valve</DD>
+				<DD>HPA : High Pressure Accumulator</DD>
+				<DD>NC : Normal Close Solenoid Valve</DD>
+			</DT>
+	
+	
+		<P></P>
+<DIV align="left" id="U4F0ABMA"><font size="4"><b>ANTILOCK BRAKING MODE - APPLY </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">If during the pressure hold or pressure decrease mode the ECU (Electronic Control Unit) senses that wheel slip has reduced, the ECU will increase the pressure to the affected wheel(s) by applying master cylinder pressure. The NO valve is opened and the NC valve is closed, now base brake master cylinder pressure can be applied to the wheel.</div>
+			<BR><div align="center">
+<IMG alt="T4B34F74" src="../../../../graphic-pool/T/4B/3/T4B34F74.png"><BR><A target="_blank" href="../../../../graphic-pool/T/4B/3/T4B34F74.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+	
+	
+		<P></P>
+<DIV align="center" id="U4F0ABMH"><font size="4"><b>ANTILOCK BRAKING MODE - HOLD </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">When the ECU (Electronic Control Unit) senses the wheel slip, the ECU closes the NO valve and keeps the NC valve closed in the brake pressure modulator valve in order to isolate the system. This holds the pressure steady on the brake so that the hydraulic pressure does not increase or decrease.</div>
+			<BR><div align="center">
+<IMG alt="T4B34F75" src="../../../../graphic-pool/T/4B/3/T4B34F75.png"><BR><A target="_blank" href="../../../../graphic-pool/T/4B/3/T4B34F75.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+	
+	
+		<P></P>
+<DIV align="center" id="U4F0ABMR"><font size="4"><b>ANTILOCK BRAKING MODE - RELEASE
+ </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">If during the pressure hold mode the ECU (Electronic Control Unit) still senses wheel slip, the HECU will decrease the pressure to the affected wheel(s). The NO valve is left closed and the NC valve is opened. The excess fluid/pressure is temporary stored into an accumulator within the brake pressure modulator valve, until the pump can return the fluid to the master cylinder reservoir.</div>
+			<BR><div align="center">
+<IMG alt="T4B34F76" src="../../../../graphic-pool/T/4B/3/T4B34F76.png"><BR><A target="_blank" href="../../../../graphic-pool/T/4B/3/T4B34F76.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+	
+	
+		<P></P>
+<DIV align="center" id="U4F0DDRP"><font size="4"><b>DDRP (DE-COUPLED DYNAMIC REAR PROPORTIONING) </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">DDRP (De-coupled Dynamic Rear Proportioning) is proportioning system to maintain vehicle stability during braking. In normal braking condition, equal wheel speed should be maintained for efficient and balanced braking. In hard braking condition, a vehicle requires relatively less brake force at rear wheel due to vehicle's weight transfer to the front. DDRP maintains desired brake pressure to the rear wheel by using the ABS rear inlet and outlet valve in order to provide efficient braking and vehicle stability. In DDRP system, Power to the Rear Hold Valve Solenoid is provided from Ignition. If the following fault conditions are existing, the Red Brake Warning Lamp will be illuminated.</div>
+			<UL>
+				<Li>Two Wheel Speed Sensors inoperative on same axle.</Li>
+				<Li>Rear inlet solenoid inoperative.</Li>
+				<Li>Battery 2 (Motor Input) short to ground.</Li>
+				<Li>Battery 1 (HECU Input) open or short to the ground.</Li>
+				<Li>Motor ground open or short to battery.</Li>
+				<Li>HECU ground open or short to battery.</Li>
+				<Li>Ignition open or short to ground.</Li>
+			</UL>
+	
+	
+		<P></P>
+<DIV align="left" id="U4F0DDRP1"><font size="4"><b>DDRP (DE-COUPLED DYNAMIC REAR PROPORTIONING) FAILURE MODES </b></font></DIV>
+<P></P>
+		
+			<Table border="1" width="100%" cellspacing="0">
+				<Thead bgcolor="eeeeee">
+					<tr>
+						<td align="center" valign="middle" rowspan="2" width="25%" class="T1"><b>
+							
+								<div>Part</div>
+							
+						</b></td>
+						<td align="center" valign="middle" rowspan="2" width="25%" class="T1"><b>
+							
+								<div>Hypothesized Failure</div>
+						</b></td>
+						<td align="center" valign="middle" colspan="3" width="30%" class="T1"><b>
+							
+								<div>De-coupled DRP</div>
+						</b></td>
+</tr>
+					<tr>
+						<td align="center" valign="middle" width="10%" class="T1"><b>
+							
+								<div>ABS Warning Lamp</div>
+						</b></td>
+						<td align="center" valign="middle" width="10%" class="T1"><b>
+							
+								<div>Brake Warning Lamp</div>
+						</b></td>
+						<td align="center" valign="middle" width="10%" class="T1"><b>
+							
+								<div>D-DRP Status</div>
+						</b></td>
+					</tr>
+				</Thead>
+				<Tbody align="center" valign="middle">
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Sensor RF</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short or Open</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Sensor LF</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short or Open</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Sensor RR</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short or Open</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Sensor LR</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short or Open</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Two Sensors, Same Axle</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short or Open</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Disabled</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>One Front &amp; One Rear Sensor</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short or Open</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="6" align="left" valign="top">
+							
+								<div>Motor</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short to Ground - LOW Side</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short to Ground - HI Side
+</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short to Battery - LOW Side</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short to Battery - HI Side</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>None</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Motor Circuit Open</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Motor Stalled</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Front Apply Solenoids</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short or Open</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Front Release Solenoids</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short or Open</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Rear Apply Solenoids</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short or Open</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Rear Release Solenoids</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short or Open</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="2" align="left" valign="top">
+							
+								<div>System Relay</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Open (Unable to turn on)</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Shorted On (Unable to turn off)</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>None</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="2" align="left" valign="top">
+							
+								<div>Battery 2 (Motor)</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Short to GND</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Degraded</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Open</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Low Voltage</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Ground (Motor)</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Open or Short To Batt</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Enabled</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Battery 1 (ECU, Solenoids)</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Open or Short To GND</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Disabled</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Ground (ECU, Solenoids)</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Open or Short To Batt</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Disabled</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Ignition</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Open or Short To GND</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Disabled</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Brake Switch</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Not Applicable</div>
+							
+						</td>
+						<td class="T1" width="20%" colspan="2" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>-</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Serial Communication</div>
+							
+						</td>
+						<td class="T1" width="25%" colspan="" rowspan="" align="left" valign="top">
+							
+								<div>Open or Short</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>ON</div>
+							
+						</td>
+						<td class="T1" width="10%" colspan="" rowspan="" align="center" valign="top">
+							
+								<div>Enabled</div>
+							
+						</td>
+					</tr>
+				</Tbody>
+			</Table>
+		
+	
+	
+		<P></P>
+<DIV align="left" id="U4F0HECU"><font size="4"><b>HECU (HYDRAULIC ELECTRONIC CONTROL UNIT) </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">The HECU performs the following primary functions; order to provide efficient braking and vehicle stability. In DDRP system, Power to the Rear Hold Valve Solenoid is provided from Ignition. If the following fault conditions are existing, The Red Brake Warning Lamp will be illuminated.</div>
+			<UL>
+				<Li>Monitor wheel speed sensor inputs.</Li>
+				<Li>Detect wheel slip tendencies.</Li>
+				<Li>Control the brake system while in the antilock control mode.</Li>
+				<Li>Monitor the system for proper electrical operation.</Li>
+			</UL>
+			<div class="T1" align="left">The HECU continuously checks the speed of each wheel to determine if any wheel is beginning to slip. If any wheel slip tendency is detected, the HECU commands appropriate valve positions to modulate brake fluid pressure in some or all of the hydraulic circuits to prevent wheel slip and provide optimum braking. The HECU continues to control pressure in individual hydraulic circuits until a slipping tendency is no longer present. Also the HECU continuously monitors the ABS for proper operation. If the HECU detects an error, it can disable the ABS function and turn on the ABS Warning Lamp in the instrument cluster. The HECU also controls the display of the ABS DTCs (Diagnostic Trouble Codes) while in diagnostic mode.</div>
+		
+	
+	
+		<P></P>
+<DIV align="left" id="U4F0SR"><font size="4"><b>SOLENOID RELAY </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">The solenoid relay, provides power to the pump motor and solenoids. The switch in the relay is normally open, but is commanded to close during initialization. The relay switch will remain closed for the remainder of the drive cycle as long as no DTCs (Diagnostic Trouble Codes) set which required the switch to open. If a DTC sets which requires the relay to be commanded off, battery voltage will be removed from the pump motor and solenoids for the remainder of the current drive cycle and ABS cannot function. The relay is an integral part of the HECU and cannot be serviced separately.</div>
+		
+	
+	
+		<P></P>
+<DIV align="left" id="U4F0WSSR"><font size="4"><b>WHEEL SPEED SENSORS AND RINGS </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">A wheel speed sensor is present at each wheel. The sensors transmit wheel speed information to the HECU by means of a small AC voltage. This voltage is generated by magnetic induction caused by passing a thoothed sensor ring past a stationary sensor. The magnitude and frequency of the AC voltage are proportional to the speed of the wheel and both will increase with increasing speed. The signal is transmitted to the HECU through interface that can cause false or noisy wheel speed sensor input to the HECU. Two different types of wheel speed sensors are used for MGH-25 system.</div>
+		
+	
+	
+		<P></P>
+<DIV align="left" id="U4F0AWL"><font size="4"><b>ABS WARNING LAMP (AMBER) </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">The ABS warning lamp is located in the instrument cluster and will illuminate if a malfunction in the ABS is detected by the HECU. The ABS warning lamp informs the driver that a condition exists which results in turning off the anti-lock brake function. If only the ABS is warning lamp is on, normal braking with full power assist is available.</div>
+			<div class="T1" align="left">Conditions for the ABS warning lamp to turn on are as follows.</div>
+			<UL>
+				<Li>ABS malfunction detected. As previously described, the ABS warning lamp turns on when a problem has been found in the ABS.</Li>
+				<Li>Instrument panel cluster bulb check. When the ignition is turned to ON, the ABS warning lamp will turn on for approximately three seconds and then turn off.</Li>
+			</UL>
+		
+	
+	
+		<P></P>
+<DIV align="left" id="U4F0BWL"><font size="4"><b>BRAKE WARNING LAMP (RED) </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">
+The red brake warning lamp in the in the instrument cluster and will illuminate to warn the driver of condition in the brake system, which may result in reduced braking ability. The lamp will illuminate when the parking brake is applied or not fully released, or if the brake fluid level switch is closed (when the brake fluid is low in the master cylinder reservoir). When the brake fluid level switch is closed (low condition) a brake warning lamp will stay illuminated until the condition has been repaired. Also some failure modes in MGH-25 system will illuminate the lamp to let the drivers know DDRP (De-coupled Dynamic Rear Proportioning) is disabled</div>
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="5U2_4F03.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="5U2_4G.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Daewoo Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

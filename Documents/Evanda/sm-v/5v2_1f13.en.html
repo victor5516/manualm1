@@ -1,0 +1,4178 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2005  Diagnostic Trouble Code (DTC) P1121</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="5V2_1F13.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Evanda</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="5V2_1F12.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="5V2_1F14.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	
+		<BR><div align="center">
+<IMG alt="V3B11F43" src="../../../../graphic-pool/V/3B/1/V3B11F43.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B11F43.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P1121"><font size="4"><b>Diagnostic Trouble Code (DTC) P1121 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0TPSIHV"><font size="4"><b>Throttle Position Sensor intermittent High Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD1"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Throttle Position (TP) sensor circuit provides a voltage signal that changes relative to throttle blade angle. The TP sensor sends a voltage signal back to the Engine Control Module (ECM) relative to the throttle plate opening. The voltage signal will vary from approximately 0.33 volts at closed throttle, to over 4.3 volts at Wide Open Throttle (WOT).</div>
+				<div class="T1" align="left">The TP signal is used by the ECM for fuel control and for most of the ECM controlled outputs. The TP signal is one of the most important inputs used by the ECM for fuel control and most of the ECM controlled outputs. If the ECM detects a TP signal that is intermittently above the range of the TP sensor, Diagnostic Trouble Code (DTC) P1121 will be set.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSD1"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>TP sensor voltage indicates a throttle voltage intermittently greater than 4.9 volts.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD1"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will not illuminate.</Li>
+					<Li>The ECM will store conditions which were present when the DTC set as Failure Records data only. This information will not be stored as Freeze Frame data.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD1"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>A history will clear after 40 consecutive warm-up cycles in which the diagnostic runs without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA1"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Check for the following conditions:</div>
+				<UL>
+					<Li>Poor connection at the ECM. Inspect harness connectors for backed-out terminals, improper mating, broken locks, improperly formed or damaged terminals, and poor terminal-to-wire connection.</Li>
+					<Li>Damaged harness. Inspect the wiring harness for damage. If the harness appears OK, observe the throttle position display on the scan tool while moving connectors and wiring harnesses related to the TP sensor. A change in the display will indicate the location of the fault.</Li>
+				</UL>
+				<div class="T1" align="left">If DTC P1121 cannot be duplicated, reviewing the Fail Records vehicle mileage since the diagnostic test last failed may help determine how often the condition that caused the DTC to be set occurs. This may assist in diagnosing the condition.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD1"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li>The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P11211"><font size="4"><b>DTC P1121 - Throttle Position Sensor Intermittent High Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is Diagnostic Trouble Code (DTC) P0123 also set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   applicable DTC table
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for poor sensor ground circuit terminal 1 connection at the Throttle Position (TP) sensor.</div>
+								<div>Is a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the TP signal circuit between TP sensor connector and the Engine Control Module (ECM) for an intermittent short to voltage.</div>
+								<div>Is a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a poor sensor ground terminal M64 at the ECM.</div>
+								<div>Is a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an intermittent open or faulty spice in the sensor ground circuit.</div>
+								<div>Is a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair or replace the faulty harness connector terminal for sensor ground circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="middle" align="center" width="15%"> - </TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the intermittent open/short circuit in wiring harness as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="middle" align="center" width="15%"> - </TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   applicable DTC table
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>
+								  <I>System OK</I>
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V3B11F43" src="../../../../graphic-pool/V/3B/1/V3B11F43.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B11F43.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P1122"><font size="4"><b>Diagnostic Trouble Code (DTC) P1122 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0TPSILV"><font size="4"><b>Throttle Position Sensor Intermittent Low Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD2"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Throttle Position (TP) sensor circuit provides a voltage signal that changes relative to throttle blade angle. The TP sensor sends a voltage signal back to the Engine Control Module (ECM) relative to the throttle plate opening. The voltage signal will vary from approximately 0.33 volts at closed throttle, to over 4.3 volts at Wide Open Throttle (WOT).</div>
+				<div class="T1" align="left">The TP signal is used by the ECM for fuel control and for most of the ECM controlled outputs. The TP signal is one of the most important inputs used by the ECM for fuel control and most of the ECM controlled outputs. If the ECM detects a TP signal that is intermittently above the range of the TP sensor, Diagnostic Trouble Code (DTC) P1122 will be set.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSD2"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>TP sensor voltage indicates a throttle voltage intermittently less than 0.14 volts.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD2"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will not illuminate.</Li>
+					<Li>The ECM will store conditions which were present when the DTC set as Failure Records data only. This information will not be stored as Freeze Frame data.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD2"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>A history will clear after 40 consecutive warm-up cycles in which the diagnostic runs without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA2"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Check for the following conditions:</div>
+				<UL>
+					<Li>Poor connection at the ECM. Inspect harness connectors for backed-out terminals, improper mating, broken locks, improperly formed or damaged terminals, and poor terminal-to-wire connection.</Li>
+					<Li>Damaged harness. Inspect the wiring harness for damage. If the harness appears OK, observe the throttle position display on the scan tool while moving connectors and wiring harnesses related to the TP sensor. A change in the display will indicate the location of the fault.</Li>
+				</UL>
+				<div class="T1" align="left">If DTC P1122 cannot be duplicated, reviewing the Fail Records vehicle mileage since the diagnostic test last failed may help determine how often the condition that caused the DTC to be set occurs. This may assist in diagnosing the condition.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD2"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li>The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P11221"><font size="4"><b>DTC P1122 - Throttle Position Sensor Intermittent Low Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is Diagnostic Trouble Code (DTC) P0123 also set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   applicable DTC table
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for poor 5 volt reference circuit terminal 2 connection at the Throttle Position (TP) sensor.</div>
+								<div>Is a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>
+								  <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>
+								  <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the TP signal circuit between TP sensor connector and the Engine Control Module (ECM) for an intermittent open or short to ground.</div>
+								<div>Is a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a poor 5 volt reference circuit terminal M32 at the ECM.</div>
+								<div>Is a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an intermittent open in the 5 volt reference circuit.</div>
+								<div>Is a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   Step 4
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair or replace the faulty harness connector terminal for 5 volt reference circuit and/or the TP signal circuit as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the intermittent open/short circuit in wiring harness as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   applicable DTC table
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F12" src="../../../../graphic-pool/V/4B/1/V4B11F12.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F12.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P1133"><font size="4"><b>Diagnostic Trouble Code (DTC) P1133 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0FHOST"><font size="4"><b>Front Heated Oxygen Sensor (HO2S1) Too Few Transition
+</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD3"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Engine Control Module (ECM) continuously monitors the Front Heated Oxygen Sensor (HO2S1) activity for 100 seconds. During the monitor period, the ECM counts the number of times that the HO2S1 switches from rich to lean and from lean to rich. With this information, a total for all switches can be determined. If the number of switches is too low, a Diagnostic Trouble code (DTC) P1133 will set. The lean-to-rich and rich-to-lean are less than 15 switches.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSD3"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S1 signal switches from 0.3 to 0.6 volts and 0.6 to 0.3 volts is less than 15 times within 90seconds.</Li>
+					<Li>Closed loop stoichiometry.</Li>
+					<Li>Engine Coolant Temperature (ECT) is greater than 70 °C (158 °F).</Li>
+					<Li>System voltage is greater than 10 volts.</Li>
+					<Li>Engine run time is greater than 60 seconds.</Li>
+					<Li>Purge Duty Cycle (DC) is less than 20%.</Li>
+					<Li>The rpm is between 1600 and 4300.</Li>
+					<Li>Airflow is between 9 and 40 g/sec.</Li>
+					<Li>DTCs P0106, P0107, P0108, P0112, P0113, P0117, P0118, P0122, P0123, P0131, P0132, P0134, P1167, P0171, P1171, P0172, P0201, P0202, P0203, P0204, P0300, P0336, P0337, P0351, P0352, P0401, P0402, P0404, P0405, P0406, P0502, P0506, P0507, P1404, and P0443 are not set.</Li>
+					<Li>2 second delay after conditions are met.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD3"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate after three consecutive trip with a fail.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD3"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTC can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA3"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">DTC P1133 is most likely caused by one of the following items:</div>
+				<UL>
+					<Li>Fuel Pressure - The system will go rich if the fuel pressure is too high. The ECM can compensate for some increase. However, if it gets too high, a DTC P1133 may set. Refer to   <A target="_blank" href="5V2_1F01.en.html#V1F0FSD">"Fuel System Diagnosis"</A> in this section.</Li>
+					<Li>Leaking injector - A leaking or malfunctioning injector can cause the system to go rich.</Li>
+					<Li>Manifold Absolute Pressure (MAP) sensor - An output that causes the ECM to sense a higher than normal manifold pressure (low vacuum) can cause the system to go rich. Disconnecting the MAP sensor will allow the ECM to set a fixed value for the MAP sensor. Substitute a different MAP sensor if the rich condition is gone while the sensor is disconnected.</Li>
+					<Li>Pressure regulator - Check for a leaking fuel pressure regulator diaphragm by checking for the presence of liquid fuel in the vacuum line to the pressure regulator.</Li>
+					<Li>Throttle Position (TP) sensor - An intermittent TP sensor output can cause the system to go rich due to a false indication of the engine accelerating.</Li>
+					<Li>HO2S1 contamination - Inspect the HO2S1 for silicone contamination from fuel or improper use of Room Temperature Vulcanizing (RTV) sealant. The sensor may have a white powdery coating and result in a high but false voltage signal (rich exhaust indication). The ECM will then reduce the amount of fuel delivered to the engine causing a severe surge or driveability problem.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD3"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Chart.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="14">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+					<Li value="16">If no malfunctions have been found at this point and no additional DTCs are set, refer to   <A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids" </A> in this section for additional checks and information.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P11331"><font size="4"><b>DTC P1133 - Front Heated Oxygen Sensor (HO2S1) Too Few Transition</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Are any additional Diagnostic Trouble Codes (DTCs) set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   applicable DTC table
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the specified parameter under the Conditions For Setting the DTC.</Li>
+									<Li>Monitor the lean-to-rich transition and rich-to-lean transition and note the number of switches.</Li>
+								</OL>
+								<div>Does the parameter show fewer transitions than the specified value within 90 seconds.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>15</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually/physically inspect for the following items:</div>
+								<UL>
+									<Li>Front Heated Oxygen Sensor (HO2S1) is securely installed.</Li>
+									<Li>Corrosion on the terminals.</Li>
+									<Li>Terminal tension.</Li>
+									<Li>HO2S1 wiring harness for poor terminal connection or damaged wiring.</Li>
+								</UL>
+								<div>Is a problem found in any of the above areas?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the exhaust manifold for a leak near the engine and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the HO2S1 connector.</Li>
+									<Li>Jumper the HO2S1 low circuit, terminal 2 to ground.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Does the scan tool indicate the voltage between the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>400-500 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Jumper the HO2S1 signal and low circuit terminal 1 to ground.</div>
+								<div>Does the scan tool indicate the voltage below the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>200 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the HO2S1.</Li>
+								</OL>
+								
+									<P></P>
+<DIV><FONT color="#336600"><B>Note : before replacing the sensor, the cause of the contamination must be determined and corrected in order to prevent further damage to the sensor. Check for following:</B></FONT></DIV>
+								
+								<UL>
+									<Li>Fuel contamination.</Li>
+									<Li>Use of improper Room Temperature Vulcanizing sealant.</Li>
+									<Li>Engine oil/coolant consumption.</Li>
+								</UL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the condition as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the HO2S1 signal circuit for a short to ground.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Remove the jumper wire.</Li>
+									<Li>Using voltmeter measure the voltage between the HO2S1 signal circuit, terminal 1 and ground.</Li>
+								</OL>
+								<div>Does the voltage above the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>407 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the ECM connectors and check the continuity between terminal 3 of HO2S1 and the terminal M29 of the ECM.</Li>
+									<Li>If the circuit measures over the specified value, repair open or poor connection as needed.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>5 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Check the continuity between terminal 1 of HO2S1 and the terminal M12 of the ECM.</Li>
+									<Li>If the circuit measures over the specified value, repair open or poor connection as needed.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>5 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the ECM.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   Step 15
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   applicable DTC table
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F12" src="../../../../graphic-pool/V/4B/1/V4B11F12.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F12.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P1134"><font size="4"><b>Diagnostic Trouble Code (DTC) P1134 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="VOB1S1TR"><font size="4"><b>Front Heated Oxygen Sensor (HO2S1) Transition Ratio</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD4"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Engine Control Module (ECM) monitors the Front Heated Oxygen Sensor (HO2S1) activity for 100 seconds after closed loop and stoichiometric operation have been established. During the monitoring period the ECM counts the number of times that the HO2S1 responds from rich to lean and adds the amount of time it took to complete all transitions. With this information, an average time for all transitions can be determined. The ECM then divides the -to-lean average by the lean-to-rich average to obtain the ratio. If the HO2S1 transition time ratio is not within the range, Diagnostic Trouble Code (DTC) P1134 will be set, indicating that the HO2S1 is not responding as expected to changes in exhaust oxygen content.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSD4"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S1 rich-to-lean and lean-to rich transition ratio is out of specification(between 0.375 and 3.5).</Li>
+					<Li>Closed Loop stoichiometry.</Li>
+					<Li>Engine Coolant Temperature (ECT) is greater than 70 °C (158 °F).</Li>
+					<Li>System voltage is greater than 10 volts.</Li>
+					<Li>Engine run time is greater than 60 seconds.</Li>
+					<Li>Purge Duty Cycle (DC) is less than 20%.</Li>
+					<Li>Engine speed is between 1600 and 4300 rpm.</Li>
+					<Li>Calculated airflow is between 9 and 40 g/sec.</Li>
+					<Li>DTCs P0106, P0107, P0108, P0112, P0113, P0117, P0118, P0122, P0123, P0131, P0132, P0134, P0135, P1167, P0171, P1171, P0172, P0201, P0202, P0203, P0204, P0300, P0336, P0337, P0351, P0352, P0401, P0402, P0404, P1404, P0405, P0406, P0502, P0506, P0507, and P0443 are not set.</Li>
+					<Li>2 second delay after conditions are met.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD4"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate after three consecutive trip with a fail.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+					<Li>The vehicle will operate in Open Loop.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD4"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>The DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA4"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">A malfunction in the HO2S1 ignition feed or ground circuit may cause a DTC P1134 to set. Check HO2S1 circuitry for intermittent faults or poor connections. If connections and wiring are OK and DTC P1134 continues to set, replace the HO2S1.</div>
+				<div class="T1" align="left">Reviewing the Failure Records vehicle mileage since the diagnostic test last failed may help determine how open the condition that caused the DTC to be set occurs. This may assist in diagnosing the condition.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD4"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Chart.</div>
+				<OL>
+					<Li value="3">A condition that affects pre-converter and post-converter oxygen sensors indicates probable contamination. To avoid damaging replacement sensors, correct the condition which caused the contamination before replacing the affected sensors.</Li>
+					<Li value="5">This step checks for conditions which may cause the oxygen sensor to appear faulty. Correct any of the described conditions if present.</Li>
+					<Li value="8">To avoid damaging replacement sensors, correct the condition which caused the contamination before replacing the affected sensors</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P11341"><font size="4"><b>DTC P1134 - Front Heated Oxygen Sensor (HO2S1) Transition Ratio</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								
+									<P></P>
+<DIV><B><FONT color="navy">Important : If any Diagnostic Trouble Codes (DTCs) are set, refer to those DTCs before processing with this diagnostic chart.</FONT></B></DIV>
+<P></P>
+								
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the engine within parameters specified under Conditions for Setting the DTC.</Li>
+									<Li>Using a scan tool, monitor specific DTC info for DTC P1134 until the DTC P1134 test runs.</Li>
+									<Li>Note the test result.</Li>
+								</OL>
+								<div>Does the scan tool indicate DTC P1134 failed this ignition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Refer to   <A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an exhaust system leak test.</div>
+								<div>If an exhaust leak is found, repair as needed.</div>
+								<div>The exhaust leak isolated?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually/physically inspect for the following items:</div>
+								<UL>
+									<Li>Front Heated Oxygen Sensor (HO2S1) is securely installed.</Li>
+									<Li>Corrosion on the terminals.</Li>
+									<Li>Terminal tension.</Li>
+									<Li>HO2S1 wiring harness for poor terminal connection or damaged wiring.</Li>
+								</UL>
+								<div>Is a problem found in any of the above areas?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the HO2S1 connector.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Using a voltmeter, measure the voltage between following terminals.</Li>
+									<Li>Terminal 1 of Engine Control Module (ECM) side HO2S1 connector and ground.</Li>
+									<Li>Terminal 2 of ECM side HO2S1 connector and ground.</Li>
+								</OL>
+								<div>Are both voltages in the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>3-5 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>With the HO2S1 disconnected, jumper the ECM side HO2S1 connector terminals 1 and 2.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Using a scan tool, monitor the HO2S1 voltage.</Li>
+								</OL>
+								<div>Does the scan tool indicates less than 10 millivolts and immediately return to about 450 millivolts when the jumper is removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair conditions as needed.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for faulty ECM connections or terminal damages and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair open, short, or grounded signal circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>
+								Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Remove the HO2S1 and examine it for sign of:</div>
+								<UL>
+									<Li>Fuel contamination.</Li>
+									<Li>Improper room temperature vulcanizing sealant (white powdery coating on the sensor)</Li>
+									<Li>Engine oil/coolant consumption.</Li>
+								</UL>
+								<div>Are sign of contamination observed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the ECM.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Determine and correct the cause of contamination.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the HO2S1.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   applicable DTC table
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F12" src="../../../../graphic-pool/V/4B/1/V4B11F12.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F12.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P1167"><font size="4"><b>Diagnostic Trouble Code (DTC) P1167 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0FHOSR"><font size="4"><b>Front Heated Oxygen Sensor (HO2S1) Rich in Decel Fuel Cutoff (DFCO)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD5"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Engine Control Module (ECM) supplies a voltage of about 0.45 volts between terminals M12 and M29 (if measured with a 10 megohm digital voltmeter, this may read as low as 0.32 volts). The Front Heated Oxygen Sensor (HO2S1) varies the voltage within a range of about 1 volt if the exhaust is rich, down through about 0.10 volts if the exhaust is lean.</div>
+				<div class="T1" align="left">In internal circuitry of the Engine control Module (ECM) can identify if the vehicle fuel system is capable of cutoff amount of the fuel supply during deceleration. When a Decel Fuel Cutoff (DFCO) mode of operation is requested during Closed Loop operation, the ECM will cutoff the fuel supply to the engine. Under these conditions the ECM should detect a lean condition. If the ECM detect a rich condition at this time, Diagnostic Trouble Code (DTC) P1167 will set. Damaged fuel pressure regulator and faulty injector will be the cause of this DTC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSD5"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S1 voltage is greater than 0.55 volts in Decel Fuel Cutoff (DFCO) mode.</Li>
+					<Li>System voltage is greater than 10 volts.</Li>
+					<Li>Engine Coolant Temperature (ECT) is greater than 60°C (140°F).</Li>
+					<Li>DTCs P0106, P0107, P0108, P0117, P0118, P0122, P0123, P0171, P0172, P0201, P0202, P0203, P0204, P0300, P0336, P0337, P0351, P0352, P0401, P0402, P0404, P0405, P0406, P0502, P0506, P0507, P1404, and P0443 are not set.</Li>
+					<Li>2 second delay after in DFCO mode.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD5"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+					<Li>The vehicle will operate in Open Loop.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD5"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTC can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA5"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The DTC P1167 or rich exhaust is most likely caused by one of the following items:</div>
+				<UL>
+					<Li>Leaking injector - A leaking or malfunctioning injector can cause the system to go rich causing a DTC P0132.</Li>
+					<Li>Pressure regulator - Check for a leaking fuel pressure regulator diaphragm by checking for the presence of liquid fuel in the vacuum line to the regulator.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P11671"><font size="4"><b>DTC P1167 - Front Heated Oxygen Sensor (HO2S1) Rich in Decel Fuel Cutoff (DFCO)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On- Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Any other component related Diagnostic Trouble Codes (DTCs) set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   "Applicable DTC table"
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using a scan tool, observe the Front Heated Oxygen Sensor (HO2S1) voltage while decelerating the engine.</Li>
+									<Li>The HO2S1 voltage should vary from specified voltage (100-900 mV) and while decelerating occasionally toggle below the specified voltage.</Li>
+								</OL>
+								<div>Is the HO2S1 voltage toggle?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>550 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Go to Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F05.en.html#V1F0P0134">"DTC P0134 Oxygen Sensor No Activity"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the items in   <A target="_blank" href="5V2_1F01.en.html#V1F0DA">"Diagnostic Aids"</A> and repair or replace component as needed. Refer to   <A target="_blank" href="5V2_1F01.en.html#V1F0FSD">"Fuel System Diagnosis"</A>.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the Engine Control Module (ECM).</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   "Applicable DTC table"
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V1F0P1171"><font size="4"><b>Diagnostic Trouble Code (DTC) P1171 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0FTSLD"><font size="4"><b>Fuel Trim System Lean During Power Enrichment
+</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0SD6"><b>System Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The internal circuitry of the Engine control Module
+(ECM) can identify if the vehicle fuel system is capable
+of supplying adequate amounts of fuel during heavy acceleration(
+power enrichment). When a Power Enrichment
+(PE) mode of operation is requested by heavy
+acceleration during Closed Loop operation, the ECM will
+provide more fuel to the engine. Under these conditions
+the ECM should detect a rich condition. If this reich condition
+is nor detected at this time, Diagnostic Trouble
+Code (DTC) P1171 will set. A plugged fuel filter or restricted
+fuel line can prevent adequate amount of fuel
+from being supplied during Power Enrichment mode.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT6"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S1 voltage is less than 0.35 volts in Power Enrichment
+(PE) mode.</Li>
+					<Li>Engine is operating in Closed Loop and in PE mode.</Li>
+					<Li>Engine Coolant Temperature (ECT) is greater than
+60°C (140°F).</Li>
+					<Li>System voltage is greater than 10 volts.
+</Li>
+					<Li>Air/Fuel ration is less than or equal to 13.5:1.</Li>
+					<Li>DTCs P0106, P0107, P0108, P0117, P0118, P0122, P0123, P0171, P0172, P0201, P0202, P0203, P0204, P0300, P0336, P0337, P0351, P0352, P0401, P0402, P0404, P0405, P0406, P0502, P0506, P0507, P1404, and P0443 are not set.</Li>
+					<Li>2 second delay after in PE mode.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD6"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time
+the diagnostic fails. This information will be stored in
+the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+					<Li>The vehicle will operate in Open Loop.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMI6"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off after three consecutive ignition cycles in which the diagnostic runs without a fault.
+</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.
+</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA6"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">A restricted fuel filter can supply adequate amounts of fuel at idle, but may not be able to supply enough fuel during heavy acceleration.
+</div>
+				<div class="T1" align="left">Water or alcohol n fuel may cause low HO2S1 voltage
+during acceleration.</div>
+				<div class="T1" align="left">Check for adequate amount of fuel in the Tank.</div>
+				<div class="T1" align="left">When the engine is idling or at steady cruise, the HO2S1
+voltage should vary from between approximately a00 to
+900 millivolts. During power enrichment mode, more fuel
+is needed, and the HO2S1 should rise above 444 millivolts.</div>
+				<div class="T1" align="left">Check for faulty or plugged injector(s).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD6"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="4">This step checks to see if the HO2S1 is operating properly.</Li>
+					<Li value="6">If no faults have been found at this point and no additional
+DTCs were set, refer to   <A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids" </A>
+in this section for additional checks and information.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P11711"><font size="4"><b>DTC P1171 Fuel Trim Supply System Lean During Power Enrichment</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector
+(DLC).</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Are any component related Diagnostic Trouble Codes (DTCs) set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>applicable DTC table</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Check the vehicle for an adequate amount of fuel.
+</Li>
+									<Li>Add fuel to the vehicles fuel tank if the tank is almost empty. 
+</Li>
+								</OL>
+								<div>Did the fuel tank require fuel?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using a scan tool, observe the Front Heated Oxygen Sensor (HO2S1) voltage while accelerating the engine over
+1200 rpm.</Li>
+									<Li>The HO2S1 voltage should vary from specified
+voltage (100--900 mV) and occasionally toggle
+above the specified voltage while accelerating.</Li>
+								</OL>
+								<div>Is the HO2S1 voltage toggle?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>3507 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0FSD">"Fuel System Diagnosis"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F05.en.html#V1F0P0134">"DTC P0134 Oxygen Sensor No Activity"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble
+Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "Applicable DTC table"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V1F0P1336"><font size="4"><b>Diagnostic Trouble Code (DTC) P1336 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0CPTENL"><font size="4"><b>58X Crank Position Tooth Error Not Learned
+</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD7"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">In order to detect engine misfire at higher engine
+speeds, the Engine Control Module (ECM) must know of
+any variation between the crankshaft sensor pulses.
+Most variations are due to the machining of the crankshaft
+reluctor wheel. However, other sources of variation
+are also possible. A Crankshaft Position (CKP) system
+variation learning procedure must be performed any
+time a change is made to the crankshaft sensor to
+crankshaft relationship of if the ECM is replaced or reprogrammed.
+The ECM measures the variations and
+then calculates compensation factors needed to enable
+the ECM to accurately detect engine misfire at all
+speeds and loads. A scan tool must be used to command
+the ECM to learn these variations. If for any reason
+the ECM is unable to learn these variations or they
+are out of an acceptable range, the ECM will set Diagnostic
+Trouble Code (DTC) P1336. An ECM that has not
+had the CKP system variation learning procedure performed
+due to replacement or reprogramming will also
+set DTC P1336.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT7"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Tooth error not learned if the manufacture enable
+counter is set to zero.
+</Li>
+					<Li>DTCs P0106, P0107, P0108, P0117, P0118, P0122,
+P0123, P0132, P0201, P0202, P0203, P0204,
+ P0325 , 0327, P0336, P0337, P0341, P0342, P0351, P0352,
+P0402, P1404, P0404, P0405, P0406 and P0502 are not set.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD7"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.
+</Li>
+					<Li>The ECM will record operating conditions at the time
+the diagnostic fails. This information will be stored in
+the Freeze Frame and Failure Records buffer.
+</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMI7"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn OFF after four consecutive ignition
+cycles in which the diagnostic runs without a fault.
+</Li>
+					<Li>A history DTC will clear after 40 consecutive warm up cycles without a fault.
+</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10
+seconds.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA7"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : To avoid personal injury when performing the crankshaft position system variation learning procedure, always set the vehicle parking brake and block the drive wheels. Release the throttle immediately when the engine starts to decelerate. Once the learn procedure is completed, engine control will be returned to the operator, and the engine will respond to throttle position.</FONT></I></B></DIV>
+<P></P>
+				
+				<div class="T1" align="left">DTC P1336 will only set if the ECM has not learned the CKP system variation. The ECM only needs to learn this variation once per life cycle of the vehicle unless the crank sensor to crankshaft relationship is disturbed. Removing a part is considered a disturbance. A fully warmed engine is critical to learning the variation correctly. If a valid learn occurs, no other learns can be completed that ignition cycle.</div>
+				<div class="T1" align="left">If the engine cuts out before the specified learn procedure engine speed or at normal fuel cutoff rpm, the ECM is not in the learn procedure mode.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD7"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check
+prompts the technician to complete some basic
+checks and store the freeze frame and failure records
+data on the scan tool if applicable. This creates an
+electronic copy of the data taken when the fault occurred.
+The information is then stored on the scan
+tool for later reference.</Li>
+					<Li value="2">Engine temperature is critical to properly learn the
+CKP system variation. Failure to properly warm the
+engine before performing this procedure will result in
+an inaccurate measurement of the CKP system variation.
+The ECM learns this variation as the engine is decelerating and then allows engine control to be returned
+to the operator. All accessories must be OFF
+when learning the CKP system angle variation. If the
+A/C is not disabled when the learn procedure is enabled,
+the ECM will disable the A/C.</Li>
+					<Li value="3">If after the specified number attempts the ECM cannot
+learn the CKP system variation, then the variation is too large and no further attempts should be made
+until the variation problem is corrected.</Li>
+					<Li value="4">Being unable to learn the procedure indicates that the
+variation is out of range.
+</Li>
+					<Li value="5">After the  CKP system variation has been learned, wait above 10 seconds with ignition switch OFF to prevent being cleared the learned value.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P13361"><font size="4"><b>DTC P1336 - 58X Crank Position Tooth Error Not Learned</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Install a scan tool to the Data Link Connector
+(DLC).</Li>
+									<Li>Put the vehicle in PARK or NEUTRAL.</Li>
+									<Li>Start the engine and operate to normal operating
+temperature.</Li>
+									<Li>Turn all accessories OFF.</Li>
+									<Li>Enable the TEC (Tooth Error Correction) LEARN
+PROCEDURE with the scan tool.</Li>
+									<Li>Raise the engine rpm to the specified value, then
+release the throttle as soon as the engine cuts
+out.</Li>
+								</OL>
+								<div>Does the scan tool indicate that the Crankshaft Position (CKP) system variation has been learned?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>65°C (149°F)</div>
+							<div>4000 rpm</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Attempt the CKP system variation procedure as many times as the specified value.</div>
+								<div>Does the scan tool indicate that the CKP system variation has been learned?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>10</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a problem with the CKP sensor to
+crankshaft relationship.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF and wait above specified
+value.</Li>
+									<Li>Turn the ignition ON, with engine OFF.</Li>
+									<Li>Using the scan tool, clear the Diagnostic Trouble
+Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating
+temperature.</Li>
+									<Li>Operate the vehicle within the conditions for
+setting this DTC as supported in the text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic ran and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>10 sec</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V1F0P1380"><font size="4"><b>Diagnostic Trouble Code (DTC) P1380 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0ARSR"><font size="4"><b>ABS Rough Road Sensor Rough Road Data Invalid</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD8"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The engine control module (ECM) identifies engine misfire by detecting variations in crankshaft speed. Crankshaft speed variations can also occur when a vehicle is operated over a rough road. The Anti-Lock Brake System (ABS) can detect if the vehicle is on a rough surface based on wheel acceleration/deceleration data supplied by each wheel speed sensor. This information is sent to the ECM by the Electronic Brake Control Module (EBCM) through the Instrument Panel Cluster (IPC) over the Universal Asynchronous Receiver Transmitter (UART) serial data line. The ECM then uses this information to determine if the crankshaft variations are being caused by an actual engine misfire or from being driven on a rough surface.</div>
+				<div class="T1" align="left">If the ABS is found to be malfunctioning, the ECM will still continue to detect for misfire. However, if a misfire Diagnostic Trouble Code (DTC) is set, this additional DTC will also be set, indicating that rough surface data was not usable during the misfire detection due to the ABS malfunction.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT8"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>ABS system has detected a wheel speed sensor fault.</Li>
+					<Li>Engine running is greater than or equal to 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD8"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will not illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMI8"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTCs can be cleared by using a scan tool.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA8"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The setting of this DTC indicates that a misfire was detected and that the ECM could not determine if the detected misfire was true or due to operating the vehicle on a rough surface. A misfire can be a true misfire with or without setting this DTC. Check the IPC and the EBCM for poor connections at the UART serial data terminals. Be sure no true misfire exists after repairing the cause of this DTC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD8"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">Be careful to clear only DTCs and not the captured information stored on the scan tool. The scan tool will issue a warning if this is about to happen.</Li>
+					<Li value="4">A DTC P1380 being reset indicates that the ECM is not receiving the correct information from the EBCM due to an ABS DTC.</Li>
+					<Li value="5">When DTC P1380 is set, an ABS DTC should also be set.</Li>
+					<Li value="6">Repair any condition that remains and is causing a misfire by following the table for any DTC that has set.</Li>
+					<Li value="7">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P13801"><font size="4"><b>DTC P1380 - ABS Rough Road Sensor Rough Road Data Invalid</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition ON with engine OFF.</Li>
+									<Li>Install the scan tool.</Li>
+									<Li>Check for any ABS Diagnostic Trouble Codes (DTCs).</Li>
+								</OL>
+								<div>Are any ABS DTCs set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Review the Freeze Frame data and note the parameters.</Li>
+									<Li>Operate the vehicle within the Freeze Frame conditions and Conditions for Setting the DTC as noted when driving on a rough surface.</Li>
+								</OL>
+								<div>Does the misfire set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the scan tool.</div>
+								<div>Does DTC P1380 set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the scan tool.</div>
+								<div>Does an ABS DTC set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the condition causing the misfire.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the engine control module (ECM).</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Using the scan tool, clear the DTCs.</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic ran and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V1F0P1381"><font size="4"><b>Diagnostic Trouble Code (DTC) P1381 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0ARSS"><font size="4"><b>ABS Rough Road Sensor Serial Data Fault</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD9"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The engine control module (ECM) identifies engine misfire by detecting variations in crankshaft speed. Crankshaft speed variations can also occur when a vehicle is operated over a rough road. The Anti-Lock Brake System (ABS) can detect if the vehicle is on a rough surface based on wheel acceleration/deceleration data supplied by each wheel speed sensor. This information is sent to the ECM by the Electronic Brake Control Module EBCM through the Instrument Panel Cluster (IPC) over the Universal Asynchronous Receiver Transmitter (UART) serial data line. The ECM then uses this information to determine if the crankshaft variations are being caused by an actual engine misfire or from being driven on a rough surface.</div>
+				<div class="T1" align="left">If the ABS is found to be malfunctioning, the ECM will still continue to detect for misfire. However, if a misfire Diagnostic Trouble Code (DTC) is set, this additional DTC will also be set, indicating that rough surface data was not usable during the misfire detection due to the ABS malfunction.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT9"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Engine running is greater than or equal to 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD9"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will not illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMI9"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTCs can be cleared by using a scan tool.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA9"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The setting of this DTC indicates that a misfire was detected and that the ECM could not determine if the detected misfire was true or due to operating the vehicle on a rough surface. A misfire can be a true misfire with or without setting this DTC. Check the IPC and the EBCM for poor connections at the UART serial data terminals. Be sure no true misfire exists after repairing the cause of this DTC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD9"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">Be careful to clear only DTCs and not the captured information stored on the scan tool. The scan tool will issue a warning if this is about to happen.</Li>
+					<Li value="4">A DTC P1381 being reset indicates that the ECM is not receiving the correct information from the EBCM due to an ABS DTC.</Li>
+					<Li value="5">When DTC P1381 is set, an ABS DTC should also be set.</Li>
+					<Li value="6">Repair any condition that remains and is causing a misfire by following the table for any DTC that has set.</Li>
+					<Li value="7">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P13811"><font size="4"><b>DTC P1381 - ABS Rough Road Sensor Serial Data Fault</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition ON with engine OFF.</Li>
+									<Li>Install the scan tool.</Li>
+									<Li>Check for any ABS Diagnostic Trouble Codes (DTCs).</Li>
+								</OL>
+								<div>Are any ABS DTCs set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Review the Freeze Frame data and note the parameters.</Li>
+									<Li>Operate the vehicle within the Freeze Frame conditions and Conditions for Setting the DTC as noted when driving on a rough surface.</Li>
+								</OL>
+								<div>Does the misfire set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the scan tool.</div>
+								<div>Does DTC P1381 set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the scan tool.</div>
+								<div>Does an ABS DTC set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the condition causing the misfire.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the engine control module (ECM).</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Using the scan tool, clear the DTCs.</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic ran and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V3B11F48" src="../../../../graphic-pool/V/3B/1/V3B11F48.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B11F48.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P1391"><font size="4"><b>Diagnostic Trouble Code (DTC) P1391 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0GSRRR"><font size="4"><b>G Sensor Rough Road Rationality
+</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD10"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Gravity Sensing Rough Road (G) sensor is a vertical low g-acceleration sensor. By sensing vertical acceleration caused by bumps or potholes in the road, the Engine Control Module (ECM) can determine if the changes in crankshaft speed are due to engine misfire or are driveline induced. If the G sensor detects a rough road condition, the ECM misfire detection diagnostic will be de-activated. The G sensor at rest output should be between 2.35-2.65 volts (+1G). During a rough road condition, the voltage output can vary between 0.5 (-1G) and 4.5 volts (+3G).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT10"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Engine is running.</Li>
+					<Li>Vehicle speed is less than or equal to 5 km/h (3.1
+mph).</Li>
+					<Li>G sensor output at idle indicates below -0.39 volts or
+above 2.21 volts.</Li>
+				</UL>
+				<div class="T1" align="left">OR</div>
+				<UL>
+					<Li>Engine is running more than 10 seconds and vehicle speed is between 18.6 mph (30 km/h) and 43.5 mph (70 km/h).</Li>
+					<Li>G sensor signal changes less than 0.00024 volts
+while driving.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD10"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will not illuminate.
+</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMI10"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>A history Diagnostic Trouble Code (DTC) will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA10"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Check for the following conditions:</div>
+				<UL>
+					<Li>Poor connection at the ECM - Inspect the harness connections for backed-out terminals, improper mating, broken locks, improperly formed or damaged terminals, and poor terminal-to-wire connection.</Li>
+					<Li>Damaged harness -- Inspect the wiring harness for damage. If the harness appears to be OK, observe the G sensor display on the scan tool while moving connectors and wiring harnesses related to the sensor. A change in the display will indicate the location of the fault.</Li>
+				</UL>
+				<div class="T1" align="left">Since the G sensor shares the ECM 5 volt reference and
+ground terminals with the A/C Pressure Sensor, a damaged
+A/C Pressure Sensor harness or sensor could
+cause a G sensor DTC to set. Refer to   <A target="_blank" href="5V2_1F02.en.html#V1F0MEISDS"> “Multiple ECM
+Information Sensor DTCs Set”</A> in this section.
+in this section.</div>
+				<div class="T1" align="left">The G sensor will give correct voltages only if it is level and mounted securely to its bracket.</div>
+				<div class="T1" align="left">Reviewing the Failure Records vehicle mileage since the diagnostic test last failed may help determine how often the condition that caused the DTC to be set occurs. This may assist in diagnosing the con</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD10"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P13911"><font size="4"><b>DTC P1391 - G Sensor Rough Road Rationality</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition ON, with engine OFF.</Li>
+									<Li>Install a scan tool to the Data Link Connector
+(DLC).</Li>
+									<Li>Review and record the scan tool Failure Records
+data.</Li>
+									<Li>Operate the vehicle within Failure Records conditions as noted.</Li>
+									<Li>Using the scan tool, monitor specific Diagnostic Trouble Code (DTC) info for DTC P1391.</Li>
+								</OL>
+								<div>Does the scan tool indicate that DTC P1391 failed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for the following conditions and repair as
+needed:</div>
+								<UL>
+									<Li>G sensor seal missing or damaged.</Li>
+									<Li>G sensor mounting flanges cracked, missing, or incorrectly installed.</Li>
+								</UL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the G sensor electrical connector.</Li>
+									<Li>Turn the ignition ON, with the engine OFF.</Li>
+									<Li>Observe the G sensor value displayed on the
+scan tool.</Li>
+								</OL>
+								<div>Is the G sensor value near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Jumper the 5 volt reference circuit, terminal A and the G sensor signal circuit, terminal B together at the G sensor harness connector.</Li>
+									<Li>Observe the G sensor value displayed on the scan tool.</Li>
+								</OL>
+								<div>Is the G sensor value near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4.95 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the Engine Control Module (ECM) and
+check the sensor ground circuit for high
+resistance, an open between the ECM and the G
+sensor, or for a poor connection at the terminal
+k34 of the ECM and repair as needed.</Li>
+									<Li>f the problem is found, repair as necessary.
+</Li>
+								</OL>
+								<div>Is a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the 5 volt reference circuit for high resistance,
+an open between the ECM and the G sensor, or a
+poor connection at the terminal k50 of the ECM and
+repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the ECM and check the G sensor
+signal circuit for high resistance, an open, a short
+to ground, or a short to the sensor ground circuit
+and repair as needed. 
+</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the G sensor signal circuit for a poor
+connection at the ECM and repair as needed.
+</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a poor connection at terminal C of the G sensor and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the G sensor.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the ECM.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Check the G sensor signal circuit for a short to
+voltage or a short to the 5 volt reference circuit
+and repair as needed.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the ECM.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the DTCs.</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic ran and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   applicable DTC table
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V3B11F48" src="../../../../graphic-pool/V/3B/1/V3B11F48.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B11F48.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P1392"><font size="4"><b>Diagnostic Trouble Code (DTC) P1392 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0GSRRL"><font size="4"><b>G Sensor Rough Road Low Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD11"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Gravity Sensing Rough Road (G) sensor is a vertical low g-acceleration sensor. By sensing vertical acceleration caused by bumps or potholes in the road, the Engine Control Module (ECM) can determine if the changes in crankshaft speed are due to engine misfire or are driveline induced. If the G sensor detects a rough road condition, the ECM misfire detection diagnostic will be de-activated. The G sensor at rest output should be between 2.35-2.65 volts (+1G). During a rough road condition, the voltage output can vary between 0.5 (-1G) and 4.5 volts (+3G).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT11"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>G sensor output is less than 2%.</Li>
+					<Li>Engine is running more than or equal to 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD11"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will not illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time
+the diagnostic fails. This information will be stored in
+the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMI11"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>A history Diagnostic Trouble Code (DTC) will clear after
+40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10
+seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA11"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Check for the following conditions:</div>
+				<UL>
+					<Li>Poor connection at the ECM - Inspect the harness
+connections for backed-out terminals, improper mating,
+broken locks, improperly formed or damaged terminals,
+and poor terminal-to-wire connection.</Li>
+					<Li>Damaged harness - Inspect the wiring harness for
+damage. If the harness appears to be OK, observe
+the G sensor display on the scan tool while moving
+connectors and wiring harnesses related to the sensor.
+A change in the display will indicate the location
+of the fault.</Li>
+				</UL>
+				<div class="T1" align="left">Since the G sensor shares the ECM 5 volt reference and ground terminals with the A/C Pressure Sensor, a damaged A/C Pressure Sensor harness or sensor could cause a G sensor DTC to set. Refer to   <A target="_blank" href="5V2_1F02.en.html#V1F0MEISDS">"Multiple ECM Information Sensor DTCs Set" </A>
+in this section.</div>
+				<div class="T1" align="left">The G sensor will give correct voltages only if it is level and mounted securely to its bracket.</div>
+				<div class="T1" align="left">Reviewing the Failure Records vehicle mileage since the diagnostic test last failed may help determine how often the condition that caused the DTC to be set occurs. This may assist in diagnosing the condition.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD11"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P13921"><font size="4"><b>DTC P1392 G Sensor Rough Road Low Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Install a scan tool to the Data Link Connector
+(DLC).</Li>
+									<Li>Turn the ignition ON, with the engine OFF.</Li>
+									<Li>Observe the ROUGH ROAD value displayed on the scan tool.</Li>
+								</OL>
+								<div>Is the ROUGH ROAD value near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Review and record the scan tool Failure Records data.
+</Li>
+									<Li>Operate the vehicle within Failure Records
+conditions as noted. </Li>
+									<Li>Using the scan tool, monitor specific Diagnostic Trouble Code (DTC) info for DTC P1392.</Li>
+								</OL>
+								<div>Does the scan tool indicate that DTC P1392 failed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.
+</Li>
+									<Li>Disconnect the G sensor electrical connector.
+</Li>
+									<Li>Turn the ignition ON, with the engine OFF.
+</Li>
+									<Li>Jumper the 5 volt reference circuit, terminal A and the G sensor signal circuit, terminal B together at the G sensor harness connector.</Li>
+									<Li>Observe the G sensor value displayed on the scan tool.
+</Li>
+								</OL>
+								<div>Is the G sensor value near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4.95 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the Engine Control Module (ECM) and
+check the 5 volt reference circuit for an open or
+short to ground and repair as needed. 
+</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the 5 volt reference circuit for poor
+connection at the ECM and repair or replace as
+needed.  
+</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the ECM and check the G sensor
+signal circuit for an open, a short to ground, or a
+short to the sensor ground circuit and repair as
+needed.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the G sensor signal circuit for a poor
+connection at the ECM and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the G sensor.
+</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the ECM.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the DTCs.</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic ran and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   applicable DTC table
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V3B11F48" src="../../../../graphic-pool/V/3B/1/V3B11F48.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B11F48.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P1393"><font size="4"><b>Diagnostic Trouble Code (DTC) P1393 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0GSRRHV"><font size="4"><b>G Sensor Rough Road High Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD12"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Rough Road (G) sensor is a vertical low g-acceleration
+sensor. By sensing vertical acceleration caused by
+bumps or potholes in the road, the Engine Control Module
+(ECM) can determine if the changes in crankshaft
+speed are due to engine misfire or are driveline induced.
+If the G sensor detects a rough road condition, the ECM
+misfire detection diagnostic will be de-activated. The G
+sensor at rest output should be between 2.35-2.65 volts
+(+1G). During a rough road condition, the voltage output
+can vary between 0.5 (-1G) and 4.5 volts (+3G).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT12"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>G sensor output is greater than 98%.</Li>
+					<Li>Engine is running more than or equal to 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD12"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will not illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time
+the diagnostic fails. This information will be stored in
+the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMI12"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>A history Diagnostic Trouble Code (DTC) will clear after
+40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10
+seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0D12"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Check for the following conditions:</div>
+				<UL>
+					<Li>Poor connection at the ECM - Inspect the harness
+connections for backed-out terminals, improper mating, broken locks, improperly formed or damaged terminals, and poor terminal-to-wire connection.</Li>
+					<Li>Damaged harness - Inspect the wiring harness for damage. If the harness appears to be OK, observe the G sensor display on the scan tool while moving connectors and wiring harnesses related to the sensor. A change in the display will indicate the location of the fault.</Li>
+				</UL>
+				<div class="T1" align="left">Since the G sensor shares the ECM 5 volt reference and ground terminals with the A/C Pressure Sensor, a damaged A/C Pressure Sensor harness or sensor could cause a G sensor DTC to set. Refer to   <A target="_blank" href="5V2_1F02.en.html#V1F0MEISDS">"Multiple ECM Information Sensor DTCs Set" </A>
+in this section.</div>
+				<div class="T1" align="left">The G sensor will give correct voltages only if it is level and mounted securely to its bracket.</div>
+				<div class="T1" align="left">Reviewing the Failure Records vehicle mileage since the diagnostic test last failed may help determine how often the condition that caused the DTC to be set occurs. This may assist in diagnosing the condition.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD12"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P13931"><font size="4"><b>DTC P1393 - G Sensor Rough Road High Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Install a scan tool to the Data Link Connector
+(DLC).</Li>
+									<Li>Start and idle the engine.</Li>
+									<Li>Observe the ROUGH ROAD value displayed on the scan tool.</Li>
+								</OL>
+								<div>Is the ROUGH ROAD value near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4.5 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Review and record the scan tool Failure Records data.</Li>
+									<Li>Operate the vehicle within Failure Records conditions as noted.</Li>
+									<Li>Using the scan tool, monitor specific Diagnostic Trouble Code (DTC) info for DTC P1393.</Li>
+								</OL>
+								<div>Does the scan tool indicate that DTC P1393 failed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the G sensor electrical connector.
+</Li>
+									<Li>Turn the ignition ON, with the engine OFF.</Li>
+									<Li>Note the G sensor voltage displayed on the scan tool.</Li>
+								</OL>
+								<div>Is the G sensor value near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Probe the sensor ground circuit terminal C with a test light to B+.</div>
+								<div>Is the test light ON?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%"> - </TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the G sensor signal circuit for a short to
+voltage or a short to the 5 volt reference circuit and
+repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a poor sensor ground terminal connection at the G sensor electrical connector.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a poor sensor ground terminal connection
+at the Engine Control Module (ECM) and repair as
+needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the G sensor ground circuit for an open and
+repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the ECM.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the G sensor.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the DTCs.</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic ran and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   applicable DTC table
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="5V2_1F12.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="5V2_1F14.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Daewoo Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

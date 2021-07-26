@@ -1,0 +1,4137 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2005  DIAGNOSIS</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="5V2_1F02.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Evanda</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="5V2_1F01.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="5V2_1F03.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	<P></P>
+<DIV align="center" id="V1F0DIAGN"><B><FONT size="5">DIAGNOSIS</FONT></B></DIV>
+<P></P>
+	<P></P>
+<DIV align="center" id="V1FSD"><B><FONT size="4">SYSTEM DIAGNOSIS</FONT></B></DIV>
+<P></P>
+	
+	
+		<P></P>
+<DIV align="left" id="V1F0DA"><font size="4"><b>Diagnostic Aids </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">If an intermittent problem is evident, follow the guidelines below.</div>
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0PC"><b>Preliminary Checks</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Before using this section you should have already performed the   <A target="_blank" href="5V2_1F01.en.html#V1F0ODSC">"On-Board Diagnostic System Check."</A>
+				</div>
+				<div class="T1" align="left">Perform a thorough visual inspection. This inspection can often lead to correcting a problem without further checks and can save valuable time. Inspect for the following conditions:</div>
+				<UL>
+					<Li>Engine control module (ECM) grounds for being clean, tight, and in their proper location.</Li>
+					<Li>Vacuum hoses for splits, kinks, collapsing and proper connections as shown on the Vehicle Emission Control Information label. Inspect thoroughly for any type of leak or restriction.</Li>
+					<Li>Air leaks at the throttle body mounting area and the intake manifold sealing surfaces.</Li>
+					<Li>Ignition wires for cracks, hardness, proper routing, and carbon tracking.</Li>
+					<Li>Wiring for proper connections.</Li>
+					<Li>Wiring for pinches or cuts.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DTCT"><b>Diagnostic Trouble Code Tables</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Do not use the Diagnostic Trouble Code (DTC) tables to try to correct an intermittent fault. The fault must be present to locate the problem.</div>
+				<div class="T1" align="left">Incorrect use of the DTC tables may result in the unnecessary replacement of parts.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0FECW"><b>Faulty Electrical Connections or Wiring</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Most intermittent problems are caused by faulty electrical connections or wiring. Perform a careful inspection of suspect circuits for the following:</div>
+				<UL>
+					<Li>Poor mating of the connector halves.</Li>
+					<Li>Terminals not fully seated in the connector body.</Li>
+					<Li>Improperly formed or damaged terminals. All connector terminals in a problem circuit should be carefully inspected, reformed, or replaced to insure contact tension.</Li>
+					<Li>Poor terminal-to-wire connection. This requires removing the terminal from the connector body.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0RT"><b>Road Test</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">If a visual inspection does not find the cause of the problem, the vehicle can be driven with a voltmeter or a scan tool connected to a suspected circuit. An abnormal voltage or scan tool reading will indicate that the problem is in that circuit.</div>
+				<div class="T1" align="left">If there are no wiring or connector problems found and a DTC was stored for a circuit having a sensor, except for DTC P0171 and DTC P0172, replace the sensor.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0FS"><b>Fuel System</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Some intermittent driveability problems can be attributed to poor fuel quality. If a vehicle is occasionally running rough, stalling, or otherwise performing badly, ask the customer about the following fuel buying habits:</div>
+				<UL>
+					<Li>Do they always buy from the same source? If so, fuel quality problems can usually be discounted.</Li>
+					<Li>Do they buy their fuel from whichever fuel station that is advertising the lowest price? If so, check the fuel tank for signs of debris, water, or other contamination.</Li>
+				</UL>
+			
+		
+	
+	
+		<P></P>
+<DIV align="left" id="V1F0ILP"><font size="4"><b>Idle Learn Procedure
+ </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">Whenever the battery cables, the engine control module (ECM), or the ECM fuse is disconnected or replaced, the following idle learn procedure must be performed:</div>
+			<OL>
+				<Li>Turn the ignition ON for 5 seconds.</Li>
+				<Li>Turn the ignition OFF for 5 seconds.</Li>
+				<Li>Turn the ignition ON for 5 seconds.</Li>
+				<Li>Start the engine in park/neutral.</Li>
+				<Li>Allow the engine to run until the engine coolant is above 185° F (85°C  ).</Li>
+				<Li>Turn the A/C ON for 10 seconds, if equipped.</Li>
+				<Li>Turn the A/C OFF for 10 seconds, if equipped.</Li>
+				<Li>If the vehicle is equipped with an automatic transaxle, apply the parking brake. While pressing the brake pedal, place the transaxle in D (drive).</Li>
+				<Li>Turn the A/C ON for 10 seconds, if equipped.</Li>
+				<Li>Turn the A/C OFF for 10 seconds, if equipped.</Li>
+				<Li>Turn the ignition OFF. The idle learn procedure is complete.</Li>
+			</OL>
+		
+	
+	
+		<P></P>
+<DIV align="left" id="V1F0TECLP"><font size="4"><b>TEC (TOOTH ERROR CORRECTION) Learn Procedure
+ </b></font></DIV>
+<P></P>
+		
+			<div class="T1" align="left">When an ECM is reflashed, initialized or replaced, and driveplate of fly wheel has been replaced, follow these procedures to relearn the crankshaft position (CKP) system variation :</div>
+			<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : To avoid personal injury when performing the TEC learn procedure, always set the vehicle parking brake and block the drive wheels. Release the throttle immediately when the engine starts to decelerate. Once the learning procedure is completed, engine control will be learned to the operator, and the engine will respond to throttle position.</FONT></I></B></DIV>
+<P></P>
+			
+			<OL>
+				<Li>Stay the gear parking or neutral.</Li>
+				<Li>Install the scan tool and select "TEC (Tooth Error Correction) LEARN" menu.</Li>
+				<Li>Start the engine with A/C off.</Li>
+				<Li>Keep the engine coolant temperature above 65°C (149° F)</Li>
+				<Li>Put the acceleration pedal above 4000 RPM until the fuel cut-off occurs.</Li>
+				<Li>Wait 10-15 seconds.</Li>
+				<Li>Fulfill this procedure again if the scan tool does not display "OK" message.</Li>
+				<Li>Turn the ignition switch OFF.</Li>
+				<Li>Turn the ignition switch ON and then clear the DTC code.</Li>
+			</OL>
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F07" src="../../../../graphic-pool/V/4B/1/V4B11F07.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0ODSC"><font size="4"><b>ON-Board Diagnostic (EOBD) System Check
+ </b></font></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The On-Board Diagnostic (EOBD) system check is the starting point for any driveability complaint diagnosis. Before using this procedure, perform a careful visual/physical check of the engine control module (ECM) and the engine grounds for cleanliness and tightness.</div>
+				<div class="T1" align="left">The EOBD system check is an organized approach to identifying a problem created by an electronic engine control system malfunction.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA1"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An intermittent may be caused by a poor connection, rubbed-through wire insulation or a wire broken inside the insulation. Check for poor connections or a damaged harness. Inspect the ECM harness and connections for improper mating, broken locks, improperly formed or damaged terminals, poor terminal-to-wire connection, and damaged harness.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Numbers below refer to the step number on the Diagnostic Chart:</div>
+				<OL>
+					<Li value="1">The Malfunction Indicator Lamp (MIL) should be ON steady with the ignition ON and the engine OFF. If not, go to "Diagnostic Aids".</Li>
+					<Li value="2">Checks the Class 2 data circuit and ensures that the ECM is able to transmit serial data.</Li>
+					<Li value="3">This test ensures that the ECM is capable of controlling the MIL and the MIL driver circuit is not shorted to ground.</Li>
+					<Li value="4">If the engine will not start, refer to   <A target="_blank" href="5V2_1F01.en.html#V1F0ECBWNR">"Engine Cranks But Will Not Run" </A>in this section.</Li>
+					<Li value="7">A scan tool parameter which is not within the typical range may help to isolate the area which is causing the problem.</Li>
+					<Li value="10">This vehicle is equipped with a ECM which utilizes an Electrically Erasable Programmable Read Only Memory (EEPROM). The replacement ECM must be programmed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0OBDS1"><font size="4"><b>On-Board Diagnostic (EOBD) System Check</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to ON.</Li>
+									<Li>Observe the Malfunction Indicator Lamp (MIL).</Li>
+								</OL>
+								<div>Is the MIL illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0NMIL">"No Malfunction Indicator Lamp"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Install the scan tool to the Data link Connector (DLC).</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+									<Li>Attempt to display the Engine Control Module (ECM) engine data with the scan tool.</Li>
+								</OL>
+								<div>Does the scan tool display the ECM engine data?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool output test function, select the MIL lamp control and command the MIL off.</Li>
+									<Li>Observe the MIL.</Li>
+								</OL>
+								<div>Does the MIL turn OFF?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0MILOS">"Malfunction Indicator Lamp on Steady"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Attempt to start the engine.</div>
+								<div>Does the engine start and continue to run?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ECWNR">"Engine Cranks But Will Not Run"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Select DISPLAY DTC with the scan tool.</div>
+								<div>Are any Diagnostic Trouble Codes (DTCs) stored?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the display for DTCs P0107, P0108, P0113, P0118, P0122, P0123, P1392.</div>
+								<div>Are two or more of the following DTCs stored?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F01.en.html#V1F0MEISDS">"Multiple ECM Information Sensor DTCs Set"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compare the ECM data values displayed on the scan tool to the typical engine scan data values.</div>
+								<div>Are the displayed values normal or close to the typical values?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0EOD">"ECM Output Diagnosis"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to indicated component system check</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Disconnect the ECM connector.</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+									<Li>Check the serial data circuit for an open, short to ground, or short to voltage. Also check the DLC ignition feed circuit for an open or short to ground, and check the DLC ground circuits for an open.</Li>
+								</OL>
+								<div>Is a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open, short to ground, or short to voltage in the serial data circuit or the DLC ignition feed circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Attempt to reprogram the ECM.</Li>
+									<Li>Attempt to display the ECM data with the scan tool.</Li>
+								</OL>
+								<div>Does the scan tool display ECM engine data?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ECM.</div>
+								<div>Is the replacement complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V1F0EOD"><font size="4"><b>ECM Output Diagnosis </b></font></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD1"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Engine Control Module (ECM) controls most components with electronic switches which complete a ground circuit when turned on. These switches are arranged in groups of 4 and 7, and they are called either a Surface Mounted Quad Driver Module, which can independently control up to 4 output terminals or an Output Driver Module (ODM), which can independently control up to 7 outputs. Not all of the outputs are always used.</div>
+				<div class="T1" align="left">Drivers are fault protected. If a relay or solenoid is shorted, having very low or zero resistance, or if the control side of the circuit is shorted to voltage, it would allow too much current flow into the ECM. The driver senses this and the output is either turned OFF or its internal resistance increases to limit current flow and protect the ECM and driver. The result is high output terminal voltage when it should be low. If the circuit from B+ to the component or the component is open, or the control side of the circuit is shorted to ground, terminal voltage will be low. Either of these conditions is considered to be a driver fault.</div>
+				<div class="T1" align="left">Drivers also have a fault line to indicate the presence of a current fault to the ECM's central processor. A scan tool displays the status of the driver fault lines as 0=OK and 1=Fault.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA2"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The scan tool has the ability to command certain components and functions ON and OFF. If a component or function does not have this capability, operate the vehicle during its normal function criteria to check for an open or shorted circuit.</div>
+				<div class="T1" align="left">An open or short to ground will appear in the open positions on the scan tool only when it is not commanded by the ECM or the scan tool, while a short to voltage will appear in the short positions on the scan tool only while the component is being commanded by the ECM or scan tool.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0EOD1"><font size="4"><b>ECM Output Diagnosis</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an Euro On-Board Diagnostic (EOBD) system check.</div>
+								<div>Is the check complete.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"No Malfunction Indicator Lamp"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Install the scan tool.</div>
+								<div>Is there a number to the Data Link Connector (DLC) 1 (=fault) below any of the numbered positions in the OUTPUT DRIVERS?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open or shorted circuit in any corresponding position (circuit) that contained a number 1 and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Command the output being checked with a scan tool while watching the corresponding position for each circuit.</div>
+								<div>Do any of the position changed to a 1?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Command the output being checked with a scan tool while watching the corresponding position for each circuit.</div>
+								<div>Does the component or function operate when commanded?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to the appropriate component table for repair</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to voltage in the corresponding circuit for position (circuit) that displayed at a 1.</div>
+								<div>Is the repair complete? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Disconnect the electrical connector to the component connected to the fault circuit.</div>
+								<div>Is a 1 still displayed in the corresponding OUTPUT DRIVER position?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to the appropriate component table for repair</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the Engine control Module (ECM).</div>
+								<div>Is the replacement complete? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Operate the vehicle within the conditions under which the original symptom was noted.</div>
+								<div>Does the system now operate properly?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V1F0MEISDS"><font size="4"><b>Multiple ECM Information Sensor DTCs Set </b></font></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD2"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Engine Control Module (ECM) monitors various sensors to determine engine operating conditions. The ECM controls fuel delivery, spark advance, transaxle operation, and emission control device operation based on the sensor inputs.</div>
+				<div class="T1" align="left">The ECM provides a sensor ground to all of the sensors. The ECM applies 5 volts through a pull-up resistor and monitors the voltage present between the sensor and the resistor to determine the status of the Engine Coolant Temperature (ECT) sensor, the Intake Air Temperature (IAT) sensor. The ECM provides the Exhaust Gas Recirculation (EGR) Pintle Position Sensor, the Throttle Position (TP) sensor, the Manifold Absolute Pressure (MAP) sensor, and the Fuel Tank Pressure Sensor with a 5 volt reference and a sensor ground signal. The ECM monitors the separate feedback signals from these sensors to determine their operating status.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA3"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Be sure to inspect the ECM and the engine grounds for being secure and clean.</div>
+				<div class="T1" align="left">A short to voltage in one of the sensor circuits can cause one or more of the following DTCs to be set: P0108, P0113, P0118, P0123, P1106, P1111, P1115, P1121 P0132,  P0463, P0533.</div>
+				<div class="T1" align="left">If a sensor input circuit has been shorted to voltage, ensure that the sensor is not damaged. A damaged sensor will continue to indicate a high or low voltage after the affected circuit has been repaired. If the sensor has been damaged, replace it.</div>
+				<div class="T1" align="left">An open in the sensor ground circuit between the ECM and the splice will cause one or more of the following DTCs to be set: P0107, P0108, P0113, P0118, P0122, P0123, P1106, P1111, P1115, P1121, P0131, P0137, P0462, P0532.</div>
+				<div class="T1" align="left">A short to ground in the 5 volt reference circuit or an open in the 5 volt reference circuit between the ECM and the splice will cause one or more of the following DTCs to be set: P0107, P0112, P0117, P0122, P1107, P1112, P1114, P1122, P0131, P0137, P0462, P0532.</div>
+				<div class="T1" align="left">Check for the following conditions:</div>
+				<UL>
+					<Li>Inspect for a poor connection at the ECM. Inspect harness connectors for backed-out terminals, improper mating, broken locks, improperly formed or damaged terminals, and poor terminal-to-wire connection.</Li>
+					<Li>Inspect the wiring harness for damage. If the harness appears to be OK, observe an affected sensor's displayed value on the scan tool with the ignition ON and the engine OFF while moving connectors and wiring harnesses related to the affected sensors. A change in the affected sensor's displayed value will indicate the location of the fault.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD1"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="9">A faulty EGR valve can leak a small amount of current from the ignition feed circuit to the 5 volt reference circuit. If the problem does not exist with the EGR valve disconnected, replace the EGR valve.</Li>
+					<Li value="0">If a sensor input circuit has been shorted to voltage, ensure that the sensor has not been damaged. A damaged IAT or ECT sensor will continue to indicate a high voltage or low temperature after the affected circuit has been repaired. A damaged ACT, TP, MAP, Fuel Tank Pressure, or EGR Pintle Position sensor will indicate a high or low voltage or may be stuck at a fixed value after the affected circuit has been repaired. If the sensor has been damaged, replace it.</Li>
+					<Li value="21">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0MPEISDS1"><font size="4"><b>Multiple ECM Information Sensor DTCs Set</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) system check.</div>
+								<div>Is the check complete.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Disconnect the Engine Control Module (ECM) connector.</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+									<Li>Check the 5V reference circuit for the following conditions:</Li>
+									<UL>
+										<Li>Poor connection at the ECM.</Li>
+										<Li>Open between the ECM connector affected sensors shorted to ground or voltage.</Li>
+									</UL>
+									<Li>If a problem is found, locate and repair the open or short circuit as needed.</Li>
+								</OL>
+								<div>Is a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Check the sensor ground circuit for the following conditions:</Li>
+									<UL>
+										<Li>Poor connection at the ECM or affected sensors.</Li>
+										<Li>Open between the ECM connector and the affected sensors.</Li>
+									</UL>
+									<Li>If a problem is found, repair it as needed.</Li>
+								</OL>
+								<div>Is a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage of the Exhaust Gas Recirculation (EGR) Pintle Position Sensor signal circuit between ECM harness connector and ground.</div>
+								<div>Does the voltage near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage of the Manifold Absolute Pressure (MAP) sensor signal circuit between the ECM harness connector and ground.</div>
+								<div>Does the voltage near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage of the Throttle Position (TP) sensor signal circuit between the ECM harness connector and ground.</div>
+								<div>Does the voltage near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage of the Intake Air Temperature (IAT) sensor signal circuit between the ECM harness connector and ground.</div>
+								<div>Does the voltage near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage of the Engine Coolant Temperature (ECT) sensor signal circuit between the ECM harness connector and ground.</div>
+								<div>Does the voltage near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the EGR valve connector.</Li>
+									<Li>Measure the voltage of the EGR Pintle Position sensor signal circuit between the ECM harness connector and ground.</Li>
+								</OL>
+								<div>Does the voltage near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the EGR valve.</div>
+								<div>Is the replacement complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Locate and repair the short to voltage in the MAP sensor signal circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Locate and repair the short to voltage in the TP sensor signal circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Locate and repair the short to voltage in the IAT sensor signal circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Locate and repair the short to voltage in the ECT sensor signal circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Locate and repair the short to voltage in the EGR Pintle Position sensor circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage of the fuel tank pressure sensor signal circuit between the ECM harness connector and ground.</div>
+								<div>Does the voltage near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Locate and repair the short to voltage in the fuel tank pressure sensor signal circuit.</div>
+								<div>Is the replacement complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ECM.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="middle" align="center" width="15%"> - </TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the conditions for setting the DTCs as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic ran and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">22</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F08" src="../../../../graphic-pool/V/4B/1/V4B11F08.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F08.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="T1F0ECWNR"><font size="4"><b>Engine Cranks But Will Not Run
+ </b></font></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="left" id="V1F0TD2"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the occurred. The information is then stored on the scan tool for later reference.</Li>
+<Li>The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="3">By performing a compression test, it can be determined if the engine has the mechanical ability to run.</Li>
+<Li>By performing a compression test, it can be determined if the engine has the mechanical ability to run.</Li>
+					<Li value="9">It is important to check for the presence of spark from all of the ignition wires. If spark is present from one to three of the ignition coil terminals, the Crankshaft Position (CKP) sensor is OK.</Li>
+<Li>It is important to check for the presence of spark from all of the ignition wires. If spark is present from one to three of the ignition coil terminals, the Crankshaft Position (CKP) sensor is OK.</Li>
+				</OL>
+				<OL>
+					<Li value="19">In checking the engine control module (ECM) outputs for the electronic spark timing signal, it recommended to use an oscilloscope to view the varying voltage signals. In measuring these outputs with a voltmeter, intermittent errors may occur that cannot be seen by a voltmeter.</Li>
+					<Li value="35">This step checks for proper operation of the ECM's control of the fuel pump circuit.</Li>
+					<Li value="59">This step checks for a ground signal being supplied by the ECM to operate the fuel injectors. If there is no ground present during the cranking of the engine, and the fuel injector wiring is OK, the ECM is at fault.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T1F0ECWNR1"><font size="4"><b>Engine Cranks But Will Not Run</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Use only electrically insulated pliers when handling ignition wires with the engine running to prevent an electrical shock.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Do not pinch or restrict nylon fuel lines. Damage to the lines could cause a fuel leak, resulting in possible fire or personal injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic (EOBD) System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for set Diagnostic Trouble Code (DTC) P0601.</div>
+								<div>Is the DTC set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Crank the engine.</div>
+								<div>Does the engine start and continue to run?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform a cylinder compression test.</div>
+								<div>Is the cylinder compression for all of the cylinders at or above the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>689 kPa
+
+(100 psi)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Inspect the timing belt alignment.</div>
+								<div>Is the timing belt in alignment?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Align or replace the timing belt as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the internal engine damage as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Inspect the fuel pump fuse.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the fuse.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool.</Li>
+									<Li>Turn the ignition ON, the engine OFF and close the throttle.</Li>
+								</OL>
+								<div>Does the Throttle Position (TP) sensor read less than the specified value.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1.0 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F04.en.html#V1F0P0123">"DTC P0123 Throttle Position Sensor High Voltage"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Compare the Engine Coolant Temperature (ECT) with the Intake Air Temperature (IAT).</div>
+								<div>Is the ECT relatively close to the IAT?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F04.en.html#V1F0P0118">"DTC P0118 Engine Coolant Temperature High Voltage</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Check if the Manifold Absolute Pressure (MAP) sensor reading is over the specified reading.</Li>
+									<Li>Crank the engine while watching the MAP sensor reading.</Li>
+								</OL>
+								<div>Does the MAP sensor read above the specified value and then change while cranking the engine?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Crank the engine.</div>
+								<div>Does the Crankshaft Position (CKP) Active Counter increment while cranking?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the scan data for serial data.</div>
+								<div>Was serial data lost while cranking the engine?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "MAP Sensor Output Check"</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair voltage loss to the engine control module (ECM) from the ignition switch.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for the presence of spark from all of the ignition wires while cranking the engine.</div>
+								<div>Is spark present from all of the ignition wires?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 41</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Measure the resistance of the ignition wires.</Li>
+									<Li>Replace any of the ignition wire(s) with a resistance above the value specified.</Li>
+									<Li>Check for the presence of spark from all of the ignition wires.</Li>
+								</OL>
+								<div>Is spark present from all of the ignition wires?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>
+30,000 W</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the Crankshaft Position (CKP) sensor connector.</Li>
+									<Li>Measure the voltage between the CKP connector terminals 1 and 3.</Li>
+									<Li>Repair the wiring as needed.</Li>
+								</OL>
+								<div>Does the voltage measure near the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1.4 v
+(2.5 v)*</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage between the CKP connector terminals 2 and 3.</div>
+								<div>Does the voltage measure near the value specified</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1.4 v
+(2.5 v)*</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 26</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 21</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage between the CKP connector terminals 1 and ground.</div>
+								<div>Does the voltage measure near the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1.4 v
+(2.5 v)*</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 22</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 23</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">21</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage between the CKP connector terminals 2 and ground.</div>
+								<div>Does the voltage measure near the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1.4 v
+(2.5 v)*</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 22</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 24</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">22</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open or short in the wire between the CKP connector terminal 3 and ground.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 25</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 40</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">23</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open or short in the wire between the CKP connector terminal 1 and the ECM connector terminal M21</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 25</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 40</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">24</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open or short in the wire between the CKP connector terminal 2 and the ECM connector terminal M5.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 25</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F03.en.html#V1F0IRCC">40</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">25</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the wiring as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">26</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the Electronic Ignition (EI) system ignition coil connector to prevent the vehicle from starting.</Li>
+									<Li>Measure the voltage at the ECM connector terminal M21 by backprobing the ECM connector.</Li>
+								</OL>
+								<div>Are the voltage readings near the values specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1.4 v (2.5 v)* </div>
+							<div>with ignition ON,</div>
+							<div>1.6 v (2.6 v)*</div>
+							<div>during cranking</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 27</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 28</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">27</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage at the ECM connector terminal M5 by backprobing the ECM connector.</div>
+								<div>Are the voltage readings near the values specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1.4 v (2.5 v)* </div>
+							<div>with ignition ON,</div>
+							<div>1.6 v (2.6 v)*</div>
+							<div>during cranking</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 29</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 28</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">28</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the CKP sensor.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">29</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the electrical connector at the EI system ignition coil.</Li>
+									<Li>Connect a test light between terminal B of the EI system ignition coil connector and ground.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the test light on?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 30</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 31</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">30</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Connect a test light of the EI system ignition coil connector and battery positive.</div>
+								<div>Is the test light on?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 34</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 32</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">31</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open in the wiring between the ignition switch and the EI system ignition coil connector terminal A.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 33</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">32</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open in the wire from the EI system ignition coil to ground.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">33</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Repair the wiring as needed.</Li>
+									<Li>Connect the EI system ignition coil connector.</Li>
+									<Li>Check for the presence of spark from all of the ignition wires.</Li>
+								</OL>
+								<div>Is spark present from all of the ignition wires?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 34</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">34</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the EI system ignition coil connector.</Li>
+									<Li>While cranking the engine, measure the voltage at the EI system ignition coil connector terminal C.</Li>
+								</OL>
+								<div>Does the voltage fluctuate within the values specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0.2-2.0 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 39</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 37</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">35</TD>
+						<TD width="49%" valign="top">
+							
+								<div>While cranking the engine, measure the voltage at the EI system ignition coil connector terminal A .</div>
+								<div>Does the voltage fluctuate within the values specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0.2-2.0 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 39</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 37</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">36</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open in the wire from the EI system ignition coil connector terminal C to the ECM connector terminal M51.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 38</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 40</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">37</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open in the wire from the EI system ignition coil connector terminal A to the ECM connector terminal M1.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 38</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 40</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">38</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Repair the wiring as needed.</Li>
+									<Li>Connect the EI system ignition coil connector.</Li>
+									<Li>Check for the presence of spark from all of the ignition wires.</Li>
+								</OL>
+								<div>Is spark present from all of the ignition wires?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 39</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">39</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the EI system ignition coil.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">40</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the ECM.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">41</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Connect a fuel pressure gauge.</Li>
+									<Li>Crank the engine.</Li>
+								</OL>
+								<div>Is any fuel pressure present?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 44</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 42</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">42</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the electrical connector at the fuel pump.</Li>
+									<Li>Connect a test light between the fuel pump connector terminals 3 and 2.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>With the ignition ON, the test light should light for the time specified.</Li>
+								</OL>
+								<div>Is the test light on?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 sec</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 43</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 53</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">43</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the fuel pump.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">44</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Is the fuel pressure within the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>283-324 kPa</div>
+							<div>(41-47 psi)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 48</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 45
+</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">45</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Check the fuel filter for a restriction.</Li>
+									<Li>Inspect the fuel lines for kinks and restrictions.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 46</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 47</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">46</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the vacuum line from the fuel pressure regulator.</Li>
+									<Li>Inspect the vacuum line for the presence of fuel.</Li>
+									<Li>Inspect the fuel pressure regulator vacuum port for the presence of fuel.</Li>
+								</OL>
+								<div>Is any fuel present?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>283-324 kPa</div>
+							<div>(41-47 psi)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 47</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">47</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the vacuum line from the fuel pressure regulator.</Li>
+									<Li>Inspect the vacuum line for the presence of fuel.</Li>
+									<Li>Inspect the fuel pressure regulator vacuum port for the presence of fuel.</Li>
+								</OL>
+								<div>Is any fuel present.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 50</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 51</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">48</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the fuel for contamination.</div>
+								<div>Is the fuel contaminated?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 49</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 65</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">49</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Remove the contaminated fuel from the fuel tank.</Li>
+									<Li>Clean the fuel tank as needed.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">50</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the fuel pressure regulator.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">51</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Remove the fuel pump assembly from the fuel tank.</Li>
+									<Li>Inspect the fuel pump sender and the fuel coupling hoses for a restriction.</Li>
+									<Li>Inspect the in-tank fuel filter for a restriction.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 52</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 43</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">52</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the fuel pump sender, the in-tank fuel filter, and/or the fuel coupling hoses as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">53</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the electrical connector at the fuel pump.</Li>
+									<Li>Connect a test light between the fuel pump connector terminal 3 and a known good ground.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>With the ignition ON, the test light should light for the time specified.</Li>
+								</OL>
+								<div>Is the test light on? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 sec</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 54</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 55</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">54</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open wire between the fuel pump connector terminal 2 and ground.</div>
+								<div>Is the repair complete</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">55</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the fuel pump relay.</Li>
+									<Li>Connect a test light between the fuel pump relay connector terminal 86 and ground.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the test light on?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 sec</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 56</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 62</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">56</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Connect a test light between the fuel pump relay connector terminal 85 and battery positive.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>With the ignition ON, the test light should light for the time specified.</Li>
+								</OL>
+								<div>Is the test light on?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 57</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 61
+</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">57</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Connect a test light between the fuel pump relay connector terminal 30 and ground.</Li>
+								</OL>
+								<div>Is the test light on?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 58</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 64</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">58</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Check the wire between the fuel pump relay connector terminal 87 and the fuel pump connector terminal 3 for an open or short to ground.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">59</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the fuel cutoff switch.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">60</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the fuel pump relay.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">61</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Check for an open in the wiring between the fuel pump relay connector terminal 85 and ground.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 72</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">62</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the wire between the fuel pump relay connector terminal 86 to the ECM connector terminal K54 for an open.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 63</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 40</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">63</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the wire between the fuel pump relay connector terminal 86 to the ECM connector terminal K54.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">64</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the wire between the fuel pump relay connector terminal 30 and the positive battery.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">65</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the fuel injector harness connectors from all of the fuel injectors.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Connect a test light between the fuel injector harness connector 1 and ground.</Li>
+									<Li>Repeat step 4 for each of the remaining fuel injectors.</Li>
+								</OL>
+								<div>Is the test light on at all of the fuel injectors?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 66</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 69</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">66</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Connect a test light between the fuel injector harness connector terminal 2 and battery positive.</Li>
+									<Li>Crank the engine.</Li>
+									<Li>Repeat steps two and three for each of the remaining fuel injectors.</Li>
+								</OL>
+								<div>Does the test light flash for all of the fuel injectors?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 67</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 70</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">67</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the resistance of each fuel injector.</div>
+								<div>Is the resistance within the value specified (the resistance will increase slightly at higher temperatures)?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>11.6-12.4 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 68</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">68</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace any of the fuel injectors with a resistance out of specification.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">69</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open wire(s) between the fuel injector harness connector(s) terminal 1 and the engine harness C205 terminal 2.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">70</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Check for an open between the #1 fuel injector harness connector terminal 2 and the ECM connector terminal M25.</Li>
+									<Li>Check for an open between the #2 fuel injector harness connector terminal 2 and the ECM connector terminal M22.</Li>
+									<Li>Check for an open between the #3 fuel injector harness connector terminal 2 and the ECM connector terminal M24.</Li>
+									<Li>Check for an open between the #4 fuel injector harness connector terminal 2 and the ECM connector terminal M11.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 71</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 73</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">71</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open fuel injector harness wire(s).</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">72</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the fuse or repair the wiring as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">73</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Inspect the I/P fuse F3.</Li>
+									<Li>Check for an open between the circuits from terminal 1 for each of the four fuel injectors and the ignition switch.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 72</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F09" src="../../../../graphic-pool/V/4B/1/V4B11F09.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F09.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0NMIL"><font size="4"><b>No Malfunction Indicator Lamp
+ </b></font></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD3"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">When the ignition is turned ON, the Malfunction Indicator Lamp (MIL) will be turned ON and remain ON until the engine is running, if no Diagnostic Trouble Codes (DTCs) are stored. Battery voltage is supplied through the ignition switch directly to the MIL telltale. The Engine Control Module (ECM) controls the MIL by providing a ground path through the MIL control circuit to turn ON the MIL.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA4"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An open ignition fuse F12 will cause the entire cluster to be inoperative.</div>
+				<div class="T1" align="left">Check the battery and ignition feed circuits for poor connections if the MIL is intermittent.</div>
+				<div class="T1" align="left">Any circuitry, that is suspected as causing an intermittent complaint, should be thoroughly checked for backed-out terminals, improper mating, broken locks, improperly formed or damaged terminals, poor terminal-to-wiring connections or physical damage to the wiring harness.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0NMIL1"><font size="4"><b>No Malfunction Indicator Lamp</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Attempt to start the engine.</div>
+								<div>Does the engine start?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ECWNR">"Engine Cranks But Will Not Run"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Disconnect the Engine Control Module (ECM) connector.</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+									<Li>Connect a test light between the ECM connector terminal K64 and ground.</Li>
+								</OL>
+								<div>Is the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check terminals for damage or poor connection.</div>
+								<div>Does any problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ECM.</div>
+								<div>Is the replacement complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair any damaged terminals or poor connection.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F0.en.html#V1F0ODSC">"On Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the fuse F12.</div>
+								<div>Is the fuse open?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Check for a short to ground in the circuit and repair as needed.</Li>
+									<Li>Replace the fuse F12.</Li>
+								</OL>
+								<div>Is the repair or replacement complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Check for an open circuit between fuse F12 and the ECM connector terminal K64 and repair as needed.</Li>
+									<Li>Check the MIL bulb and replace if open.</Li>
+								</OL>
+								<div>Is the repair or replacement complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F09" src="../../../../graphic-pool/V/4B/1/V4B11F09.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F09.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0MILOS"><font size="4"><b>Malfunction Indicator Lamp on Steady
+ </b></font></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD4"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">When the ignition switch is turned ON, the Malfunction Indicator Lamp (MIL) will be turned ON and remain ON until the engine is running, if no Diagnostic Trouble Codes (DTCs) are stored. Battery voltage is supplied through the ignition switch directly to the MIL telltale. The Engine Control Module (ECM) controls the MIL by providing a ground path through the MIL control circuit to turn ON the MIL.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD5"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool, if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is stored in the scan tool for later reference.</Li>
+					<Li value="2">When the ignition is turned ON, the MIL should be turned on and remain on until the engine is running or if an emission related DTC is stored. This step checks the ability of the ECM to control the MIL. The scan tool has the ability to command the MIL on and off.</Li>
+					<Li value="4">A shorted MIL circuit can be diagnosed with a scan tool.</Li>
+					<Li value="6">The replacement ECM must be reprogrammed. Refer to the latest Techline information for reprogramming procedures.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0MILOS1"><font size="4"><b>Malfunction Indicator Lamp On Steady</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) system check.</div>
+								<div>Is the check complete.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Install the scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Command the Malfunction Indicator Lamp (MIL) ON and OFF.</Li>
+								</OL>
+								<div>Does the MIL turn ON and OFF when commanded?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Disconnect the Engine Control Module (ECM) connector.</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+								</OL>
+								<div>Is the MIL off?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the MIL control circuit for a short to ground and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the instrument panel cluster. Refer to   <A target="_blank" href="5V2_9E0.en.html#V9E0II">Section 9E, Instrumentation/Driver Information.</A>
+								</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ECM.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes(DTCs).</Li>
+									<Li>Attempt to start the engine.</Li>
+								</OL>
+								<div>Does the engine start and continue to run?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 1</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Allow the engine to idle until normal operating temperature is reached.</Li>
+									<Li>Check if any DTCs are set.</Li>
+								</OL>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to " Applicable DTC table"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V1F0FSD"><font size="4"><b>Fuel System Diagnosis
+ </b></font></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD5"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The fuel pump is an in-tank type mounted to a fuel sender assembly. The fuel pump will remain on as long as the engine is cranking or running and the Engine Control Module (ECM) is receiving reference pulses from the crankshaft position (CKP) sensor. If there are no reference pulses, the ECM will turn off the fuel pump two seconds after the ignition switch is turned ON or two seconds after the engine stops running. The fuel pump delivers fuel to the fuel rail and the fuel injectors, where the fuel system pressure is controlled from 284 to 325 kPa (41 to 47 psi) by the fuel pressure regulator. The excess fuel is returned to the fuel tank.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD6"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="2">When the engine is idling, the intake manifold vacuum is high. This vacuum is applied to the fuel pressure regulator diaphragm, offsetting the spring pressure inside the fuel pressure regulator and lowering the fuel pressure.</Li>
+					<Li value="10">If there is fuel bleeding back through the fuel return outlet, this is due to a faulty fuel pressure regulator.</Li>
+					<Li value="14">Another symptom often present when the fuel injectors are leaking is hard starting. Leaking fuel injectors can cause a flooding condition.</Li>
+					<Li value="23">Fuel leaking from the fuel pump inlet is due to a faulty one-way check valve in the fuel pump.</Li>
+				</OL>
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The fuel system is under pressure. To avoid fuel spillage and the risk of personal injury or fire, it is necessary to relieve the fuel system pressure before disconnecting the fuel lines.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Do not pinch or restrict nylon fuel lines to avoid damage that could cause a fuel leak, resulting in possible fire or personal injury.</FONT></I></B></DIV>
+<P></P>
+				
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0FPRP"><b>Fuel Pressure Relief Procedure</b></DIV>
+<P></P>
+			
+				<OL>
+					<Li>Remove the fuel cap.</Li>
+					<Li>Remove the fuel pump fuse EF10 from the engine fuse box.</Li>
+					<Li>Start the engine and allow the engine to stall.</Li>
+					<Li>Crank the engine for an additional 10 seconds.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0FSD1"><font size="4"><b>Fuel System Diagnosis</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Relieve the fuel system pressure.</Li>
+									<Li>Install a fuel pressure gauge.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the fuel pressure within the values specified and holding steady?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>284~325 kPa (41~47psi)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the fuel pressure regulator vacuum hose.</Li>
+									<Li>Start the engine.</Li>
+									<Li>Allow the engine to idle.</Li>
+									<Li>Connect the fuel pressure regulator vacuum hose.</Li>
+								</OL>
+								<div>Does the fuel pressure decrease?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Allow the engine to idle.</Li>
+									<Li>Disconnect the vacuum hose from the fuel pressure regulator.</Li>
+									<Li>Connect a vacuum pump with a gauge to the fuel pressure regulator vacuum port.</Li>
+									<Li>Apply 41~47 kPa (12~14 in. Hg) of vacuum to the fuel pressure regulator.</Li>
+								</OL>
+								<div>Does the fuel pressure decrease?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Locate and correct the cause of the vacuum restriction to the fuel pressure regulator.</Li>
+									<Li>Confirm the operation of the fuel pressure regulator.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Relieve the fuel system pressure.</Li>
+									<Li>Install a fuel pressure gauge.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the fuel pressure within the values specified but not holding steady?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>284~325kPa (41~47psi)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Inspect the fuel lines for a leak.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the fuel line(s) as needed.</Li>
+									<Li>Install a fuel pressure gauge.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the fuel pressure within the values specified but not holding steady?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>284~325kPa (41~47psi)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Remove the fuel pump assembly.</Li>
+									<Li>With the fuel pump under pressure, inspect the fuel pump coupling hoses for leaking.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Tighten or replace the fuel pump coupling hoses as needed.</Li>
+									<Li>Install a fuel pressure gauge.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the fuel pressure within the values specified but not holding steady?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>41-47 psi (284-325 kPa)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With the fuel system under pressure, inspect the fuel return outlet for leaking.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the fuel pressure regulator.</Li>
+									<Li>Install a fuel pressure gauge.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the fuel pressure within the values specified but not holding steady?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>284~325kPa (41~47psi)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With the fuel system under pressure, inspect the fuel inlet for leaking.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the fuel pump assembly.</Li>
+									<Li>Install a fuel pressure gauge.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the fuel pressure within the values specified but not holding steady?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>284~325kPa (41~47psi)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Remove the fuel rail and the fuel injectors as an assembly.</Li>
+									<Li>With the fuel system under pressure, inspect all of the fuel injectors for leaking.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the leaking fuel injector(s).</Li>
+									<Li>Install a fuel pressure gauge.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the fuel pressure within the values specified but not holding steady?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>284~325kPa (41~47psi)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the fuel pressure regulator.</Li>
+									<Li>Disconnect the fuel pressure regulator vacuum hose.</Li>
+									<Li>Start the engine.</Li>
+									<Li>Allow the engine to idle.</Li>
+									<Li>Connect the fuel pressure regulator vacuum hose.</Li>
+								</OL>
+								<div>Does the fuel pressure decrease?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Relieve the fuel system pressure.</Li>
+									<Li>Install a fuel pressure gauge.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the fuel system pressure below the values specified and holding steady?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>284~325kPa (41~47psi)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Relieve the fuel system pressure.</Li>
+									<Li>Install a fuel pressure gauge.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the fuel system pressure below the values specified and holding steady?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>284~325kPa (41~47psi)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Inspect the fuel lines for leaks.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Remove the fuel pump assembly.</Li>
+									<Li>With the fuel pump under pressure, inspect the fuel pump coupling hoses for leaking.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 21</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">21</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Remove the fuel pump assembly.</Li>
+									<Li>With the fuel system under pressure, inspect the fuel return outlet for leaking.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 22</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">22</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Remove the fuel pump assembly.</Li>
+									<Li>With the fuel system under pressure, inspect the fuel inlet for leaking.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 23</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">23</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Remove the fuel rail and the fuel injectors as an assembly.</Li>
+									<Li>With the fuel system under pressure, inspect all of the fuel injectors for leaking.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F10" src="../../../../graphic-pool/V/4B/1/V4B11F10.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F10.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0FPRCC"><font size="4"><b>Fuel Pump Relay Circuit Check
+ </b></font></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD6"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">When the ignition switch is turned ON, the Engine Control Module (ECM) will supply battery voltage to activate the fuel pump relay and run the in-tank fuel pump. The fuel pump will operate as long as the engine is cranking or running and the ECM is receiving ignition reference pulses.</div>
+				<div class="T1" align="left">If there are no reference pulses, the ECM will shut off the fuel pump within 2 seconds after the ignition switch is turned ON.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA5"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An intermittent problem may be caused by a poor connection, rubbed through wire insulation, or a broken wire inside the insulation.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD3"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="3">This step checks for the ECM providing a ground for the operation of the fuel pump relay.</Li>
+					<Li value="7">By confirming that the wiring is OK using Steps 2 through 6, it can be determined that the fuel pump relay is at fault.</Li>
+					<Li value="9">After determining that there is no ground being provided by the ECM to the fuel pump relay, the fault is either the ECM or the wiring between the ECM and the fuel pump relay.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0FPRCC1"><font size="4"><b>Fuel Pump Relay Circuit Check</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF for 10 seconds.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Listen for in-tank fuel pump operation.</Li>
+								</OL>
+								<div>Does the fuel pump operate for the time specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 sec</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the fuel pump relay.</Li>
+									<Li>Connect a test light between the fuel pump relay connector terminal 30 and ground.</Li>
+								</OL>
+								<div>Turn the ignition ON.
+
+Is the test light on?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Connect a test light between the fuel pump relay connector terminal 86 and battery positive.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>With the ignition ON, the test light should light for the time specified.</Li>
+								</OL>
+								<div>Is the test light on?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 sec</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Connect a test light between the fuel pump relay connector terminal 30 and ground.</Li>
+								</OL>
+								<div>Is the test light on?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open or short to ground in the wire between the fuel pump relay connector terminal 87 and the fuel pump connector terminal 3.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Repair the wire between the fuel pump relay connector terminal 87 and the fuel pump connector terminal 3.</Li>
+									<Li>Install the fuel pump relay.</Li>
+									<Li>Turn the ignition OFF for 10 seconds.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Does the fuel pump operate for the time specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 sec</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the fuel pump relay.</Li>
+									<Li>Turn the ignition OFF for 10 seconds.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Does the fuel pump operate for the time specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 sec</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open wire between the fuel pump relay connector terminal 30 and the battery.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open wire between the fuel pump relay connector terminal 86 to the engine control module (ECM) connector terminal K54</div>
+								<div>Is the problem found.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Repair the wire between the fuel pump relay connector terminal 86 to the ECM connector terminal K54.</Li>
+									<Li>Install the fuel pump relay.</Li>
+									<Li>Turn the ignition OFF for 10 seconds.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Does the fuel pump operate for the time specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 sec</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the fuse F3 or repair the wire between the fuel pump relay connector terminal 30 and the battery.</Li>
+									<Li>Install the fuel pump relay.</Li>
+									<Li>Turn the ignition OFF for 10 seconds.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Does the fuel pump operate for the time specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 sec</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the ECM.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Does the fuel pump operate for the time specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 sec</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the fuse F3 or repair the wire between the fuel pump relay connector terminal 30 and the ignition system</Li>
+									<Li>Install the fuel pump relay.</Li>
+									<Li>Turn the ignition OFF for 10 seconds.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Does the fuel pump operate for the time specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 sec</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="5V2_1F01.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="5V2_1F03.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Daewoo Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

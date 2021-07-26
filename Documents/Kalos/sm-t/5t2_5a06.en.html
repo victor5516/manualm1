@@ -1,0 +1,941 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2005 KALOS Diagnostic Trouble Code (DTC) P1710</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="5T2_5A06.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">KALOS</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="5T2_5A05.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="5T2_5A07.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_KALOS.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_KALOS_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	<BR><IMG alt="T3B15A14" src="../../../../graphic-pool/T/3B/1/T3B15A14.png"><BR><A target="_blank" href="../../../../graphic-pool/T/3B/1/T3B15A14.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P1710"><font size="4"><b>Diagnostic Trouble Code (DTC) P1710 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0TSE"><font size="4"><b>Timing Solenoid (ST) Electrical</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CSDTC"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>TCM detects that the ON signal of the Timing Solenoid (ST) monitor during 0.5 seconds when ST driver outputs the OFF signal.(When the ST circuit is open or short to battery).</Li>
+					<Li>TCM detects that the OFF signal of the Timing Solenoid (ST) monitor during 0.1 seconds when ST driver outputs the ON signal.(When the ST circuit is short to battery).</Li>
+					<Li>The above detection 3 times at shifting continuously.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC"><b>Action Taken When the  DTC Sets</b></DIV>
+<P></P>
+			<UL>
+<Li>TCM will request the illumination of MIL and store DTC when TCM detects a failure on the first ignition cycle.</Li>
+					<Li>After failure decision : emergency mode</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC"><b>Conditions for Clearing the DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The TCM turns off the MIL when no further failures detected for three consecutive ignition cycles.</Li>
+					<Li>The scan tool can clear the DTC from the TCM history.</Li>
+					<Li>The TCM clears the DTC from the TCM history memory after forty consecutive ignition cycles without fault.
+</Li>
+					<Li>TCM detects the ON signal of the ST monitor during 100 ms when ST driver outputs the ON signal and TCM detects the OFF signal of the ST monitor during 160 ms when ST driver outputs the OFF signal.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF"><b>Cause of Failure</b></DIV>
+<P></P>
+			<UL>
+<Li>Wiring harness or connector between Timing Solenoid (ST) and TCM</Li>
+					<Li>ST</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P17101"><font size="4"><b>DTC P1710 Timing Solenoid (ST) Electrical</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Install the Scan tool.</Li>
+									<Li>With the engine OFF, turn the ignition switch to the ON position.</Li>
+									<Li>Select Store Freeze Frame/Failure Records from the Diagnostic Trouble Codes Information menu.</Li>
+									<Li>Store Freeze Frame/Failure Records.</Li>
+									<Li>Select Clear DTC Information from the Diagnostic Trouble Codes Information menu.</Li>
+									<Li>Clear DTC Information.</Li>
+									<Li>Perform one vehicle drive cycle.</Li>
+								</OL>
+								<div>Is the Malfunction Indicator Lamp (MIL) ON?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair the temporary connection failure of connector (Refer to "Wiring Harness and Connector Inspection" in this section.)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Select Request DTC by Status from the Diagnostic Trouble Codes Information menu.</Li>
+									<Li>Request DTC by Status.</Li>
+								</OL>
+								<div>Is DTC P1710 displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair the temporary connection failure of connector (Refer to "Wiring Harness and Connector Inspection" in this section.)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Inspect the resistance between the vehicle harness and Timing Solenoid (ST). Refer to   <A target="_blank" href="5T2_5A02.en.html#T5A0UI">"Unit Inspection" </A>
+in this section.</Li>
+									<Li>Disconnect the TCM connector (X-1) and inspect the resistance between the terminal A24 and A23. </Li>
+								</OL>
+								<div>Is the measurement within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C</div>
+							<div>11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Estimate the failure of between the vehicle wiring harness connector and TCM.</Li>
+									<Li>Inspect the connector. Refer to "Wiring Harness and Connector Inspection" in this section.</Li>
+									<Li>Inspect the connection condition between the connectors (C-1).</Li>
+								</OL>
+								<div>Is the connection condition OK?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair the wiring harness connectors.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Estimate the failure of between the vehicle harness and ST.</Li>
+									<Li>Disconnect the connector (X-3) of T/M wire and inspect the resistance between ST connector terminal 2 and ground.</Li>
+								</OL>
+								<div>Is the measurement within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C</div>
+							<div>11-16 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Replace the master TCM.</Li>
+									<Li>Perform the reproducing test under user condition after confirming no DTC.</Li>
+								</OL>
+								<div>Is DTC displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair the temporary connection failure of connector (Refer to "Wiring Harness and Connector Inspection" in this section.)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Replace the TCM</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Estimate the failure of the vehicle wiring harness or between connectors.</Li>
+									<Li>Inspect continuity and short circuit for the vehicle wiring harness and inspect the connection condition between connectors (C-3). Refer to "Wiring Harness and Connector Inspection" in this section.</Li>
+								</OL>
+								<div>Is the condition OK?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair the temporary connection failure of connector</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Replace the vehicle harness or adjustment between connectors</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Estimate the failure of T/M wire or between connectors of ST.</Li>
+									<Li>Inspect the ST. Refer to   <A target="_blank" href="5T2_5A02.en.html#T5A0UI">"Unit Inspection" </A>
+in this section.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Replace the ST</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Estimate the failure of T/M wire.</Li>
+								</OL>
+								<div>Inspect continuity and short circuit for the T/M wire and inspect the connection condition between connectors (C-6). Refer to "Wiring Harness and Connector Inspection" in this section.</div>
+								<div>Is the condition OK?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair the temporary connection failure of connector </div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Replace the T/M wire or adjustment between connectors</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="T3D15A02" src="../../../../graphic-pool/T/3D/1/T3D15A02.png"><BR><A target="_blank" href="../../../../graphic-pool/T/3D/1/T3D15A02.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P1790"><font size="4"><b>Diagnostic Trouble Code (DTC) P1790 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0ITCM"><font size="4"><b>Internal Transmission Control Module (TCM) Random Access Memory (RAM) Checksum Error</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CSDTC1"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The Transmission Control Module (TCM) detects a difference between the calculated checksum data and rear checksum data.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC1"><b>Action Taken When the  DTC Sets</b></DIV>
+<P></P>
+			<UL>
+<Li>TCM will request the illumination of MIL and store DTC when TCM detects a failure on the first consecutive ignition cycle.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC1"><b>Conditions for Clearing the DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The TCM turns off the MIL when no further failures detected for three consecutive ignition cycles.</Li>
+					<Li>The scan tool can clear the DTC from the TCM history.</Li>
+					<Li>The TCM clears the DTC from the TCM history memory after forty consecutive ignition cycles without fault.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF1"><b>Cause of Failure</b></DIV>
+<P></P>
+			<UL>
+<Li>Harness or connector between TCM and ECM</Li>
+					<Li>ECM</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P17901"><font size="4"><b>DTC P1790 Internal Transmission Control Module (TCM) Random  Access Memory (RAM) Checksum Error
+</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Install the Scan tool.</Li>
+									<Li>With the engine OFF, turn the ignition switch to the ON position.</Li>
+									<Li>Select Store Freeze Frame/Failure Records from the Diagnostic Trouble Codes Information menu.</Li>
+									<Li>Store Freeze Frame/Failure Records.</Li>
+									<Li>Select Clear DTC Information from the Diagnostic Trouble Codes Information menu.</Li>
+									<Li>Clear DTC Information.</Li>
+									<Li>Perform one vehicle drive cycle.</Li>
+								</OL>
+								<div>Is the Malfunction Indicator Lamp (MIL) ON?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Inspect Transmission Control Module (TCM) wiring harness and connector for signs of an intermittent condition. Repair as necessary.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Select Request DTC by Status from the Diagnostic Trouble Codes Information menu.</Li>
+									<Li>Request DTC by Status.</Li>
+								</OL>
+								<div>Is DTC P1790 displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Replace the Transmission Control Module (TCM)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Inspect Transmission Control Module (TCM) wiring harness and connector for signs of an intermittent condition. Repair as necessary.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="T3D15A02" src="../../../../graphic-pool/T/3D/1/T3D15A02.png"><BR><A target="_blank" href="../../../../graphic-pool/T/3D/1/T3D15A02.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P1791"><font size="4"><b>Diagnostic Trouble Code (DTC) P1791 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0TPSE"><font size="4"><b>Throttle Position Signal Error</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CSDTC2"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>TCM detects that malfunction of throttle position signal for 2 seconds continuously.</Li>
+					<Li>No DTC U2105</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC2"><b>Action Taken When the  DTC Sets</b></DIV>
+<P></P>
+			<UL>
+<Li>TCM will request the illumination of MIL and store DTC when TCM detects a failure on the first ignition cycle.</Li>
+					<Li>TCM judges the throttle opening is 0% for shift point control.</Li>
+					<Li>TCM judges the throttle opening is 100% for line pressure control.
+</Li>
+					<Li>No lock-up</Li>
+					<Li>No 4th gear</Li>
+					<Li>No self-learning control
+</Li>
+					<Li>No timing solenoid control for N-D
+</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC2"><b>Conditions for Clearing the DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The TCM turns off the MIL when no further failures detected for three consecutive ignition cycles.</Li>
+					<Li>The scan tool can clear the DTC from the TCM history.</Li>
+					<Li>The TCM clears the DTC from the TCM history memory after forty consecutive ignition cycles without fault.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF2"><b>Cause of Failure</b></DIV>
+<P></P>
+			<UL>
+<Li>Wiring harness or connector between ECM and TCM
+</Li>
+					<Li>ECM</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P17911"><font size="4"><b>DTC 1791 Throttle Position Signal Error</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Install the Scan tool.</Li>
+									<Li>With the engine OFF, turn the ignition switch to the ON position.</Li>
+									<Li>Select Store Freeze Frame/Failure Records from the Diagnostic Trouble Codes Information menu.</Li>
+									<Li>Store Freeze Frame/Failure Records.</Li>
+									<Li>Select Clear DTC Information from the Diagnostic Trouble Codes Information menu.</Li>
+									<Li>Clear DTC Information.</Li>
+									<Li>Perform one vehicle drive cycle.</Li>
+								</OL>
+								<div>Is the Malfunction Indicator Lamp (MIL) ON?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair the temporary connection failure of connector.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Select Request DTC by Status from the Diagnostic Trouble Codes Information menu.</Li>
+									<Li>Request DTC by Status.</Li>
+								</OL>
+								<div>Is DTC P1791 displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair the temporary connection failure of connector.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the TCM wiring connector and ECM wiring connector.</Li>
+									<Li>Measure the resistance between terminal A17 of the TCM wiring connector and terminal K14 (88) of the ECM wiring connector.</Li>
+									<Li>Measure the resistance between terminal A7 of the TCM wiring connector and terminal K15 (57) of the ECM wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>0 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal A17.</Li>
+									<Li>Measure the voltage of terminal A7.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Replace the TCM.</Li>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Check if P1791 DTC is set.</Li>
+								</OL>
+								<div>Is the DTC set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Replace the ECM.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>After the repair, use a scan tool "clear info" function and road test the vehicle.</Li>
+									<Li>Review the "DTC info".</Li>
+								</OL>
+								<div>Has the last test failed or is the current DTC displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Begin diagnosis again</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair verified exit DTC chart</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="T3D15A02" src="../../../../graphic-pool/T/3D/1/T3D15A02.png"><BR><A target="_blank" href="../../../../graphic-pool/T/3D/1/T3D15A02.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0U2105"><font size="4"><b>Diagnostic Trouble Code (DTC) U2105 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0CBE"><font size="4"><b>Can Error</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CSDTC3"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>TCM detects that the BUS OFF signal. This detection is continued for 0.2 seconds.</Li>
+					<Li>TCM detects that nothing of ECM signal on CAN BUS for 0.2 seconds. This detection is continued for 2.0 seconds.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC3"><b>Action Taken When the  DTC Sets</b></DIV>
+<P></P>
+			<UL>
+<Li>TCM will request the illumination of MIL and store DTC when TCM detects a failure on the first ignition cycle.</Li>
+					<Li>TCM judges the throttle opening is 0% for shift point and lock-up point control.</Li>
+					<Li>TCM judges the throttle opening is 100% for line pressure control.</Li>
+					<Li>No lock-up</Li>
+					<Li>No self-learning control
+</Li>
+					<Li>No 4th gear</Li>
+					<Li>TCM judges the engine revolution is 0 rpm.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC3"><b>Conditions for Clearing the DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The TCM turns off the MIL when no further failures detected for three consecutive ignition cycles.</Li>
+					<Li>The scan tool can clear the DTC from the TCM history.</Li>
+					<Li>TCM detects the BUS normal signal for 2 seconds continuously.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF3"><b>Cause of Failure</b></DIV>
+<P></P>
+			<UL>
+<Li>Wiring harness or connector between ECM and TCM
+</Li>
+					<Li>ECM</Li>
+					<Li>TCM</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0U21051"><font size="4"><b>DTC U2105 CAN Bus Error</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Install the Scan tool.</Li>
+									<Li>With the engine OFF, turn the ignition switch to the ON position.</Li>
+									<Li>Select Store Freeze Frame/Failure Records from the Diagnostic Trouble Codes Information menu.</Li>
+									<Li>Store Freeze Frame/Failure Records.</Li>
+									<Li>Select Clear DTC Information from the Diagnostic Trouble Codes Information menu.</Li>
+									<Li>Clear DTC Information.</Li>
+									<Li>Perform one vehicle drive cycle.</Li>
+								</OL>
+								<div>Is the Malfunction Indicator Lamp (MIL) ON?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair the temporary connection failure of connector.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Select Request DTC by Status from the Diagnostic Trouble Codes Information menu.</Li>
+									<Li>Request DTC by Status.</Li>
+								</OL>
+								<div>Is DTC U2105 displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair the temporary connection failure of connector.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the TCM wiring connector and ECM wiring connector.</Li>
+									<Li>Measure the resistance between terminal A17 of the TCM wiring connector and terminal K14 (88) of the ECM wiring connector.</Li>
+									<Li>Measure the resistance between terminal A7 of the TCM wiring connector and terminal K15 (57) of the ECM wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>0 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal A17.</Li>
+									<Li>Measure the voltage of terminal A7.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Replace the TCM.</Li>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Check if U2105 DTC is set.</Li>
+								</OL>
+								<div>Is the DTC set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Replace the ECM.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>After the repair, use a scan tool "clear info" function and road test the vehicle.</Li>
+									<Li>Review the "DTC info".</Li>
+								</OL>
+								<div>Has the last test failed or is the current DTC displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Begin diagnosis again</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair verified exit DTC chart</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="5T2_5A05.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="5T2_5A07.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Daewoo Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

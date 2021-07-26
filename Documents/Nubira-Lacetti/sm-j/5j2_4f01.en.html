@@ -1,0 +1,2249 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2005  Diagnostic Trouble Code (DTC) C0035</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="5J2_4F01.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Nubira-Lacetti</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="5J2_4F0.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="5J2_4F02.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_Nubira-Lacetti.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_Nubira-Lacetti_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	
+		<BR><IMG alt="J3B14F05" src="../../../../graphic-pool/J/3B/1/J3B14F05.png"><BR><A target="_blank" href="../../../../graphic-pool/J/3B/1/J3B14F05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0035"><font size="4"><b>Diagnostic Trouble Code (DTC) C0035 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0LFWSS"><font size="4"><b>Left Front Wheel Speed Sensor Circuit Malfunction</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The toothed wheel generates a voltage pulse as it moves past the sensor. Each tooth-gap-tooth series on the wheel generates the pulses. The electronic brake control module (EBCM) uses the frequency of these pulses to determine the wheel speed. The voltage generated depends on the air gap between the sensor and the toothed wheel, and on the wheel speed.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN"><b>Diagnosis</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">This procedure checks for a malfunctioning wheel speed sensor, a short to ground or to voltage in the wiring, or a contact problem in a connector.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE"><b>Cause(s)</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The wheel speed sensor is defective or disconnected.</Li>
+					<Li>There is a problem in the wiring.</Li>
+					<Li>There is a problem with a connector.</Li>
+					<Li>There is a problem in the toothed ring.</Li>
+					<Li>Wrong installed WSS.</Li>
+					<Li>Wrong sensor signal.</Li>
+					<Li>Signal noise via WSS.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA"><b>Fail Action</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">ABS action is disabled, and the ABS warning lamp is ON. EBD is enabled. (Refer to the EBD failure matrix in this section).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">This step begins an examination for a defective wheel speed sensor.</Li>
+					<Li value="6">This step tests the wiring for a short to voltage.</Li>
+					<Li value="8">This step tests the wiring for a short to ground.</Li>
+					<Li value="10">This step tests for an open or a high resistance in the wiring.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DA"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Be sure that the speed sensor wiring is properly routed and retained. This will help to prevent false signals due to the pickup of electrical noise.</div>
+				<div class="T1" align="left">It is very important to perform a thorough inspection of the wiring and the connectors. Failure to inspect the wiring and the connectors carefully and completely may result in misdiagnosis, causing part replacement with the reappearance of the malfunction.</div>
+				<div class="T1" align="left">You can use the scan tool to monitor wheel speeds during a road test. Watch the wheel speeds being displayed on the scan tool to see if any of the readings is unusual, such as one sensor varying in speed from the other three, a signal going intermittently high or low, etc. If this does not identify the intermittent, wet the speed sensor harness on the underside of the vehicle and perform a road test, monitoring the wheel speeds with the scan tool.</div>
+				<P></P>
+<DIV><B><FONT color="navy">Important : If the WSS signal fault input to the EBCM, the ABS warning lamp turns on. As if a sensor signal fault can be removed by the scan tool, the ABS warning lamp doesn't turn off. In order to turn ABS warning lamp off, you should driver a car up to 12 km/h.</FONT></B></DIV>
+<P></P>
+				
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00351"><font size="4"><b>DTC C0035 - Left Front Wheel Speed Sensor Circuit Malfunction</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Examine the wheel speed sensor.</div>
+								<div>Are there any signs of physical damage?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Disconnect the left front wheel speed sensor connector.</Li>
+									<Li>Use a digital voltmeter (DVM) to measure the resistance between the sensor terminals.</Li>
+								</OL>
+								<div>Is the resistance within the specified value at approximately 25°C (77°F)?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1280-1920 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the wheel speed sensor.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Switch the DVM to the AC millivolt range.</Li>
+									<Li>Measure the voltage output of between the wheel speed sensor terminals while rotating the wheel about 1 revolution every 2 seconds.</Li>
+								</OL>
+								<div>Is the output within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 120 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the speed sensor or the toothed wheel as required.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Disconnect the harness from the EBCM.</Li>
+									<Li>Connect a DVM between ground and one terminal of the wheel speed connector.</Li>
+									<Li>Turn the ignition to ON.</Li>
+									<Li>Repeat the above test for the other terminal of the wheel speed connector.</Li>
+								</OL>
+								<div>Is the voltage for either of these terminals within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 1 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to voltage in the affected circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Measure the resistance to ground from terminal 6 at the harness EBCM connector.</Li>
+									<Li>Measure the resistance to ground from terminal 7 at the harness EBCM connector.</Li>
+								</OL>
+								<div>Is the resistance at either circuit less than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to ground in the affected circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Measure the resistance between terminal 6 at the harness EBCM connector and the harness wheel speed sensor connector terminal connected to the WHT wire.</Li>
+									<Li>Measure the resistance between terminal 7 at the harness EBCM connector and the harness wheel speed sensor connector terminal connected to the ORN wire.</Li>
+								</OL>
+								<div>Is the resistance on either circuit within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 5 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance in the affected circuit as required.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ABS unit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F04" src="../../../../graphic-pool/J/5B/1/J5B14F04.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F04.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0040"><font size="4"><b>Diagnostic Trouble Code (DTC) C0040 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0RFWSS"><font size="4"><b>Right Front Wheel Speed Sensor Circuit Malfunction</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD1"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The toothed wheel generates a voltage pulse as it moves past the sensor. Each tooth-gap-tooth series on the wheel generates the pulses. The electronic brake control module (EBCM) uses the frequency of these pulses to determine the wheel speed. The voltage generated depends on the air gap between the sensor and the toothed wheel, and on the wheel speed.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN1"><b>Diagnosis</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">This procedure checks for a malfunctioning wheel speed sensor, a short to ground or to voltage in the wiring, or a contact problem in a connector.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE1"><b>Cause(s)</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The wheel speed sensor is defective or disconnected.</Li>
+					<Li>There is a problem in the wiring.</Li>
+					<Li>There is a problem with a connector.</Li>
+					<Li>There is a problem in the toothed ring.</Li>
+					<Li>Wrong installed WSS.</Li>
+					<Li>Wrong sensor signal.</Li>
+					<Li>Signal noise via WSS.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA1"><b>Fail Action</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">ABS action is disabled, and the ABS warning lamp is ON. EBD is enabled. (Refer to the EBD failure matrix in this section)</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD1"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">This step begins an examination for a defective wheel speed sensor.</Li>
+					<Li value="6">This step tests the wiring for a short to voltage.</Li>
+					<Li value="8">This step tests the wiring for a short to ground.</Li>
+					<Li value="10">This step tests for an open or high resistance in the wiring.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DA1"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Be sure that the speed sensor wiring is properly routed and retained. This will help to prevent false signals due to the pickup of electrical noise.</div>
+				<div class="T1" align="left">It is very important to perform a thorough inspection of the wiring and the connectors. Failure to inspect the wiring and the connectors carefully and completely may result in misdiagnosis, causing part replacement with the reappearance of the malfunction.</div>
+				<div class="T1" align="left">You can use the scan tool to monitor wheel speeds during a road test. Watch the wheel speeds being displayed on the scan tool to see if any of the readings is unusual, such as one sensor varying in speed from the other three, a signal going intermittently high or low, etc. If this does not identify the intermittent, wet the speed sensor harness on the underside of the vehicle and perform a road test, monitoring the wheel speeds with the scan tool.</div>
+				<P></P>
+<DIV><B><FONT color="navy">Important : If the WSS signal fault input to the EBCM, the ABS warning lamp turns on. As if a sensor signal fault can be removed by the scan tool, the ABS warning lamp doesn't turn off. In order to turn ABS warning lamp off, you should drive a car up to 12 km/h.</FONT></B></DIV>
+<P></P>
+				
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00401"><font size="4"><b>DTC C0040 - Right Front Wheel Speed Sensor Circuit Malfunction</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Examine the wheel speed sensor.</div>
+								<div>Are there any signs of physical damage?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Disconnect the right front wheel speed sensor connector.</Li>
+									<Li>Use a digital voltmeter (DVM) to measure the resistance between the sensor terminals.</Li>
+								</OL>
+								<div>Is the resistance within the specified value at approximately 25°C (77°F)?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1280-1920 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the wheel speed sensor.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Switch the DVM to the AC millivolt range.</Li>
+									<Li>Measure the voltage output of between the wheel speed sensor terminals while rotating the wheel about 1 revolution every 2 seconds.</Li>
+								</OL>
+								<div>Is the output within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 120 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the speed sensor or the toothed wheel as required.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Disconnect the harness from the EBCM.</Li>
+									<Li>Connect a DVM between ground and one terminal of the wheel speed connector.</Li>
+									<Li>Turn the ignition to ON.</Li>
+									<Li>Repeat the above test for the other terminal of the wheel speed connector.</Li>
+								</OL>
+								<div>Is the voltage for either of these terminals within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 1 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to voltage in the affected circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Measure the resistance to ground from terminal 4 at the harness EBCM connector.</Li>
+									<Li>Measure the resistance to ground from terminal 5 at the harness EBCM connector.</Li>
+								</OL>
+								<div>Is the resistance at either circuit less than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to ground in the affected circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Measure the resistance between terminal 4 at the harness EBCM connector and the harness wheel speed sensor connector terminal connected to the WHT wire.</Li>
+									<Li>Measure the resistance between terminal 5 at the harness EBCM connector and the harness wheel speed sensor connector terminal connected to the GRY wire.</Li>
+								</OL>
+								<div>Is the resistance on either circuit within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 5 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance in the affected circuit as required.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ABS unit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F05" src="../../../../graphic-pool/J/5B/1/J5B14F05.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0045"><font size="4"><b>Diagnostic Trouble Code (DTC) C0045 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0LRFWS"><font size="4"><b>Left Rear Wheel Speed Sensor Circuit Malfunction</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD2"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The toothed wheel generates a voltage pulse as it moves past the sensor. Each tooth-gap-tooth series on the wheel generates the pulses. The electronic brake control module (EBCM) uses the frequency of these pulses to determine the wheel speed. The voltage generated depends on the air gap between the sensor and the toothed wheel, and on the wheel speed.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN2"><b>Diagnosis</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">This procedure checks for a malfunctioning wheel speed sensor, a short to ground or to voltage in the wiring, or a contact problem in a connector.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE2"><b>Cause(s)</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The wheel speed sensor is defective or disconnected.</Li>
+					<Li>There is a problem in the wiring.</Li>
+					<Li>There is a problem with a connector.</Li>
+					<Li>There is a problem in the toothed ring.</Li>
+					<Li>Wrong installed WSS.</Li>
+					<Li>Wrong sensor signal.</Li>
+					<Li>Signal noise via WSS.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA2"><b>Fail Action</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">ABS action is disabled, and the ABS warning lamp is ON. EBD is enabled. (Refer to the EBD failure matrix in this section)</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD2"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">This step begins an examination for a defective wheel speed sensor.</Li>
+					<Li value="6">This step tests the wiring for a short to voltage.</Li>
+					<Li value="8">This step tests the wiring for a short to ground.</Li>
+					<Li value="10">This step tests for an open or a high resistance in the wiring.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DA2"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Be sure that the speed sensor wiring is properly routed and retained. This will help to prevent false signals due to the pickup of electrical noise.</div>
+				<div class="T1" align="left">It is very important to perform a thorough inspection of the wiring and the connectors. Failure to inspect the wiring and the connectors carefully and completely may result in misdiagnosis, causing part replacement with the reappearance of the malfunction.</div>
+				<div class="T1" align="left">You can use the scan tool to monitor wheel speeds during a road test. Watch the wheel speeds being displayed on the scan tool to see if any of the readings is unusual, such as one sensor varying in speed from the other three, a signal going intermittently high or low, etc. If this does not identify the intermittent, wet the speed sensor harness on the underside of the vehicle and perform a road test, monitoring wheel speeds with the scan tool.</div>
+				<P></P>
+<DIV><B><FONT color="navy">Important : If the WSS signal fault input to the EBCM, the ABS warning lamp turns on. As if a sensor signal fault can be removed by the scan tool, the ABS warning lamp doesn't turn off. In order to turn ABS warning lamp off, you should drive a car up to 12 km/h.</FONT></B></DIV>
+<P></P>
+				
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00451"><font size="4"><b>DTC C0045 - Left Rear Wheel Speed Sensor Circuit Malfunction</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Examine the wheel speed sensor.</div>
+								<div>Are there any signs of physical damage?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Disconnect the left rear wheel speed sensor connector.</Li>
+									<Li>Use a digital voltmeter (DVM) to measure the resistance between the sensor terminals.</Li>
+								</OL>
+								<div>Is the resistance within the specified value at approximately 25°C (77°F)?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1280-1920 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the wheel speed sensor.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Switch the DVM to the AC millivolt range.</Li>
+									<Li>Measure the voltage output of between the wheel speed sensor terminals while rotating the wheel about 1 revolution every 2 seconds.</Li>
+								</OL>
+								<div>Is the output within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 120 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the speed sensor or the toothed wheel as required.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Disconnect the harness from the EBCM.</Li>
+									<Li>Connect a DVM between ground and one terminal of the wheel speed connector.</Li>
+									<Li>Turn the ignition to ON.</Li>
+									<Li>Repeat the above test for the other terminal of the wheel speed connector.</Li>
+								</OL>
+								<div>Is the voltage for either of these terminals within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 1 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to voltage in the affected circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Measure the resistance to ground from terminal 8 at the harness EBCM connector.</Li>
+									<Li>Measure the resistance to ground from terminal 9 at the harness EBCM connector.</Li>
+								</OL>
+								<div>Is the resistance at either circuit less than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to ground in the affected circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Measure the resistance between terminal 8 at the harness EBCM connector and the harness wheel speed sensor connector terminal connected to the RED wire.</Li>
+									<Li>Measure the resistance between terminal 9 at the harness EBCM connector and the harness wheel speed sensor connector terminal connected to the BLK wire.</Li>
+								</OL>
+								<div>Is the resistance on either circuit within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 5 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or the high resistance in the affected circuit as required. Be sure to check terminals 5 and 4 of connector C110 and terminal 3 and 4 of connector C901.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ABS unit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F06" src="../../../../graphic-pool/J/5B/1/J5B14F06.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F06.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0050"><font size="4"><b>Diagnostic Trouble Code (DTC) C0050 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0RRWSS"><font size="4"><b>Right Rear Wheel Speed Sensor Circuit Malfunction</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD3"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The toothed wheel generates a voltage pulse as it moves past the sensor. Each tooth-gap-tooth series on the wheel generates the pulses. The electronic brake control module (EBCM) uses the frequency of these pulses to determine the wheel speed. The voltage generated depends on the air gap between the sensor and the toothed wheel, and on the wheel speed.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN3"><b>Diagnosis</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">This procedure checks for a malfunctioning wheel speed sensor, a short to ground or to voltage in the wiring, or a contact problem in a connector.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE3"><b>Cause(s)</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The wheel speed sensor is defective or disconnected.</Li>
+					<Li>There is a problem in the wiring.</Li>
+					<Li>There is a problem with a connector.</Li>
+					<Li>There is a problem in the toothed ring.</Li>
+					<Li>Wrong installed WSS.</Li>
+					<Li>Wrong sensor signal.</Li>
+					<Li>Signal noise via WSS.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA3"><b>Fail Action</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">ABS action is disabled, and the ABS warning lamp is ON. EBD is enabled. (Refer to the EBD failure matrix in this section)</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD3"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">This step begins an examination for a defective wheel speed sensor.</Li>
+					<Li value="6">This step tests the wiring for a short to voltage.</Li>
+					<Li value="8">This step tests the wiring for a short to ground.</Li>
+					<Li value="10">This step tests for an open or high resistance in the wiring.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DA3"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Be sure that the speed sensor wiring is properly routed and retained. This will help to prevent false signals due to the pickup of electrical noise.</div>
+				<div class="T1" align="left">It is very important to perform a thorough inspection of the wiring and the connectors. Failure to inspect the wiring and the connectors carefully and completely may result in misdiagnosis, causing part replacement with the reappearance of the malfunction.</div>
+				<div class="T1" align="left">You can use the scan tool to monitor wheel speeds during a road test. Watch the wheel speeds being displayed on the scan tool to see if any of the readings is unusual, such as one sensor varying in speed from the other three, a signal going intermittently high or low, etc. If this does not identify the intermittent, wet the speed sensor harness on the underside of the vehicle and perform a road test, monitoring wheel speeds with the scan tool.</div>
+				<P></P>
+<DIV><B><FONT color="navy">Important : If the WSS signal fault input to the EBCM, the ABS warning lamp turns on. As if a sensor signal fault can be removed by the scan tool, the ABS warning lamp doesn't turn off. In order to turn ABS warning lamp off, you should drive a car up to 12 km/h.</FONT></B></DIV>
+<P></P>
+				
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00501"><font size="4"><b>DTC C0050 - Right Rear Wheel Speed Sensor Circuit Malfunction</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Examine the wheel speed sensor.</div>
+								<div>Are there any signs of physical damage?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Disconnect the left rear wheel speed sensor connector.</Li>
+									<Li>Use a digital voltmeter (DVM) to measure the resistance between the sensor terminals.</Li>
+								</OL>
+								<div>Is the resistance within the specified value at approximately 25°C (77°F)?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1280-1920 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the wheel speed sensor.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Switch the DVM to the AC millivolt range.</Li>
+									<Li>Measure the voltage output of between the wheel speed sensor terminals while rotating the wheel about 1 revolution every 2 seconds.</Li>
+								</OL>
+								<div>Is the output within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 120 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the speed sensor or the toothed wheel as required.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Disconnect the harness from the EBCM.</Li>
+									<Li>Connect a DVM between ground and one terminal of the wheel speed connector.</Li>
+									<Li>Turn the ignition to ON.</Li>
+									<Li>Repeat the above test for the other terminal of the wheel speed connector.</Li>
+								</OL>
+								<div>Is the voltage for either of these terminals within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 1 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to voltage in the affected circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Measure the resistance to ground from terminal 1 at the harness EBCM connector.</Li>
+									<Li>Measure the resistance to ground from terminal 2 at the harness EBCM connector.</Li>
+								</OL>
+								<div>Is the resistance at either circuit less than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to ground in the affected circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Measure the resistance between terminal 1 at the harness EBCM connector and the harness wheel speed sensor connector terminal connected to the WHT wire.</Li>
+									<Li>Measure the resistance between terminal 2 at the harness EBCM connector and the harness wheel speed sensor connector terminal connected to the GRY wire.</Li>
+								</OL>
+								<div>Is the resistance on either circuit within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 5 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance in the affected circuit as required. Be sure to check terminals 3 and 10 of connector C110 and terminals 1 and 2 of connector C901.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ABS unit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F07" src="../../../../graphic-pool/J/5B/1/J5B14F07.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0060"><font size="4"><b>Diagnostic Trouble Code (DTC) C0060/C0065 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0LFIOV"><font size="4"><b>Left Front Inlet and Outlet Valve Solenoid Fault</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD4"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The solenoid valve coil circuits are supplied with power from the battery when the valve relay is energized. Switched ground is provided by the electronic brake control module (EBCM) to each coil.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN4"><b>Diagnosis</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">This procedure checks whether the left front inlet and outlet valves are functioning.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE4"><b>Cause(s)</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>A valve has failed.</Li>
+					<Li>A solenoid coil is open or shorted.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA4"><b>Fail Action</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">ABS is disabled, and the ABS warning lamp is turned ON for the remainder of the ignition cycle. EBD is disabled. If the failure is intermittent, the EBCM will enable the system at the next ignition cycle and set a history DTC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD4"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">This step begins the test of the inlet valve.</Li>
+					<Li value="3">This step tests the outlet valve.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00601"><font size="4"><b>DTC C0060/C0065 - Left Front Inlet and Outlet Valve Solenoid Fault</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Raise and suitably support the vehicle at the corner being tested.</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+									<Li>Install the scan tool to the Data Link Connector (DLC) and select Wheel front left" to begin the solenoid tests at that wheel. This will test both the inlet and the outlet valves.</Li>
+									<Li>When the scan tool indicates "Pressure hold," depress and hold the brake pedal until the end of the test.</Li>
+									<Li>Have an assistant attempt to rotate the wheel.</Li>
+								</OL>
+								<div>Can the wheel be rotated?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Maintain pressure on the brake pedal.</Li>
+									<Li>When the scan tool indicates "Pressure increase," have an assistant attempt to rotate the wheel again.</Li>
+								</OL>
+								<div>Can the wheel be rotated now?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Maintain pressure on the brake pedal.</Li>
+									<Li>When the scan tool indicates "Pressure release on," have an assistant attempt to rotate the wheel again.</Li>
+								</OL>
+								<div>Can the wheel be rotated?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Release brake pedal pressure when the scan tool indicates "Pressure release off."</Li>
+									<Li>Clear all DTCs.</Li>
+									<Li>Road test the vehicle.</Li>
+								</OL>
+								<div>Does the DTC set again?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Check the wiring harness and connector terminals for an intermittent problem.</Li>
+									<Li>Repair any problem found.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ABS unit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F07" src="../../../../graphic-pool/J/5B/1/J5B14F07.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0070"><font size="4"><b>Diagnostic Trouble Code (DTC) C0070/C0075 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0RFIOV"><font size="4"><b>Right Front Inlet and Outlet Valve Solenoid Fault</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD5"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The solenoid valve coil circuits are supplied with power from the battery when the valve relay is energized. Switched ground is provided by the electronic brake control module (EBCM) to each coil.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN5"><b>Diagnosis</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">This procedure checks whether the right front inlet and outlet valves are functioning.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE5"><b>Cause(s)</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>A solenoid coil is open or shorted.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA5"><b>Fail Action</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">ABS is disabled, and the ABS warning lamp is turned ON for the remainder of the ignition cycle. EBD is disabled. If the failure is intermittent, the EBCM will enable the system at the next ignition cycle and set a history DTC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD5"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">This begins the test of the inlet valve.</Li>
+					<Li value="3">This tests the outlet valve.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00701"><font size="4"><b>DTC C0070/C0075 - Right Front Inlet and Outlet Valve Solenoid Fault</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Raise and suitably support the vehicle at the corner being tested.</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+									<Li>Install the scan tool to the Data Link Connector (DLC) and select "Wheel front right" to begin the solenoid tests at that wheel. This will test both the inlet and the outlet valves.</Li>
+									<Li>When the scan tool indicates "Pressure hold," depress and hold the brake pedal until the end of the test.</Li>
+									<Li>Have an assistant attempt to rotate the wheel.</Li>
+								</OL>
+								<div>Can the wheel be rotated?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Maintain pressure on the brake pedal.</Li>
+									<Li>When the scan tool indicates "Pressure increase," have an assistant attempt to rotate the wheel again.</Li>
+								</OL>
+								<div>Can the wheel be rotated now?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Maintain pressure on the brake pedal.</Li>
+									<Li>When the scan tool indicates "Pressure release on," have an assistant attempt to rotate the wheel again.</Li>
+								</OL>
+								<div>Can the wheel be rotated?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Release brake pedal pressure when the scan tool indicates "Pressure release off."</Li>
+									<Li>Clear all DTCs.</Li>
+									<Li>Road test the vehicle.</Li>
+								</OL>
+								<div>Does the DTC set again?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Check the wiring harness and connector terminals for an intermittent problem.</Li>
+									<Li>Repair any problem found.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ABS unit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F07" src="../../../../graphic-pool/J/5B/1/J5B14F07.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0080"><font size="4"><b>Diagnostic Trouble Code (DTC) C0080/C0085 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0LRIOV"><font size="4"><b>Left Rear Inlet and Outlet Valve Solenoid Fault</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD6"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The solenoid valve coil circuits are supplied with power from the battery when the valve relay is energized. Switched ground is provided by the electronic brake control module (EBCM) to each coil.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN6"><b>Diagnosis</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">This procedure checks whether the left rear inlet and outlet valves are functioning.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE6"><b>Cause(s)</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>A valve has failed.</Li>
+					<Li>A solenoid coil is open or shorted.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA6"><b>Fail Action</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">ABS is disabled, and the ABS warning lamp is turned ON for the remainder of the ignition cycle. EBD is disabled. If the failure is intermittent, the EBCM will enable the system at the next ignition cycle and set a history DTC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD6"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">This begins the test of the inlet valve.</Li>
+					<Li value="3">This tests the outlet valve.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00801"><font size="4"><b>DTC C0080/C0085 - Left Rear Inlet and Outlet Valve Solenoid Fault</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Raise and suitably support the vehicle at the corner being tested.</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+									<Li>Install the scan tool to the Data Link Connector (DLC) and select "Wheel rear left" to begin the solenoid tests at that wheel. This will test both the inlet and the outlet valves.</Li>
+									<Li>When the scan tool indicates "Pressure hold," depress and hold the brake pedal until the end of the test.</Li>
+									<Li>Have an assistant attempt to rotate the wheel.</Li>
+								</OL>
+								<div>Can the wheel be rotated?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Maintain pressure on the brake pedal.</Li>
+									<Li>When the scan tool indicates "Pressure increase," have an assistant attempt to rotate the wheel again.</Li>
+								</OL>
+								<div>Can the wheel be rotated now?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Maintain pressure on the brake pedal.</Li>
+									<Li>When the scan tool indicates "Pressure release on," have an assistant attempt to rotate the wheel again.</Li>
+								</OL>
+								<div>Can the wheel be rotated?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Release brake pedal pressure when the scan tool indicates "Pressure release off."</Li>
+									<Li>Clear all DTCs.</Li>
+									<Li>Road test the vehicle.</Li>
+								</OL>
+								<div>Does the DTC set again?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Check the wiring harness and connector terminals for an intermittent problem.</Li>
+									<Li>Repair any problem found.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ABS unit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F07" src="../../../../graphic-pool/J/5B/1/J5B14F07.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0090"><font size="4"><b>Diagnostic Trouble Code (DTC) C0090/C0095 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0RRIOV"><font size="4"><b>Right Rear Inlet and Outlet Valve Solenoid Fault</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD7"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The solenoid valve coil circuits are supplied with power from the battery when the valve relay is energized. Switched ground is provided by the electronic brake control module (EBCM) to each coil.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN7"><b>Diagnosis</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">This procedure checks whether the right rear inlet and outlet valves are functioning.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE7"><b>Cause(s)</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>A valve has failed.</Li>
+					<Li>A solenoid coil is open or shorted.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA7"><b>Fail Action</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">ABS is disabled, and the ABS warning lamp is turned ON for the remainder of the ignition cycle. EBD is disabled. If the failure is intermittent, the EBCM will enable the system at the next ignition cycle and set a history DTC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD7"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+					<Li value="1">This begins the test of the inlet valve.</Li>
+					<Li value="3">This tests the outlet valve.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00901"><font size="4"><b>DTC C0090/C0095 - Right Rear Inlet and Outlet Valve Solenoid Fault</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Raise and suitably support the vehicle at the corner being tested.</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+									<Li>Install the scan tool to the Data Link Connector (DLC) and select "Wheel rear right" to begin the solenoid tests at that wheel. This will test both the inlet and the outlet valves.</Li>
+									<Li>When the scan tool indicates "Pressure hold," depress and hold the brake pedal until the end of the test.</Li>
+									<Li>Have an assistant attempt to rotate the wheel.</Li>
+								</OL>
+								<div>Can the wheel be rotated?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Maintain pressure on the brake pedal.</Li>
+									<Li>When the scan tool indicates "Pressure increase," have an assistant attempt to rotate the wheel again.</Li>
+								</OL>
+								<div>Can the wheel be rotated now?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Maintain pressure on the brake pedal.</Li>
+									<Li>When the scan tool indicates "Pressure release on," have an assistant attempt to rotate the wheel again.</Li>
+								</OL>
+								<div>Can the wheel be rotated?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Release brake pedal pressure when the scan tool indicates "Pressure release off."</Li>
+									<Li>Clear all DTCs.</Li>
+									<Li>Road test the vehicle.</Li>
+								</OL>
+								<div>Does the DTC set again?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Check the wiring harness and connector terminals for an intermittent problem.</Li>
+									<Li>Repair any problem found.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ABS unit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="5J2_4F0.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="5J2_4F02.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Daewoo Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

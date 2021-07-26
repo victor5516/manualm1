@@ -1,0 +1,1784 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2005  ENGINE CONTROLS</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="5V2_1F0.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Evanda</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="5V2_1E0.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="5V2_1F01.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+<DIV>
+	
+	<BR><DIV align="center"><B><FONT size="5">SECTION   1F</FONT></B></DIV>
+	<BR><DIV align="center" id="V1F0EC"><B><FONT size="6">ENGINE CONTROLS</FONT></B></DIV>
+	
+		
+			<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Disconnect the negative battery cable before removing or installing any electrical unit o r w hen a tool or equipment could easily come in contact with exposed electrical terminals. Disconnecting this cable will help prevent personal injury and damage to the vehicle. The ignition must also be in LOCK unless otherwise noted.</FONT></I></B></DIV>
+<P></P>
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V1F0SPECI"><B><FONT size="5">SPECIFICATIONS</FONT></B></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="center" id="V1F0EDDT"><font size="4"><b>Engine Data Display Tables
+ </b></font></DIV>
+<P></P>
+			
+				<P></P>
+<DIV align="center" id="V1F0EDD1"><b>Engine Data Display</b></DIV>
+<P></P>
+				
+					<Table border="1" width="100%" cellspacing="0">
+						<Thead bgcolor="eeeeee">
+							<tr>
+								<td align="center" valign="middle" class="T1" width="30%"><b>
+									
+										<div>Parameter</div>
+									
+								</b></td>
+								<td align="center" valign="middle" class="T1" width="20%"><b>
+									
+										<div>Scaling</div>
+									
+								</b></td>
+								<td align="center" valign="middle" class="T1" width="50%"><b>
+									
+										<div>Value</div>
+									
+								</b></td>
+							</tr>
+						</Thead>
+						<Tbody align="center" valign="middle">
+<tr colspan="">
+								<td class="T1" width="30%" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Desired Idle Speed</div>
+									
+								</td>
+								<td class="T1" width="20%" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>RPM</div>
+									
+								</td>
+								<td class="T1" width="50%" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>ECM idle command (varies with temperature)</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="30%" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Engine RPM</div>
+									
+								</td>
+								<td class="T1" width="20%" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>RPM</div>
+									
+								</td>
+								<td class="T1" width="50%" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>± 50 RPM from desired RPM in drive (A/T)  ± 50 RPM from desired RPM in neutral (M/T)</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>MAP</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>kPa</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>29 - 55 (varies with manifold and barometric pressure)</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Throttle Position Volt</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>V</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>0 v</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Start-up IAT</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>°C </div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>varies</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Intake Air Temperature</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>°C </div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>10 - 90 °C </div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Coolant Temperature (Start-up)</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>°C </div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>varies</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Engine Coolant Temperature</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>°C</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>85 - 105 °C</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>IAC Motor Position</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>-</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>1 - 50</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>O2 Sensor (B1-S1)</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>mV</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>1-1000 mV (varies continuously)</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>O2 Sensor (B1-S2)</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>mV</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>1-1000 mV (varies continuously)</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Fuel System Status</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Closed Loop/</div>
+										<div>Open Loop</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>"Closed Loop" (may enter "Open Loop" at extended idle)</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Rich/Lean (B1-S1)</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Rich/Lean</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>varies</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Lean to Rich Average</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>mS</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>10 -211 ms or 0 ms</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Rich to Lean Average</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>mS</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>10 -211 ms or 0 ms</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Engine Load Value</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>%</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>0 - 100 % (varies)</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Short Term Fuel Trim</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>%</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>-30 - 30%</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Long Term Fuel Trim</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>%</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>-30 - 30%</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Linear EGR Feedback</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>V</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>varies</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>EGR Duty Cycle</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>%</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>0 %</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>EGR EWMA Result</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>-</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>&lt; = 0</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Spark Advance</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>°</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>varies</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>MIL Odometer</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Km</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>0 Km</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>MIL On Time</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Min</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>0 Min</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Base Injection PWM</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>mS</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>1.0 - 5.0 ms</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Barometric Pressure</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>kPa</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>varies with altitude</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Ignition Voltage</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>V</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>13.5 - 14.8 V</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Air/Fuel Ratio</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Ratio</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>14.6 (Closed Loop Enable)</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Calculated Air Flow</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>G/S</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>varies</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Total Misfire (Current)</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>-</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>0</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Misfire History Cyl. 1</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>-</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>0</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Misfire History Cyl. 2</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>-</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>0</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Misfire History Cyl. 3</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>-</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>0</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Misfire History Cyl. 4</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>-</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>0</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Vehicle Speed</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Km/H</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>0 Km/H</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>A/C Pressure</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>V</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>varies</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>A/C Request</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Yes/No</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>No</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>A/C Clutch</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>On/Off</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Off</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Fuel Pump Command</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>On/Off</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>On</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Closed Loop</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Yes/No</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Yes</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Throttle At Idle</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Yes/No</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>No</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>O2 Ready (B1-S1)</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Yes/No</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Yes</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Knock Present</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Yes/No</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>No</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Fan Low</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>On/Off</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>On/Off</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Fan High</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>On/Off</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>On/Off</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>TCC Engaged (Only AT)</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Yes/No</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Yes</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Park/Neutral (Only AT)</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>P/N and R/N/D</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>P/N</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Fuel Level Input</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>V</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>varies</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Fuel Level Output</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>%</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>varies</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Fuel Trim Cell</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>-</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>18</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>G-Sensor</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>V</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>1.1 - 3.7 V (Non-ABS Only)</div>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+									
+										<div>Engine Runtime</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>HH:MM:SS</div>
+									
+								</td>
+								<td class="T1" width="" colspan="" rowspan="" align="center" valign="middle">
+									
+										<div>Hours:Minutes:Seconds</div>
+									
+								</td>
+							</tr>
+						</Tbody>
+					</Table>
+					<div class="T1" align="left">* Condition: Warmed up, idle, park or neutral, A/C off</div>
+				
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0EDDTD"><font size="4"><b>Engine Data Display Table Definitions
+ </b></font></DIV>
+<P></P>
+			
+				<P></P>
+<DIV align="left" id="V1F0PECMD"><b>ECM Data Description</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The following information will assist in diagnosing emission or driveability problems. A first technician can view the displays while the vehicle is being driven by second technician. Refer to Powertrain On-Board Diagnostic (EOBD) System Check for addition information.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0ACC"><b>A/C Clutch</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The A/C Relay represents the commanded state of the A/C clutch control relay. The A/C clutch should be engaged when the scan tool displays ON.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0ACP"><b>A/C Pressure</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The A/C High Side displays the pressure value of the A/C refrigerant pressure sensor. The A/C High Side helps to diagnose the diagnostic trouble code (DTC) P0533.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0ACR"><b>A/C Request</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The A/C Request represents whether the air conditioning is being requested from the HVAC selector. The input is received by the instrument panel cluster and then sent serial data to the ECM and finally to the scan tool over KWP 2000 serial data.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0AFR"><b>Air Fuel Ratio</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The Air Fuel Ration indicates the air to fuel ratio based on the Front Heated Oxygen Sensor (HO2S1) inputs. The ECM uses the fuel trims to adjust fueling in order to attempt to maintain an air fuel ratio of 14.7:1.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0BARO"><b>BARO</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The Barometric Pressure (BARO) sensor measures the change in the intake manifold pressure which results from altitude changes. This value is updated at ignition ON and also at Wide Open Throttle (WOT).</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0BIP"><b>Base Injection PWM</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">Indicates the base Pulse Width Modulation (PWM) or ON time of the indicated cylinder injector in milliseconds. When the engine load is increased, the injector pulse width will increase.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0CAF"><b>Calculated Air Flow</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The calculated air flow is a calculation based on manifold absolute pressure. The calculation is used in several diagnostics to determine when to run the diagnostics.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0DI"><b>Desired Idle Speed</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The ECM commands the idle speed. The ECM compensates for various engine loads in order to maintain the desired idle speed. The actual engine speed should remain close to the desired idle under the various engine loads with the engine idling.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0ECT"><b>Engine Coolant Temperature</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The Engine Coolant Temperature (ECT) sensor sends engine temperature information to the ECM. The ECM supplies 5 volts to the engine coolant temperature sensor circuit. The sensor is a thermistor which changes internal resistance as temperature changes. When the sensor is cold (internal resistance high), the ECM monitors a high voltage which it interprets as a cold engine. As the sensor warms (internal resistance decreases), the voltage signal will decrease and the ECM will interpret the lower voltage as a warm engine.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0EGRD"><b>EGR Desired Position</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The desired exhaust gas recirculation (EGR) position is the commanded EGR position. The ECM calculates the desired EGR position. The higher the percentage, the longer the ECM is commanding the EGR valve ON.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0EL"><b>Engine Load</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">Indicates engine load based on manifold absolute pressure. The higher the percentage, the more load the engine is under.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0ERT"><b>Engine Run Time</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The engine run time is a measure of how long the engine has been running. When the engine stops running, the timer resets to zero.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0ES"><b>Engine Speed</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">Engine Speed is computed by the ECM from the fuel control reference input. It should remain close to desired idle under the various engine loads with the engine idling.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0FAN"><b>Fan</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The Fan Control (FC) Relay is commanded by the ECM. The FC Relay displays the command as ON or OFF.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0FLS"><b>Fuel Level Sensor</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The Fuel Level Sensor monitors the fuel level in the tank. The Fuel Level Sensor monitors the rate of change of the air pressure in the EVAP system. Several of the Enhanced EVAP System diagnostics are dependent upon the correct fuel level.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0FSS3"><b>Fuel System Status</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The Closed Loop is displayed indicating that the ECM is controlling the fuel delivery according to the Front Heated Oxygen Sensor (HO2S1) voltage as close to an air/fuel ratio of 14.7 to 1 as possible.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0IACP"><b>IAC Position</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The scan tool displays the ECM command for the Idle Air Control (IAC) pintle position in counts. The higher the number of counts, the greater the commanded idle speed reads. The Idle Air Control responds to changes in the engine load in order to maintain the desired idle rpm.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0I1"><b>Ignition 1 (Voltage)</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The ignition volts represent the system voltage measured by the ECM at the ignition feed circuit.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0IAT"><b>Intake Air Temperature</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The ECM converts the resistance of the Intake Air Temperature (IAT) sensor to degrees in the same manner as the engine coolant temperature (ECT) sensor. In take air temperature is used by the ECM to adjust fuel delivery and spark timing according to incoming air density.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0KP"><b>Knock Present</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The KS Noise Channel indicates when the ECM detects the KS signal. The ECM should display NO at idle.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0LTFT"><b>Long Term FT</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The Long Term Fuel Trim (FT) is derived from the short term fuel trim value. The Long Term FT is used for the long term correction of the fuel delivery. A value of 128 counts (0%) indicates that the fuel delivery requires no compensation in order to maintain a 14.7:1 air to fuel ratio. A value below 128 counts means that the fuel system is too rich and the fuel delivery is being reduced. The ECM is decreasing the injector pulse width. A value above 128 counts indicates that a lean condition exists for which the ECM is compensating.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0MAP"><b>MAP</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The Manifold Absolute Pressure (MAP) sensor measures the change in the intake manifold pressure which results from engine load and speed changes. As the intake manifold pressure increases, the air density in the intake also increases and the additional fuel is required.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0MH"><b>Misfire History #1-4</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">Indicates the number of misfires that have occurred after 195 current misfires have been counted. The current misfire counter will add its misfires to the history misfire counter after 195 total misfires have taken place. If 1 cylinder is misfiring, the misfiring current counter will have 195 misfires counted before adding to its history counter. If 2 cylinders are misfiring, the misfiring current counter will add to their history counters after 97 misfires. The counter increments only after a misfire diagnostic trouble code (DTC) has been set.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0FHOS"><b>Front Heated Oxygen Sensor </b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The pre-converter Front Heated Oxygen Sensor (HO2S1) reading represents the exhaust oxygen sensor output voltage. This voltage will fluctuate constantly between 100 mv (lean exhaust) and 900 mv (rich exhaust) when the system is operating in a Closed Loop.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0RHOS"><b>Rear Heated Oxygen Sensor </b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The post-converter Rear Heated Oxygen Sensor (HO2S2) represents the exhaust oxygen output voltage past the catalytic converter. This voltage remains inactive, or the voltage will appear lazy within a range of 100 mv (lean exhaust) and 900 mv (rich exhaust) when operating in a Closed Loop.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0STFT"><b>Short Term FT</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The Short Term FT represents a short term correction to fuel delivery by the ECM in response to the amount of time the oxygen sensor voltage spends above or below the 450 mv threshold. If the oxygen sensor has mainly been below 450 mv, indicating a lean air/fuel mixture, short term fuel trim will increase to tell the ECM to add fuel. If the oxygen sensor voltage stays mainly above the threshold, the ECM will reduce fuel delivery to compensate for the indicated rich condition.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0SA"><b>Spark Advance</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">This is a display of the spark advance Ignition Coil (IC) calculation which the ECM is programming in the ignition system. It computes the desired spark advance using data such as engine temperature, rpm, engine load, vehicle speed and operating mode.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0TCCE"><b>TCC Engaged</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">When the brake pedal is applied, the Torque Converter Clutch (TCC) brake switch sends a signal to the ECM to disengage the TCC and disable the cruise control.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0TMCC"><b>Total Misfire Current Counter</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">Indicates the total number of misfires that have been detected in all the cylinders after 100 engine cycles. One cycle equals one complete 4 stroke cycle. The total misfire only increments during the steady state cruise conditions.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0TPS"><b>TP Sensor</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The ECM uses the TP Sensor in order to determine the amount of the throttle demanded by the vehicle's operator. The TP Sensor reads between 0.36-0.96 volts at idle to above 4 volts at WOT.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0VS"><b>Vehicle Speed</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The vehicle speed sensor signal is converted into mph or km/h for display. The vehicle speed output from the ECM is 4000 pulses per mile. The scan tool uses the KWP 2000 serial data from the ECM to obtain vehicle speed, while the Instrument Panel Cluster (IPC), cruise control module and the chime alarm module use the 4000 ppm output.</div>
+				
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0FTS"><font size="4"><b>Fastener Tightening Specifications
+ </b></font></DIV>
+<P></P>
+			
+				<Table border="1" width="100%" cellspacing="0">
+					<Thead bgcolor="eeeeee">
+						<tr>
+							<td align="center" valign="middle" class="T1" width="55%"><b>
+								
+									<div>Application</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1" width="15%"><b>
+								
+									<div>N•m</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1" width="15%"><b>
+								
+									<div>Lb-Ft</div>
+								
+							</b></td>
+							<td align="center" valign="middle" class="T1" width="15%"><b>
+								
+									<div>Lb-In</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+						<tr colspan="">
+							<td class="T1" width="55%" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Accessory Mounting Bracket Bolts</div>
+								
+							</td>
+							<td class="T1" width="15%" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>37</div>
+								
+							</td>
+							<td class="T1" width="15%" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>27</div>
+								
+							</td>
+							<td class="T1" width="15%" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Camshaft Position Sensor Bolts</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>8</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>71</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Crankshaft Position Sensor Retaining Bolt</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>8</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>71</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Electronic Ignition System Ignition Coil Retaining Bolts </div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>10</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>89</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Engine Control Module Bolts</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>4</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>35</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Engine Coolant Temperature Sensor Bolt</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>20</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>15</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Evaporative Emission Canister Flange Bolt</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>10</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>89</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Evaporative Emission Canister Purge Solenoid Bracket
+Bolt</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>10</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>89</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Exhaust Gas Recirculation Valve Retaining Bolts</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>30
+</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>22</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Fuel Filter Mounting Bracket Assembly Bolt</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>10</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>89</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Fuel Pressure Regulator Retaining Bolt</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>12</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>106</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Fuel Tank Retaining Bolts</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>20</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>15</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Fuel  Rail Retaining Bolts</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>25</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>18</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Idle Air Control Valve Retaining Bolts</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>3</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>27</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Knock Sensor Bolt</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>20</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>15</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Manifold Absolute Pressure Sensor Retaining Bolt</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>4</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>35</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Oxygen Sensor Bolt</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>44</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>33</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Rear A/C Compressor Mounting Bracket Bolts</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>35</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>26</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Spark Plug Cover Bolts</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>3</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>27</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Throttle Body Retaining Nuts</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>10</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>89</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+							<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Throttle Position Sensor Retaining Bolts</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>2</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+								
+									<div>18</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0FSS"><font size="4"><b>Fuel System Specifications </b></font></DIV>
+<P></P>
+			
+				<P></P>
+<DIV align="left" id="V1F0GASO"><b>Gasoline</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">All engines are designed to use unleaded fuel only. Unleaded fuel must be used for proper emission control system operation. Its use will also minimize spark plug fouling and extend engine oil life. Using leaded fuel can damage the emission warranty coverage. The fuel should meet specification ASTM D4814 for the U.S. or CGSB 3.5 M93 for Canada. All engines are designed to use unleaded fuel with a minimum U(R+M)/2e (pump) octane number of 87, where R=research octane number, and M=motor octane number.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0ETHA"><b>Ethanol</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">You may use fuel containing ethanol (ethyl alcohol) or grain alcohol providing that there is no more than 10 percent ethyl alcohol by volume.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0METH"><b>Methanol</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">Do not use fuels containing methanol. Methanol can corrode metal parts and cause damage to plastic and rubber parts in the fuel system.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="V1F0MTBE"><b>Methyl Tertiary-Butyl Ether (MTBE)</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">You may use fuel containing Methyl Tertiary-Butyl Ether (MTBE) providing there is no more than 15 percent MTBE by volume.</div>
+				
+			
+		
+	
+	
+	</DIV>
+<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="5V2_1E0.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="5V2_1F01.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Daewoo Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

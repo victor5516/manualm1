@@ -1,0 +1,3267 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2005  Diagnostic Trouble Code (DTC) P0131
+
+ </TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="5V2_1F05.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Evanda</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="5V2_1F04.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="5V2_1F06.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F12" src="../../../../graphic-pool/V/4B/1/V4B11F12.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F12.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P0131"><font size="4"><b>Diagnostic Trouble Code (DTC) P0131
+
+  </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0FHOSLV"><font size="4"><b>Front Heated Oxygen Sensor (HO2S1) Low Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Engine Control Module (ECM) supplies a voltage of about 0.45 volts between terminals M12 and M29 (if measured with a 10 megohm digital voltmeter, this may read as low as 0.32 volts). The Front Heated Oxygen sensor 1 (HO2S1) varies the voltage within a range of about 1 volt if the exhaust is rich, down through about 0.10 volts if the exhaust is lean.</div>
+				<div class="T1" align="left">The sensor is like an open circuit and produces no voltage when it is below 315°C(600°F). An open sensor circuit or cold sensor causes Open Loop operation.</div>
+				<div class="T1" align="left">If the HO2S1 pigtail wiring, connector, or terminal is damaged, the entire HO2S1 assembly must be replaced. Do not attempt to repair the wiring, connector, or terminals. In order for the sensor to function properly, it must have a clean air reference provided to it. This clean air reference is obtained by way of the HO2S1 wire(s). Any attempt to repair the wires, connector or terminals could result in the obstruction of the air reference and degrade the HO2S1 performance. Refer to "Front Heated Oxygen Sensor" in this section.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S1 voltage is less than 0.05 volts.</Li>
+					<Li>Closed loop stoichiometry.</Li>
+					<Li>Engine Coolant Temperature (ECT) is greater than 60°C(140°F).</Li>
+					<Li>System voltage is greater than 10 volts.</Li>
+					<Li>DTCs P0106, P0107, P0108, P0117, P0118, P0122, P0123, P0171, P0172, P0201, P0202, P0203, P0204, P0300, P0336, P0337, P0351, P0352, P0401, P0402, P0404, P0405, P0406, P0502, P0506, P0507, P1404, and P0443 are not set.</Li>
+					<Li>3 second delay after conditions are met.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+					<Li>The vehicle will operate in Open Loop.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>The DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Fuel pressure - The system will be lean if the fuel pressure is too low. It may be necessary to monitor the fuel pressure while driving the vehicle at various road speeds and/or loads to confirm. Refer to   <A target="_blank" href="5V2_1F02.en.html#V1F0FSD">"Fuel System Diagnosis"</A> in this section.</Li>
+					<Li>Manifold Absolute Pressure (MAP) sensor - An output that causes the ECM to sense a lower than normal manifold pressure (high vacuum) can cause the system to go lean. Disconnecting the MAP sensor will allow the ECM to substitute a fixed (default) value for the MAP sensor. If the lean condition is gone when the sensor is disconnected, substitute a known good sensor and recheck.</Li>
+					<Li>Fuel contamination - Water, in even small amounts near the in-tank fuel pump inlet can be delivered to the injector. The water causes a lean exhaust and can set DTC P0131.</Li>
+					<Li>Sensor harness - The HO2S1 sensor pigtail may be mis-positioned and contacting the exhaust manifold.</Li>
+					<Li>Engine misfire - A misfiring cylinder will result in unburned oxygen in the exhaust, which could cause DTC P0131 to set. Refer to DTC P0300 Engine Misfire in this section.</Li>
+					<Li>Cracked Front Heated Oxygen Sensor - A cracked HO2S1 or poor ground at the sensor could cause DTC P0131. Refer to  <A target="_blank" href="5V2_1F02.en.html#V1F0SD1">"Symptoms Diagnosis" </A> in this section.</Li>
+					<Li>Plugged fuel filter - A plugged fuel filter can cause a lean condition and cause a DTC P0131 to set.</Li>
+					<Li>Plugged Front Heated Oxygen Sensor - A plugged reference port on the HO2S1 will indicate a lower-than-normal voltage output from the HO2S1.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">This step determines if DTC P0131 is the result of a hard failure or an intermittent condition. It may be necessary to operate the vehicle within the Freeze Frame conditions and Conditions for Setting the DTC in order to duplicate the malfunction detected by the ECM.</Li>
+					<Li value="4">This step simulates DTC P0134. If the ECM senses the change, the ECM and the wiring are OK.</Li>
+					<Li value="6">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+					<Li value="8">If no malfunctions have been found at this point and no additional DTCs were set, refer to   <A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A> for additional checks and information.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P01311"><font size="4"><b>DTC P0131 - Front Heated Oxygen Sensor (HO2S1) Low Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the check completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+								</OL>
+								<div>Does the Front Heated Oxygen Sensor (HO2S1) voltage remain below the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0.1 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Review the Freeze Frame data and note the parameters.</Li>
+									<Li>Operate the vehicle within the Freeze frame conditions and Conditions For Setting the DTC as noted.</Li>
+								</OL>
+								<div>Does the HO2S1 voltage stay below the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0.1 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect HO2S1 connector.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Does the scan tool indicate the HO2S1 voltage within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>407-509 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the HO2S1 signal circuit, terminal 1 for a short to ground and repair as needed.</div>
+								<div>Is the repair necessary.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<UL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the Engine Control Module (ECM).</Li>
+								</UL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>If disconnected, reconnect HO2S1 connector.</Li>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F12" src="../../../../graphic-pool/V/4B/1/V4B11F12.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F12.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P0132"><font size="4"><b>Diagnostic Trouble Code (DTC) P0132 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0FHOS"><font size="4"><b>Front Heated Oxygen Sensor (HO2S1) High Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD1"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Engine Control Module (ECM) supplies a voltage of about 0.45 volts between terminals M12 and M29 (if measured with a 10 megohm digital voltmeter, this may read as low as 0.32 volts). The Front Heated Oxygen Sensor (HO2S1) varies the voltage within a range of about 1 volt if the exhaust is rich, down through about 0.10 volts if the exhaust is lean.</div>
+				<div class="T1" align="left">The sensor is like and open circuit and produces no voltage when it is below 315 °C (600 °F). An open sensor circuit or cold sensor causes Open Loop operation.</div>
+				<div class="T1" align="left">If the HO2S1 pigtail wiring, connector, or terminal is damaged, the entire HO2S1 assembly must be replaced. Do not attempt to repair the wiring, connector, or terminals. In order for the sensor to function properly, it must have a clean air reference provided to it. This clean air reference is obtained by way of the HO2S1 wire(s). Any attempt to repair the wires, connector or terminals could result in the obstruction of the air reference and degrade the HO2S1 performance. Refer to  <A target="_blank" href="5V2_1F016.en.html#V1F0FHOS">"Front Heated Oxygen Sensor"</A> in this section.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT1"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S1 voltage is greater than 0.952 volts.</Li>
+					<Li>Closed loop stoichiometry.</Li>
+					<Li>Engine Coolant Temperature (ECT) is greater than 60 °C(140 °F).</Li>
+					<Li>System voltage is greater than 10 volts.</Li>
+					<Li>DTCs P0106, P0107, P0108, P0117, P0118, P0122, P0123, P0171, P0172, P0201, P0202, P0203, P0204, P0300, P0336, P0337, P0351, P0352, P0401, P0402, P0404, P0405, P0406, P0502, P0506, P0507, P1404, and P0443 are not set.</Li>
+					<Li>3 second delay after conditions are met.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD1"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+					<Li>The vehicle will operate in Open Loop.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD1"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>The DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA1"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The DTC P0132 or rich exhaust is most likely caused by one of the following items:</div>
+				<UL>
+					<Li>Fuel pressure - The system will go rich if the fuel pressure is too high. The ECM can compensate for some increase, but if it gets too high, a DTC P0132 will be set</Li>
+					<Li>Leaking injector - A leaking or malfunctioning injector can cause the system to go rich causing a DTC P0132.</Li>
+					<Li>Manifold Absolute Pressure (MAP) sensor - An output that causes the ECM to sense a higher than normal manifold pressure (low vacuum) can cause the system to go rich. Disconnecting the MAP sensor will allow the ECM to substitute a fixed value for the MAP sensor. Substitute a different a MAP sensor, if the rich condition is gone while the sensor is disconnected.</Li>
+					<Li>Pressure regulator - Check for a leaking fuel pressure regulator diaphragm by checking for the presence of liquid fuel in the vacuum line to the regulator.</Li>
+					<Li>TP sensor - An intermittent TP sensor output will cause the system to go rich due to a false indication of the engine accelerating.</Li>
+					<Li>HO2S1 contamination - Inspect the HO2S1 for silicone contamination from fuel or the use of improper Room Temperature Vulcanizing sealant. The sensor may have a white powdery coating which may result in a high but false voltage signal (rich exhaust indication). The ECM will then reduce the amount of fuel delivered to the engine, causing a severe surge or driveability problem.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD1"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">This step determines if DTC P0132 is the result of a hard failure or an intermittent condition. It may be necessary to operate the vehicle within the Freeze Frame conditions and Conditions for Setting the DTC in order to duplicate the malfunction detected by the ECM.</Li>
+					<Li value="4">This step simulates a DTC P0131. If the ECM senses the change, the ECM and the wiring are OK.</Li>
+					<Li value="6">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+					<Li value="8">If no malfunctions have been found at this point and
+no additional DTCs were set, refer to   <A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A> in this section for additional checks and information.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P01321"><font size="4"><b>DTC P0132 - Front Heated Oxygen Sensor (HO2S1) High Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+								</OL>
+								<div>Does the Front Heated Oxygen Sensor (HO2S1) voltage remain below the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>952 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Review the Freeze Frame data and note the parameters.</Li>
+									<Li>Operate the vehicle within the Freeze frame conditions and Conditions For Setting the DTC as noted.</Li>
+								</OL>
+								<div>Does the HO2S1 voltage stay below the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>952 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect HO2S1 connector.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Jumper the Engine Control Module (ECM) side HO2S1 signal circuit to ground.</Li>
+								</OL>
+								<div>Does the scan tool indicate the HO2S1 voltage below the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>500 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the HO2S1 signal circuit, terminal 1 for a short to voltage and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<UL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the ECM.</Li>
+								</UL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>If disconnected, reconnect HO2S1 connector.</Li>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F12" src="../../../../graphic-pool/V/4B/1/V4B11F12.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F12.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P0133"><font size="4"><b>Diagnostic Trouble Code (DTC) P0133 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T1F0FHOSSR"><font size="4"><b>Front Heated Oxygen Sensor (HO2S1) Slow Response
+</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD2"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Engine Control Module (ECM) continuously monitors the Front Heated Oxygen Sensor (HO2S1) activity for 100 seconds. During the monitor period, the ECM counts the number of times that the HO2S1 switches from rich to lean and from lean to rich and adds the amount of time it took to complete all switches. With this information, an average time for all switches can be determined. If the average time to switch is too out of specification, a DTC P0133 will set.</div>
+				<div class="T1" align="left">If the HO2S1 pigtail wiring, connector, or terminal is damaged, the entire HO2S1 assembly must be replaced. Do not attempt to repair the wiring, connector, or terminals. In order for the sensor to function properly, it must have a clean air reference provided to it. This clean air reference is obtained by way of the HO2S1 wire(s). Any attempt to repair the wires, connector, or terminals could result in the obstruction of the air reference and degrade HO2S1 performance.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT2"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S1 average transition time between 0.3-0.6 volts, lean to rich is greater than 70.3 milliseconds or rich to lean is greater than 117 milliseconds.</Li>
+					<Li>Closed loop stoichiometry.</Li>
+					<Li>Engine Coolant Temperature (ECT) is greater than 70°C (158°F).</Li>
+					<Li>System voltage is greater than 10 volts.</Li>
+					<Li>Engine run time is greater than 60 seconds.</Li>
+					<Li>Purge Duty Cycle (DC) is less than 20%.</Li>
+					<Li>The rpm is between 1600 and 4300.</Li>
+					<Li>Airflow is between 9 and 40 g/sec.</Li>
+					<Li>DTCs P0106, P0107, P0108, P0112, P0113, P0117, P0118, P0122, P0123, P0131, P0132, P0134, P0135, P1167, P0171, P1171, P0172, P0201, P0202, P0203, P0204, P0300, P0336, P0337, P0351, P0352, P0401, P0402, P0404, P0405, P0406, P0502, P0506, P0507, P1404, and P0443 are not set.</Li>
+					<Li>2 second delay after conditions are met.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD2"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate after three consecutive trip with a fail.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD2"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>The DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA2"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">DTC P0133 or slow response is most likely caused by one of the following items:</div>
+				<UL>
+					<Li>Fuel pressure - The system will go rich if fuel pressure is too high. The ECM can compensate for some increase, but if it gets too high, a DTC P0133 may set. Refer to  <A target="_blank" href="5V2_1F02.en.html#V1F0FSD">"Fuel System Diagnosis"</A> in this section.</Li>
+					<Li>Leaking injector - A leaking or malfunctioning injector can cause the system to go rich.</Li>
+					<Li>Manifold Absolute Pressure (MAP) sensor - An output that causes the ECM to sense a higher than normal manifold pressure (low vacuum) can cause the system to go rich. Disconnecting the MAP sensor will allow the ECM to set a fixed value for the MAP sensor. Substitute a different MAP sensor if the rich condition is gone while the sensor is disconnected.</Li>
+					<Li>Pressure regulator - Check for a leaking fuel pressure regulator diaphragm by checking for the presence of liquid fuel in the vacuum line to the pressure regulator.</Li>
+					<Li>Throttle Position (TP) sensor - An intermittent TP sensor output can cause the system to go rich due to a false indication of the engine accelerating.</Li>
+					<Li>HO2S1 contamination - Inspect HO2S1 for silicone contamination from fuel or use of improper room temperature vulcanizing (RTV) sealant. The sensor may have a white powdery coating, resulting in a high but false voltage signal (rich exhaust indication). The ECM will then reduce the amount of fuel delivered to the engine causing a severe surge or driveability problem.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD2"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="14">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+					<Li value="17">If no malfunctions have been found at this point and no additional DTCs were set, refer to   <A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A> for additional checks and information.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P01331"><font size="4"><b>DTC P0133 - Front Heated Oxygen Sensor (HO2S1) Slow Response</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector DLC).</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Are any additional Diagnostic Trouble Codes (DTCs) set?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "Applicable DTC table"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the specified parameter under the Conditions For Setting the DTC.</Li>
+									<Li>Using the scan tool monitor the specific DTC information for DTC P0133 until DTC P0133 test run.</Li>
+								</OL>
+								<div>Does the scan tool indicate DTC P0133 failed this ignition cycle?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F01.en.html#V1F0DA">"Diagnostic Aids"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Did the scan tool indicate that DTC P1133 or P1134 failed this ignition cycle.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "Applicable DTC table"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the exhaust manifold/catalytic converter for a leak and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually/physically inspect for the following items:</div>
+								<UL>
+									<Li>Front Heated Oxygen Sensor (HO2S1) is securely installed.</Li>
+									<Li>Corrosion on the terminals.</Li>
+									<Li>Terminal tension.</Li>
+									<Li>HO2S1 wiring harness for poor terminal connection or damaged wiring.</Li>
+								</UL>
+								<div>Is a problem found in any of the above areas?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the HO2S1 connector.</Li>
+									<Li>Jumper the HO2S1 low circuit, terminal 2 to ground.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Does the scan tool indicate the voltage between the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>400 - 500 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Jumper the HO2S1 signal and low circuit terminal 1 to ground.</div>
+								<div>Does the scan tool indicate the voltage below the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>200 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the condition as necessary.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<UL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the ECM connector.</Li>
+									<Li>Check the HO2S1 low circuit for an open or poor connection and repair as needed.</Li>
+								</UL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the terminal M29 of the ECM for poor connection and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the HO2S1 signal circuit for an open or short to ground and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the terminal M12 of the ECM for poor connection and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<UL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the ECM.</Li>
+								</UL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the HO2S1.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "Applicable DTC table"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F12" src="../../../../graphic-pool/V/4B/1/V4B11F12.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F12.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P0134"><font size="4"><b>Diagnostic Trouble Code (DTC) P0134 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0FHOSAO"><font size="4"><b>Front Heated Oxygen Sensor (HO2S1) No Activity or Open
+</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD3"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Engine Control Module (ECM) supplies a voltage of about 0.45 volts between terminals M12 and M29 (if measured with a 10 megohm digital voltmeter, this may read as low as 0.32 volts). The Front Heated Oxygen Sensor (HO2S1) varies the voltage within a range of about 1 volt if the exhaust is rich, down through about 0.10 volts if the exhaust is lean.</div>
+				<div class="T1" align="left">The sensor is like and open circuit and produces no voltage when it is below 315 °C (600 °F). An open sensor circuit or cold sensor causes Open Loop operation.</div>
+				<div class="T1" align="left">If the HO2S1 pigtail wiring, connector, or terminal is damaged, the entire HO2S1 assembly must be replaced. Do not attempt to repair the wiring, connector, or terminals. In order for the sensor to function properly, it must have a clean air reference provided to it. This clean air reference is obtained by way of the HO2S1 wire(s). Any attempt to repair the wires, connector or terminals could result in the obstruction of the air reference and degrade the HO2S1 performance. Refer to   <A target="_blank" href="5V2_1F16.en.html#V1F0FHOS">"Front Heated Oxygen Sensor (HO2S1)"</A> in this section.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT3"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S1 voltage is between 300 and 600 mV.</Li>
+					<Li>Engine Coolant Temperature (ECT) is greater than 60 °C (140 °F)</Li>
+					<Li>System voltage is greater than 10 volts.</Li>
+					<Li>Engine run time is greater than 60 seconds.</Li>
+					<Li>Airflow is greater than 9 g/sec.</Li>
+					<Li>DTCs P0106, P0107, P0108, P0117, P0118, P0122, P0123, P0171, P0172, P0201, P0202, P0203, P0204, P0300, P0336, P0337, P0351, P0352, P0401, P0402, P0404, P0405, P0406, P0502, P0506, P0507, P1404, and P0443 are not set.</Li>
+					<Li>3 second delay after exiting Decel Fuel Cut-off (DFCO) mode.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWDS3"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+					<Li>The vehicle will operate in Open Loop.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD3"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>The DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA3"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Normal scan tool voltage varies from 150 mV to 850 mV while in Closed Loop. If DTC P0134 is intermittent, refer to   <A target="_blank" href="5V2_1F15.en.html#V1F0INTER">"Intermittents" </A> in this section.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD3"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">During engine warm-up, the HO2S1 should warm up, and its voltage output should vary between 150 mv and 850 mv. When the HO2S1 voltage varies, the engine will go into Closed Loop. This determines if the HO2S1 1 is operating properly.</Li>
+					<Li value="4">This will determine if the sensor is malfunctioning or if the wiring or the ECM is the cause of the DTC P0134.</Li>
+					<Li value="6">Use only a high impedance digital voltmeter (DVM) for this test. The test checks the continuity of the HO2S1 signal and the ground circuits; if the ground circuit is open, the ECM voltage on the circuit will be over 0.6 volts (600 mv).</Li>
+					<Li value="10">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P01341"><font size="4"><b>DTC P0134 - Front Heated Oxygen Sensor (HO2S1)No Activity or Open</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the engine above the specified rpm for 2 minutes.</Li>
+								</OL>
+								<div>Does the scan tool indicate Closed Loop?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>80°C(176°F)</div>
+							<div>1200 rpm</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Review the Freeze Frame data and note the parameters.</Li>
+									<Li>Operate the vehicle within the Freeze frame conditions and Conditions For Setting the DTC as noted.</Li>
+								</OL>
+								<div>Does the scan tool indicate CLOSED LOOP?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect HO2S1 connector.</Li>
+									<Li>Jumper the terminal 2 of HO2S1 connector and ground.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Does the scan tool indicate the HO2S1 voltage within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>400 - 500 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the HO2S1 harness connector for malfunction or poor connection and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Idle the engine.</Li>
+									<Li>Remove the jumper wire.</Li>
+									<Li>Using a voltmeter, measure the voltage between terminal 1 of HO2S1 and ground</Li>
+								</OL>
+								<div>Is the voltage above the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>600 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the engine OFF.</Li>
+									<Li>Using a voltmeter, measure the voltage between terminal 1 of the HO2S1 and ground.</Li>
+								</OL>
+								<div>Is the voltage below the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>300 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the HO2S1 low circuit for an open or short to ground between terminal 2 of the HO2S1 and terminal M29 of the ECM and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the HO2S1 signal circuit for an open or short to ground between terminal 1 of the HO2S1 and terminal M12 of the ECM and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<UL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the ECM.</Li>
+								</UL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the HO2S1.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "Applicable DTC table"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F12" src="../../../../graphic-pool/V/4B/1/V4B11F12.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F12.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P0135"><font size="4"><b>Diagnostic Trouble Code (DTC) P0135 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0FHOSH1"><font size="4"><b>Front Heated Oxygen Sensor (HO2S1) Heater Circuit Not Functioning
+</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD4"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">In order to control emissions, a catalytic converter is used to convert harmful emissions into harmless water vapor and carbon dioxide.</div>
+				<div class="T1" align="left">The engine control module (ECM) has the ability to monitor this process by using a Rear Heated Oxygen sensor (HO2S2). The HO2S2, located in the exhaust stream past the catalytic converter, produces an output signal which indicates the storage capacity of the catalyst; this in turn indicates the catalyst's ability to convert exhaust emissions effectively. If the catalyst is functioning properly, the HO2S2 signal will be far less active than the signal produced by the Front Heated Oxygen sensor (HO2S1).</div>
+				<div class="T1" align="left">If the HO2S2 pigtail wiring, connector or terminal are damaged, the entire HO2S2 assembly must be replaced. Do not attempt to repair the wiring, connector or terminals. In order for the sensor to function properly, it must have a clean air reference provided to it. This clean air reference is obtained by way of the HO2S2 wire(s). Any attempt to repair the wires, connector or terminals could result in the obstruction of the air reference and degrade HO2S2 performance.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT4"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>DTCs P0106, P0117, P0118,  P1017 are not set.</Li>
+					<Li>Engine run time is greater than 200 seconds.</Li>
+					<Li>Filtered O2 heater current is less than 0.025 amps.</Li>
+					<Li>System voltage is less than 16 volts.</Li>
+					<Li>MAP is less than 65 kpa.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWDS4"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate after three consecutive trip with a fail.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history Diagnostic Trouble Code (DTC) is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD4"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off after three consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA4"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An intermittent may be caused by rubbed through wire insulation or a wire contacting the exhaust.</div>
+				<div class="T1" align="left">Check for poor connection or damaged harness - inspect harness connectors for the following conditions:</div>
+				<UL>
+					<Li>Improper mating</Li>
+					<Li>Broken locks</Li>
+					<Li>Improperly formed</Li>
+					<Li>Damaged terminals</Li>
+					<Li>Poor terminal-to-wire connection</Li>
+					<Li>Damaged harness</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD4"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">This step determines if DTC P0141 is the result of a hard failure or an intermittent condition. With the ignition ON, engine OFF, the HO2S2 voltage displayed on the scan tool should change within several minutes toward 0 or 1 volt, indicating that the heater is working properly.</Li>
+					<Li value="3">Probing terminal 3 of the HO2S2 connector verifies if voltage is available to the HO2S2 heater.</Li>
+					<Li value="4">If voltage is available at the connector, than it becomes a good voltage source to check for a ground at terminal 2.</Li>
+					<Li value="5">Determines if voltage is not available at the HO2S2 due to an open in the HO2S2 fuse or open ignition feed circuit. If the fuse is open, determine if it was due to a short in the ignition feed circuit before replacing the fuse.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P01351"><font size="4"><b>DTC P0135 Front Heated Oxygen Sensor (HO2S1) Heater Circuit Not Functioning</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								
+									<P></P>
+<DIV><B><FONT color="DarkSlateGray">Notice : If the engine has just been operating, allow the engine to cool for about one-half hour before proceeding.</FONT></B></DIV>
+<P></P>
+								
+								<OL>
+									<Li>Turn the ignition switch ON, with the engine OFF.</Li>
+									<Li>Install a scan tool.</Li>
+								</OL>
+								<div>Does the Rear Heated Oxygen Sensor (HO2S2) voltage gradually change toward the specified voltage?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 v or 1 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the HO2S2 electrical connector.</Li>
+									<Li>With a test light connected to ground, probe the ignition feed circuit, terminal 1 of the connector.</Li>
+								</OL>
+								<div>Does the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Connect a test light between the ignition feed and ground circuits, terminal 1 and 2 of the connector.</div>
+								<div>Does the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Inspect the fuse in the engine fuse block.</div>
+								<div>Is the fuse open?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the connections terminal 1 and 4 at the HO2S2 connector and repair as necessary.</div>
+								<div>Is a repair necessary?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the connections terminal 2 at the HO2S2 connector and repair as necessary.</div>
+								<div>Is a repair necessary?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Check for a short to ground in the HO2S2 ignition feed circuit and repair as necessary?</Li>
+									<Li>Replace open fuse.</Li>
+								</OL>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the connections terminal 1 at the HO2S2 connector and repair as necessary.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the HO2S2 sensor.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open in the ground circuit.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open in the ignition feed circuit.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "Applicable DTC table"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V3B11F45" src="../../../../graphic-pool/V/3B/1/V3B11F45.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B11F45.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P0137"><font size="4"><b>Diagnostic Trouble Code (DTC) P0137 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0OBSLV1"><font size="4"><b>Rear Heated Oxygen Sensor (HO2S2) Low Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD5"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">In order to control emissions, a catalytic converter is used to convert harmful emissions into harmless water vapor and carbon dioxide.</div>
+				<div class="T1" align="left">The Engine Control Module (ECM) has the ability to monitor this process by using a 
+Rear Heated Oxygen Sensor (HO2S2). The HO2S2, located in the exhaust stream past the catalytic converter, produces an output signal which indicates the storage capacity of the catalyst. This in turn indicates the catalyst's ability to convert exhaust emissions effectively. If the catalyst is functioning properly, the HO2S2 signal will be far less active than the signal produced by the Front Heated Oxygen Sensor (HO2S1).</div>
+				<div class="T1" align="left">If the HO2S2 pigtail wiring, connector, or terminal is damaged, the entire HO2S2 assembly must be replaced. Do not attempt to repair the wiring, connector, or terminals. In order for the sensor to function properly, it must have a clean air reference provided to it. This clean air reference is obtained by way of the HO2S2 wire(s). Any attempt to repair the wires, connector, or terminals could result in the obstruction of the air reference and degrade the HO2S2 performance.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT5"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S2 voltage is less than 0.052 volt in Closed Loop control or less than 0.35 volt in Power Enrichment (PE) mode.</Li>
+					<Li>Engine Coolant Temperature (ECT) is greater than 60°C (140°F).</Li>
+					<Li>System voltage is greater than 10 volts.</Li>
+					<Li>Closed Loop test: 3 seconds delay after in Closed Loop and air flow is greater than 9 g/sec.</Li>
+					<Li>Power Enrichment test: Air/Fuel ration is less than or equal to 13.5 and 2 seconds delay after in Power Enrichment mode.</Li>
+					<Li>DTCs P0106, P0107, P0108, P0117, P0118, P0122, P0123, P0171, P0172, P0201, P0202, P0203, P0204, P0300, P0336, P0337, P0351, P0352, P0141, P0402, P0404, P0405, P0406, P0502, P0506, P0507, P1404, and P0443 are not set.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD5"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate after three consecutive trip with a fail.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD5"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>The DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA5"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An intermittent may be caused by rubbed-through wire insulation or a wire contacting the exhaust.</div>
+				<div class="T1" align="left">Check for the following conditions:</div>
+				<UL>
+					<Li>Exhaust system - Inspect the exhaust system for leaks. Check the exhaust between the three-way catalytic converter and the flange for leaks, corrosion, or for loose or missing hardware and repair as necessary.</Li>
+					<Li>Poor connection or damaged harness - Ensure that the HO2S2 pigtail is not contacting the exhaust. Check for the following conditions:</Li>
+					<Li>Improper mating</Li>
+					<Li>Broken locks</Li>
+					<Li>Improperly formed</Li>
+					<Li>Damaged terminals</Li>
+					<Li>Poor terminal-to-wire connection</Li>
+					<Li>Damaged harness</Li>
+					<Li>Intermittent test - Observe the HO2S2 on the scan tool while moving related connections and the wiring harness with the ignition ON. If the failure is induced, the HO2S2 display will change. This may help isolate the location of the malfunction.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD5"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">This step determines if DTC P0137 is the result of a hard failure or an intermittent condition.</Li>
+					<Li value="4">Jumping the HO2S2 low circuit, terminal 1 to ground is necessary to allow the ECM to display the supplied bias voltage. If the voltage is between 0.35 and 0.55 volt, then the wiring and ECM are OK.</Li>
+					<Li value="6">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P01371"><font size="4"><b>DTC P0137 - Rear Heated Oxygen Sensor (HO2S2) Low Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the Rear Heated Oxygen Sensor (HO2S2) voltage less than the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0.1 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Start the engine.</Li>
+									<Li>Review the Freeze Frame data and note the parameters.</Li>
+									<Li>Operate the vehicle within the Freeze frame conditions and Conditions For Setting the DTC as noted.</Li>
+								</OL>
+								<div>Is the HO2S2 voltage less than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0.4 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect HO2S2 connector.</Li>
+									<Li>Connect a jumper wire between terminal 3 of HO2S2 connector and ground.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Does the scan tool indicate that the HO2S2 voltage is within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>350-550 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the Engine Control Module (ECM) connector and check the HO2S2 high circuit, terminal K36 for short to ground or short to the HO2S2 low circuit terminal K53 and repair as needed.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<UL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the ECM.</Li>
+								</UL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<UL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the HO2S2.</Li>
+								</UL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V3B11F45" src="../../../../graphic-pool/V/3B/1/V3B11F45.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B11F45.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P0138"><font size="4"><b>Diagnostic Trouble Code (DTC) P0138 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0OBSH1"><font size="4"><b>Rear Heated Oxygen Sensor (HO2S2) High Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD6"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">In order to control emissions, a catalytic converter is used to convert harmful emissions into harmless water vapor and carbon dioxide.</div>
+				<div class="T1" align="left">The Engine Control Module (ECM) has the ability to monitor this process by using a Rear Heated Oxygen Sensor (HO2S2). The HO2S2, located in the exhaust stream past the catalytic converter, produces an output signal which indicates the storage capacity of the catalyst. This in turn indicates the catalyst¡¯s ability to convert exhaust emissions effectively. If the catalyst is functioning properly, the HO2S2 signal will be far less active than the signal produced by the Front Heated Oxygen Sensor (HO2S1).</div>
+				<div class="T1" align="left">If the HO2S2 pigtail wiring, connector, or terminal is damaged, the entire HO2S2 assembly must be replaced. Do not attempt to repair the wiring, connector, or terminals. In order for the sensor to function properly, it must have a clean air reference provided to it. This clean air reference is obtained by way of the HO2S2 wire(s). Any attempt to repair the wires, connector, or terminals could result in the obstruction of the air reference and degrade the HO2S2 performance.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT6"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S2 voltage is greater than 0.952 volt in Closed Loop control or greater than 0.478 volt in Decel Fuel Cutoff (DFCO) mode.</Li>
+					<Li>Engine Coolant Temperature (ECT) is greater than 60 °C (140 °F).</Li>
+					<Li>System voltage is greater than 10 volts.</Li>
+					<Li>Closed Loop test: 3 seconds delay after in Closed Loop and airflow is greater than 9 g/sec.</Li>
+					<Li>DFCO test: 2 seconds delay after in DFCO.</Li>
+					<Li>DTCs P0106, P0107, P0108, P0117, P0118, P0122, P0123, P0171, P0172, P0201, P0202, P0203, P0204, P0300, P0336, P0337, P0351, P0352, P0141, P0402, P0404, P0405, P0406, P0501, P0506, P0507, P1404, and P0443 are not set.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD6"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate after three consecutive with a fail.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD6"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>The DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA6"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Check for the following conditions:</div>
+				<UL>
+					<Li>Rich exhaust - An overly rich exhaust may load the catalyst, causing high HO2S2 signal voltages.</Li>
+					<Li>Silicone contamination - A false rich condition may be caused by silicone contamination of the HO2S2. This will be indicated by a powdery white deposit on the sensor.</Li>
+					<Li>Faulty HO2S2 - If HO2S2 is internally shorted, the HO2S2 voltage displayed on a scan tool will be over 1 volt. Disconnect the HO2S2 and jumper the sensor low circuit to engine ground; if the displayed voltage goes from over 1000 millivolt to around 450 millivolt, replace the HO2S2.</Li>
+					<Li>Intermittent test - Observe HO2S2 on the scan tool while moving related connectors and the wiring harness with the key in the ON position. If the failure is induced, the HO2S2 display will change. This may help isolate the location of the malfunction.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD6"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">This step determines if DTC P0138 is the result of a hard failure or an intermittent condition.</Li>
+					<Li value="5">Disconnecting the HO2S2 and jumpering the sensor signal circuit and the sensor low circuit to ground should cause the scan tool to display HO2S2 voltage below 100 mv (0.1 v). If the signal voltage is still high, the ECM is malfunctioning.</Li>
+					<Li value="6">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P01381"><font size="4"><b>DTC P0138 - Rear Heated Oxygen Sensor (HO2S2) High Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%"> - </TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the Rear Heated Oxygen Sensor (HO2S2) voltage above the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0.9 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Review the Freeze Frame data and note the parameters.</Li>
+									<Li>Operate the vehicle within the Freeze frame conditions and Conditions For Setting the DTC as noted.</Li>
+								</OL>
+								<div>Is the HO2S2 voltage above the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0.9 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect HO2S2 connector.</Li>
+									<Li>Disconnect the Engine Control Module (ECM) connector.</Li>
+									<Li>With voltmeter connected to ground, probe the HO2S2 high signal circuit, terminal K36.</Li>
+								</OL>
+								<div>Is the voltage within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>± 0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Reconnect the ECM connector.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Jumper the high and low circuits at the HO2S2 connector, terminals 3 and 4 to ground.</Li>
+								</OL>
+								<div>Does the scan tool indicate the HO2S2 voltage below the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0.1 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to voltage in the HO2S2 high circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<UL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the HO2S2.</Li>
+								</UL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<UL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the ECM.</Li>
+								</UL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V3B11F45" src="../../../../graphic-pool/V/3B/1/V3B11F45.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B11F45.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P0140"><font size="4"><b>Diagnostic Trouble Code (DTC) P0140 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0OSAO"><font size="4"><b>Rear Heated Oxygen Sensor (HO2S2) No Activity or Open</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD7"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">In order to control emissions, a catalytic converter is used to convert harmful emissions into harmless water vapor and carbon dioxide.</div>
+				<div class="T1" align="left">The Engine Control Module (ECM) has the ability to monitor this process by using a Rear Heated Oxygen Sensor (HO2S2). The HO2S2, located in the exhaust stream past the catalytic converter, produces an output signal which indicates the storage capacity of the catalyst. This in turn indicates the catalyst¡¯s ability to convert exhaust emissions effectively. If the catalyst is functioning properly, the HO2S2 signal will be far less active than the signal produced by the Front Heated Oxygen Sensor (HO2S1).</div>
+				<div class="T1" align="left">If the HO2S2 pigtail wiring, connector, or terminal is damaged, the entire HO2S2 assembly must be replaced. Do not attempt to repair the wiring, connector, or terminals. In order for the sensor to function properly, it must have a clean air reference provided to it. This clean air reference is obtained by way of the HO2S2 wire(s). Any attempt to repair the wires, connector, or terminals could result in the obstruction of the air reference and degrade the HO2S2 performance.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT7"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S2 voltage is between 0.422 and 0.478 volts.</Li>
+					<Li>Engine Coolant Temperature (ECT) is greater than 60°C (140°F).</Li>
+					<Li>Engine rum time is greater than 60 seconds.</Li>
+					<Li>System voltage is greater than 10 volts.</Li>
+					<Li>Closed Loop stoichiometry.</Li>
+					<Li>3 second delay after exiting Decel Fuel Cutoff (DFCO) mode.</Li>
+					<Li>DTCs P0106, P0107, P0108, P0117, P0118, P0122, P0123, P0171, P0172, P0201, P0202, P0203, P0204, P0300, P0336, P0337, P0351, P0352, P0141, P0402, P0404, P0405, P0406, P0501, P0506, P0507, P1404, and P0443 are not set.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD7"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate after three consecutive trip with a fail.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD7"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>The DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA7"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An intermittent may be caused by a rubbed-through wire insulation or a wire contacting the exhaust.</div>
+				<div class="T1" align="left">Check for the following conditions:</div>
+				<UL>
+					<Li>A poor connection or a damaged harness - Inspect the harness for a short to ground in the sensor signal circuit. Ensure that the HO2S2 pigtail is not contacting the exhaust. Check for the following conditions:</Li>
+					<Li>Improper mating</Li>
+					<Li>Broken locks</Li>
+					<Li>Improperly formed</Li>
+					<Li>Damaged terminals</Li>
+					<Li>Poor terminal-to-wire connection</Li>
+					<Li>Damaged harness</Li>
+					<Li>Intermittent test - Observe HO2S2 on the scan tool while moving the related connections and the wiring harness with the ignition ON. If the failure is induced, the HO2S2 display will change. This may help isolate the location of the malfunction.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD7"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">This step determines if DTC P0140 is the result of a hard failure or an intermittent condition.</Li>
+					<Li value="4">Disconnecting the HO2S2 and jumpering the sensor signal circuit and the sensor low circuit to ground will determine if the ECM or wiring or HO2S2 is malfunctioning.</Li>
+					<Li value="6">Determines which circuit the malfunction is in. If the sensor signal circuit and the sensor low circuit are OK, then the ECM connection or ECM is malfunctioning.</Li>
+					<Li value="10">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P01401"><font size="4"><b>DTC P0140 - Rear Heated Oxygen Sensor (HO2S2) No Activity or Open</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Start the engine and operate to normal operating temperature.</Li>
+									<Li>Run the engine above the specified rpm for two minutes.</Li>
+								</OL>
+								<div>Does the scan tool display a Rear Heated Oxygen Sensor (HO2S2) voltage between the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>80°C(176°F)</div>
+							<div>1200 rpm</div>
+							<div>422-478 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Allow the engine to idle.</Li>
+									<Li>Review the Freeze Frame data and note the parameters.</Li>
+									<Li>Operate the vehicle within the Freeze frame conditions and Conditions For Setting the DTC as noted.</Li>
+								</OL>
+								<div>Does the scan tool display the HO2S2 voltage steady around the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>422-478 mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect HO2S2 connector.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Jumper the high and low circuits at the HO2S2 connector, terminals 3 and 4 to ground.</Li>
+								</OL>
+								<div>Does the scan tool indicate the HO2S2 voltage below the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0.1 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Check for a malfunctioning connection at the HO2S2 Engine Control Module (ECM) side and repair as needed.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Remove the jumper wire.</Li>
+									<Li>With a voltmeter connected to ground, probe the terminal 4 of the HO2S2.</Li>
+								</OL>
+								<div>Does the voltage within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4.5 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the HO2S2.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the HO2S2 low circuit for an open or poor connection and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the ECM connector.</Li>
+									<Li>Check the HO2S2 high circuit for continuity and repair as needed.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the HO2S2.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V3B11F45" src="../../../../graphic-pool/V/3B/1/V3B11F45.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B11F45.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P0141"><font size="4"><b>Diagnostic Trouble Code (DTC) P0141 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0ROBSH0"><font size="4"><b>Rear Heated Oxygen Sensor (HO2S2) Heater Circuit Not Functioning
+
+
+</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD8"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">In order to control emissions, a catalytic converter is used to convert harmful emissions into harmless water vapor and carbon dioxide.</div>
+				<div class="T1" align="left">The Engine Control Module (ECM) has the ability to monitor this process by using a Rear Heated Oxygen Sensor (HO2S2). The HO2S2, located in the exhaust stream past the catalytic converter, produces an output signal which indicates the storage capacity of the catalyst. This in turn indicates the catalyst¡¯s ability to convert exhaust emissions effectively. If the catalyst is functioning properly, the HO2S2 signal will be far less active than the signal produced by the Front Heated Oxygen Sensor (HO2S1).</div>
+				<div class="T1" align="left">If the HO2S2 pigtail wiring, connector, or terminal is damaged, the entire HO2S2 assembly must be replaced. Do not attempt to repair the wiring, connector, or terminals. In order for the sensor to function properly, it must have a clean air reference provided to it. This clean air reference is obtained by way of the HO2S2 wire(s). Any attempt to repair the wires, connector, or terminals could result in the obstruction of the air reference and degrade the HO2S2 performance.</div>
+				<div class="T1" align="left">The ECM will check if HO2S2 is functioning properly by monitoring the current to HO2S2 heater. If the current is less than 0.1 ampere, DTC P0141 will set.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT8"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S2 heater current is less than 0.1 amperes.</Li>
+					<Li>Engine rum time is greater than 60 seconds.</Li>
+					<Li>System voltage is greater than 10 volts.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD8"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate after three consecutive trip with a fail.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD8"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>The DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA8"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An intermittent may be caused by a rubbed-through wire insulation or a wire contacting the exhaust.</div>
+				<div class="T1" align="left">Check for a poor connection or a damaged harness - inspect the harness connectors for the following conditions:</div>
+				<UL>
+					<Li>Improper mating</Li>
+					<Li>Broken locks</Li>
+					<Li>Improperly formed</Li>
+					<Li>Damaged terminals</Li>
+					<Li>Poor terminal-to-wire connection</Li>
+					<Li>Damaged harness</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD8"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">This step determines if DTC P0141 is the result of a hard failure or an intermittent condition. With the ignition ON, engine OFF, the HO2S2 voltage displayed on the scan tool should change within several minutes toward 0 or 1 volt, indicating that the heater is working properly.</Li>
+					<Li value="3">Probing terminal D of the HO2S2 connector verifies if voltage is available to the HO2S2 heater.</Li>
+					<Li value="4">If voltage is available at the connector, than it becomes a good voltage source to check for a ground at terminal 2.</Li>
+					<Li value="5">Determines if voltage is not available at the HO2S2 due to an open in the HO2S2 fuse or open ignition feed circuit. If the fuse is open, determine if it was due to a short in the ignition feed circuit before replacing the fuse.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P01411"><font size="4"><b>DTC P0141 - Rear Heated Oxygen Sensor (HO2S2) Heater Circuit Not Functioning</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the Rear Heated Oxygen Sensor (HO2S2) connector.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Using a voltmeter, measure the voltage at terminal 1 of HO2S2 and ground.</Li>
+								</OL>
+								<div>Is the voltage within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>11-14 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "Main Relay Circuit Check"</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the HO2S2 connector.</Li>
+									<Li>Check the connections at HO2S2 connector, terminal 2 and 1 and repair as needed.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Disconnect the Engine control Module (ECM) connector.</div>
+								<div>Check the connection at the ECM connector, terminal M2 and repair as needed.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using ohmmeter, measure the resistance between terminal 2 of the HO2S2 and terminal M2 of the ECM.</Li>
+								</OL>
+								<div>Is the resistance equal to the specified value?</div>
+								<OL>
+									<Li>Using a voltmeter, measure the voltage between terminal M2 of the ECM and ground.</Li>
+								</OL>
+								<div>Is the voltage within the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 Ω</div>
+							<div>≈0 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair an open or short to voltage circuit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check he continuity between terminal 2 and 1 of the HO2S2.</div>
+								<div>Is a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the HO2S2.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the ECM.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to Applicable DTC Table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="5V2_1F04.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="5V2_1F06.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Daewoo Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

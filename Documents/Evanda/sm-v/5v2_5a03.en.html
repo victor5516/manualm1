@@ -1,0 +1,2832 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2005  Diagnostic Trouble Code(DTC) P0715</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="5V2_5A03.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Evanda</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="5V2_5A02.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="5V2_5A04.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	<BR><div align="center">
+<IMG alt="V3B15A28" src="../../../../graphic-pool/V/3B/1/V3B15A28.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B15A28.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P0715"><font size="4"><b>Diagnostic Trouble Code(DTC) P0715 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0ISSCM"><font size="4"><b>Input Speed Sensor(ISS) Circuit Malfunction</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD1"><b>Circuit Description</b></DIV>
+<P></P>
+			<div class="T1" align="left">Information relative to transaxle input speed to the TCM. The TCM uses transaxle input speed information to control line pressure, TCC apply and release and transaxle shift patterns. This information is also uses to calculate the appropriate operating gear ratios and TCC slippage.</div>
+				<div class="T1" align="left">The input speed sensor mounts onto piston B that is inside of valve body.</div>
+				<div class="T1" align="left">An air gap of 1.8~2.2mm(0.07~0.086inch) is maintained between the sensor and the piston B.</div>
+				<div class="T1" align="left">The sensor consists of a permanent magnet surrounded by a coil of wire. As the piston B is driven by the turbine shaft, an AC signal is induced by the input speed sensor. Higher vehicle speeds induce a higher frequency and voltage measurement at the sensor.</div>
+				<div class="T1" align="left">Sensor resistance should measure between 825~835 ohms at 20°C(68°F). Sensor can measure from 1,000~8,000HZ.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD1"><b>Conditions for Setting The DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Input speed is more than 7,000 rpm.</Li>
+					<Li>System voltage is too high or too low.</Li>
+					<Li>TCM or ECM is defective.</Li>
+					<Li>Immediately after the above condition occurs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD1"><b>Action Taken When The DTC Sets</b></DIV>
+<P></P>
+			<UL>
+<Li>The Malfunction Indicator Lamp(MIL) will illuminate.</Li>
+					<Li>The TCM will record operating conditions at the time the diagnostic fails. This information will be stored in the Failure Records buffer.</Li>
+					<Li>Adopt Emergency/ Substitute mode and constant 4th gear by hydraulic control.</Li>
+					<Li>After ignition OFF/ON : 3rd gear by hydraulic control, position P, R and N also possible.</Li>
+					<Li>Open lock up clutch.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD1"><b>Conditions for Clearing The MIL/DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The MIL will turn OFF when the malfunction has not occurred after three-ignition cycles.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm up cycles without a fault.</Li>
+					<Li>Using a scan tool can clear history DTCs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0SD1"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			<UL>
+<Li>When DTC P0715 sets, the possible cause of fault could be ISS(input speed sensor).</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P07151"><font size="4"><b>DTC P0715 - Input Speed Sensor(ISS) Circuit Malfunction</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the check completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Install the scan tool.</Li>
+									<Li>Turn the ignition ON and record then clear DTC(s).</Li>
+									<Li>Turn the ignition OFF, then turn the ignition ON.</Li>
+									<Li>Observe the input speed on the scan tool.</Li>
+								</OL>
+								<div>Is the speed within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>Input speed :</div>
+							<div>0-7,000rpm</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the transaxle wiring connector.</Li>
+									<Li>Measure the resistance between terminals 15 and 16 of the transaxle wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>830 ± 5Ω </div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Remove the oil pan.</Li>
+									<Li>Disconnect the input speed sensor wiring connector.</Li>
+									<Li>Measure the resistance between terminal 1 of the input speed sensor wiring connector and terminal 15 of the transaxle wiring connector.</Li>
+									<Li>Measure the resistance between terminal 2 of the input speed sensor wiring connector and terminal 16 of the transaxle wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal 1.</Li>
+									<Li>Measure the voltage of terminal 2.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Repair the short to battery power.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Replace the input speed sensor.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div class="p"></div>
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Disconnect the transaxle wiring connector and TCM connector.</Li>
+									<Li>Measure the resistance between terminal 15 of the transaxle wiring connector and terminal B4 of the TCM wiring connector.</Li>
+									<Li>Measure the resistance between terminal 16 of the transaxle wiring connector and terminal B2 of the TCM wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal 15.</Li>
+									<Li>Measure the voltage of terminal 16.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK			</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+<div>Replace the TCM.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>After the repair, use a scan tool "clear info" function and road test the vehicle.</Li>
+									<Li>Review the "DTC info".</Li>
+								</OL>
+								<div>Has the last test failed or is the current DTC
+displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Begin diagnosis
+again
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair verified
+exit DTC chart
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V3B15A28" src="../../../../graphic-pool/V/3B/1/V3B15A28.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B15A28.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P0716"><font size="4"><b>Diagnostic Trouble Code(DTC) P0716 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0ISSCR"><font size="4"><b>Input Speed Sensor(ISS) Circuit Range/Performance</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD2"><b>Circuit Description</b></DIV>
+<P></P>
+			<div class="T1" align="left">Information relative to transaxle input speed to the TCM. The TCM uses transaxle input speed information to control line pressure, TCC apply and release and transaxle shift patterns. This information is also uses to calculate the appropriate operating gear ratios and TCC slippage.</div>
+				<div class="T1" align="left">The input speed sensor mounts onto piston B that is inside of valve body.</div>
+				<div class="T1" align="left">An air gap of 1.8~2.2mm(0.07~0.086inch) is maintained between the sensor and the piston B.</div>
+				<div class="T1" align="left">The sensor consists of a permanent magnet surrounded by a coil of wire. As the piston B is driven by the turbine shaft, an AC signal is induced by the input speed sensor. Higher vehicle speeds induce a higher frequency and voltage measurement at the sensor.</div>
+				<div class="T1" align="left">Sensor resistance should measure between 825~835
+ohms at 20°C(68°F). Sensor can measure from 1,000~
+8,000HZ.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD2"><b>Conditions for Setting The DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The increasing rate of the turbine speed is more than 45,000 rpm/sec.</Li>
+					<Li>System voltage is greater than 8.5 volts.</Li>
+					<Li>Engine is running.</Li>
+					<Li>No engine speed error DTCs P0727.</Li>
+					<Li>Gear position is D.</Li>
+					<Li>TCM or ECM is defective.</Li>
+					<Li>Immediately after the above condition occurs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD2"><b>Action Taken When The DTC Sets</b></DIV>
+<P></P>
+			<UL>
+<Li>The Malfunction Indicator Lamp(MIL) will illuminate.</Li>
+					<Li>The TCM will record operating conditions at the time the diagnostic fails. This information will be stored in the Failure Records buffer.</Li>
+					<Li>Adopt Emergency/ Substitute mode and constant 4th gear by hydraulic control.</Li>
+					<Li>After ignition OFF/ON : 3rd gear by hydraulic control, position P, R and N also possible.</Li>
+					<Li>Open lock up clutch.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD2"><b>Conditions for Clearing The MIL/DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The MIL will turn OFF when the malfunction has not occurred after three-ignition cycles.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm up cycles without a fault.</Li>
+					<Li>Using a scan tool can clear history DTCs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA2"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			<UL>
+<Li>When DTC P0716 sets, the possible cause of fault could be ISS(input speed sensor).</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P07161"><font size="4"><b>DTC P0716 - Input Speed Sensor(ISS) Circuit Range/Performance</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the check completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Install the scan tool.</Li>
+									<Li>Turn the ignition ON and record then clear DTC(s).</Li>
+									<Li>Turn the ignition OFF, then turn the ignition ON.</Li>
+									<Li>Observe the input speed on the scan tool.</Li>
+								</OL>
+								<div>Is the speed within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>Input speed :</div>
+							<div>0-7,000rpm</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the transaxle wiring connector.</Li>
+									<Li>Measure the resistance between terminals 15 and 16 of the transaxle wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>830 ± 5Ω </div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Remove the oil pan.</Li>
+									<Li>Disconnect the input speed sensor wiring connector.</Li>
+									<Li>Measure the resistance between terminal 1 of the input speed sensor wiring connector and terminal 15 of the transaxle wiring connector.</Li>
+									<Li>Measure the resistance between terminal 2 of the input speed sensor wiring connector and terminal 16 of the transaxle wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal 1.</Li>
+									<Li>Measure the voltage of terminal 2.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Repair the short to battery power.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Replace the input speed sensor.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div class="p"></div>
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Disconnect the transaxle wiring connector and TCM connector.</Li>
+									<Li>Measure the resistance between terminal 15 of the transaxle wiring connector and terminal B4 of the TCM wiring connector.</Li>
+									<Li>Measure the resistance between terminal 16 of the transaxle wiring connector and terminal B2 of the TCM wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal 15.</Li>
+									<Li>Measure the voltage of terminal 16.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK			</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+<div>Replace the TCM.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>After the repair, use a scan tool "clear info" function and road test the vehicle.</Li>
+									<Li>Review the "DTC info".</Li>
+								</OL>
+								<div>Has the last test failed or is the current DTC
+displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Begin diagnosis
+again
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair verified
+exit DTC chart
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V3B15A28" src="../../../../graphic-pool/V/3B/1/V3B15A28.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B15A28.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P0717"><font size="4"><b>Diagnostic Trouble Code(DTC) P0717 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0ISSCN"><font size="4"><b>Input Speed Sensor(ISS) Circuit No Signal</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD3"><b>Circuit Description</b></DIV>
+<P></P>
+			<div class="T1" align="left">Information relative to transaxle input speed to the TCM. The TCM uses transaxle input speed information to control line pressure, TCC apply and release and transaxle shift patterns. This information is also uses to calculate the appropriate operating gear ratios and TCC slippage.</div>
+				<div class="T1" align="left">The input speed sensor mounts onto piston B that is inside of valve body.</div>
+				<div class="T1" align="left">An air gap of 1.8~2.2mm(0.07~0.086inch) is maintained between the sensor and the piston B.</div>
+				<div class="T1" align="left">The sensor consists of a permanent magnet surrounded by a coil of wire. As the piston B is driven by the turbine shaft, an AC signal is induced by the input speed sensor. Higher vehicle speeds induce a higher frequency and voltage measurement at the sensor.</div>
+				<div class="T1" align="left">Sensor resistance should measure between 825~835
+ohms at 20°C(68°F). Sensor can measure from 1,000~
+8,000HZ.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD3"><b>Conditions for Setting The DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>When engine speed(rpm) is more than 3,100rpm, Turbine speed is less than 100rpm.</Li>
+					<Li>System voltage is too high or too low.</Li>
+					<Li>CAN transmitting wiring harness shortage or open.</Li>
+					<Li>TCM or ECM is defective.</Li>
+					<Li>Immediately after the above condition occurs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD3"><b>Action Taken When The DTC Sets</b></DIV>
+<P></P>
+			<UL>
+<Li>The Malfunction Indicator Lamp(MIL) will illuminate.</Li>
+					<Li>The TCM will record operating conditions at the time the diagnostic fails. This information will be stored in the Failure Records buffer.</Li>
+					<Li>Adopt Emergency/ Substitute mode and constant 4th gear by hydraulic control.</Li>
+					<Li>After ignition OFF/ON : 3rd gear by hydraulic control, position P, R and N also possible.</Li>
+					<Li>Open lock up clutch.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD3"><b>Conditions for Clearing The MIL/DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The MIL will turn OFF when the malfunction has not occurred after three-ignition cycles.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm up cycles without a fault.</Li>
+					<Li>Using a scan tool can clear history DTCs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA3"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			<UL>
+<Li>When DTC P0717 sets, the possible cause of fault could be ISS(input speed sensor).</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P07171"><font size="4"><b>DTC P0717 - Input Speed Sensor(ISS) Circuit No Signal</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the check completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Install the scan tool.</Li>
+									<Li>Turn the ignition ON and record then clear DTC(s).</Li>
+									<Li>Turn the ignition OFF, then turn the ignition ON.</Li>
+									<Li>Observe the input speed on the scan tool.</Li>
+								</OL>
+								<div>Is the speed within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>100rpm</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the transaxle wiring connector.</Li>
+									<Li>Measure the resistance between terminals 15 and 16 of the transaxle wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>830 ± 5Ω </div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Remove the oil pan.</Li>
+									<Li>Disconnect the input speed sensor wiring connector.</Li>
+									<Li>Measure the resistance between terminal 1 of the input speed sensor wiring connector and terminal 15 of the transaxle wiring connector.</Li>
+									<Li>Measure the resistance between terminal 2 of the input speed sensor wiring connector and terminal 16 of the transaxle wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal 1.</Li>
+									<Li>Measure the voltage of terminal 2.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Repair the short to battery power.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Replace the input speed sensor.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div class="p"></div>
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Disconnect the transaxle wiring connector and TCM connector.</Li>
+									<Li>Measure the resistance between terminal 15 of the transaxle wiring connector and terminal B4 of the TCM wiring connector.</Li>
+									<Li>Measure the resistance between terminal 16 of the transaxle wiring connector and terminal B2 of the TCM wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal 15.</Li>
+									<Li>Measure the voltage of terminal 16.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK			</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+<div>Replace the TCM.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>After the repair, use a scan tool "clear info" function and road test the vehicle.</Li>
+									<Li>Review the "DTC info".</Li>
+								</OL>
+								<div>Has the last test failed or is the current DTC
+displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Begin diagnosis
+again
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair verified
+exit DTC chart
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V3B15A29" src="../../../../graphic-pool/V/3B/1/V3B15A29.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B15A29.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P0720"><font size="4"><b>Diagnostic Trouble Code(DTC) P0720 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0OSSCM"><font size="4"><b>Output Speed Sensor(OSS) Circuit Malfunction</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD4"><b>Circuit Description</b></DIV>
+<P></P>
+			<div class="T1" align="left">The vehicle A/T OSS is a magnetic inductive pickup that relays information relative to vehicle speed to the TCM.</div>
+				<div class="T1" align="left">Vehicle speed information is used by the TCM to control shift timing, line pressure, and TCC apply and release.</div>
+				<div class="T1" align="left">The output speed sensor mounts in the case at the speed sensor rotor, which is pressed onto the spur gear. An air gap of 0.1mm~1.3mm(0.004~0.05in) is maintained between the sensor and the teeth on the spur gear teeth. The sensor consists of a permanent magnet surrounded by a coil of wire. As the differential rotates, an AC signal induces a higher frequency and voltage measurement at the sensor. Sensor resistance should measure ∞ at 20°C (68°F). Sensor can measure from 20HZ~8,000HZ.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD4"><b>Conditions for Setting The DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Output speed is greater than 9,762rpm.</Li>
+					<Li>System voltage is too high or too low.</Li>
+					<Li>CAN transmitting wiring harness shortage or open.</Li>
+					<Li>TCM or ECM is defective.</Li>
+					<Li>Immediately after the above condition occurs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD4"><b>Action Taken When The DTC Sets</b></DIV>
+<P></P>
+			<UL>
+<Li>The Malfunction Indicator Lamp(MIL) will illuminate.</Li>
+					<Li>The TCM will record operating conditions at the time the diagnostic fails. This information will be stored in the Failure Records buffer.</Li>
+					<Li>Adopt Emergency/ Substitute mode and constant 4th gear.</Li>
+					<Li>Open lock up clutch.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD4"><b>Conditions for Clearing The MIL/DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The MIL will turn OFF when the malfunction has not occurred after three-ignition cycles.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm up cycles without a fault.</Li>
+					<Li>Using a scan tool can clear history DTCs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA4"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			<UL>
+<Li>When DTC P0720 sets, the possible cause of fault could be OSS(Output speed sensor).</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P07201"><font size="4"><b>DTC P0720 - Output Speed Sensor(OSS) Circuit Malfunction</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the check completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Install the scan tool.</Li>
+									<Li>Turn the ignition ON and record then clear DTC(s), then turn the ignition OFF.</Li>
+									<Li>Raise and support the drive wheels, then start the engine.</Li>
+									<Li>Gear position is D and observe the output speed on the scan tool.</Li>
+								</OL>
+								<div>Is the speed within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>190~9,762rpm</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the transaxle wiring connector.</Li>
+									<Li>Measure the resistance between terminals 1 and 2 of the transaxle wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Remove the oil pan.</Li>
+									<Li>Disconnect the output speed sensor wiring connector.</Li>
+									<Li>Measure the resistance between terminal 1 of the output speed sensor wiring connector and terminal 1 of the transaxle wiring connector.</Li>
+									<Li>Measure the resistance between terminal 2 of the output speed sensor wiring connector and terminal 2 of the transaxle wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal 1.</Li>
+									<Li>Measure the voltage of terminal 2.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Replace the output speed sensor.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div class="p"></div>
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Disconnect the transaxle wiring connector and TCM connector.</Li>
+									<Li>Measure the resistance between terminal 1 of the transaxle wiring connector and terminal B10 of the TCM wiring connector.</Li>
+									<Li>Measure the resistance between terminal 2 of the transaxle wiring connector and terminal B5 of the TCM wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal 1.</Li>
+									<Li>Measure the voltage of terminal 2.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK			</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+<div>Replace the TCM.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>After the repair, use a scan tool "clear info" function and road test the vehicle.</Li>
+									<Li>Review the "DTC info".</Li>
+								</OL>
+								<div>Has the last test failed or is the current DTC
+displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Begin diagnosis
+again
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair verified
+exit DTC chart
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V3B15A29" src="../../../../graphic-pool/V/3B/1/V3B15A29.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B15A29.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P0721"><font size="4"><b>Diagnostic Trouble Code(DTC) P0721 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0OSSCR1"><font size="4"><b>Output Speed Sensor(OSS) Circuit Range/Performance</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD5"><b>Circuit Description</b></DIV>
+<P></P>
+			<div class="T1" align="left">The vehicle A/T OSS is a magnetic inductive pickup that relays information relative to vehicle speed to the TCM.</div>
+				<div class="T1" align="left">Vehicle speed information is used by the TCM to control shift timing, line pressure, and TCC apply and release.</div>
+				<div class="T1" align="left">The output speed sensor mounts in the case at the speed sensor rotor, which is pressed onto the spur gear. An air gap of 0.1mm~1.3mm(0.004~0.05in) is maintained between the sensor and the teeth on the spur gear teeth. The sensor consists of a permanent magnet surrounded by a coil of wire. As the differential rotates, an AC signal induces a higher frequency and voltage measurement at the sensor. Sensor resistance should measure ∞ at 20°C (68°F). Sensor can measure from 20HZ~8,000HZ.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD5"><b>Conditions for Setting The DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Transaxle speed is less than 8,160rpm.</Li>
+					<Li>The increasing rate of output speed is more than 45,000rpm/sec.</Li>
+					<Li>System voltage is greater than 8.5 volts.</Li>
+					<Li>Engine is running.</Li>
+					<Li>No engine speed error DTCs P0727, P0725.</Li>
+					<Li>No park/neutral position switch error DTC P0705.</Li>
+					<Li>TCM or ECM is defective.</Li>
+					<Li>Immediately after the above condition occurs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD5"><b>Action Taken When The DTC Sets</b></DIV>
+<P></P>
+			<UL>
+<Li>The Malfunction Indicator Lamp(MIL) will illuminate.</Li>
+					<Li>The TCM will record operating conditions at the time the diagnostic fails. This information will be stored in the Failure Records buffer.</Li>
+					<Li>Adopt Emergency/ Substitute mode and constant 4th gear.</Li>
+					<Li>Open lock up clutch.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD5"><b>Conditions for Clearing The MIL/DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The MIL will turn OFF when the malfunction has not occurred after three-ignition cycles.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm up cycles without a fault.</Li>
+					<Li>Using a scan tool can clear history DTCs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA5"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			<UL>
+<Li>When DTC P0721 sets, the possible cause of fault could be OSS(Output speed sensor).</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P07211"><font size="4"><b>DTC P0721 - Output Speed Sensor(OSS) Circuit Range/Performance</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the check completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Install the scan tool.</Li>
+									<Li>Turn the ignition ON and record then clear DTC(s), then turn the ignition OFF.</Li>
+									<Li>Raise and support the drive wheels, then start the engine.</Li>
+									<Li>Gear position is D and observe the output speed on the scan tool.</Li>
+								</OL>
+								<div>Is the speed within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>190~9,762rpm</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition LOCK.</Li>
+									<Li>Disconnect the transaxle wiring connector.</Li>
+									<Li>Measure the resistance between terminals 1 and 2 of the transaxle wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Remove the oil pan.</Li>
+									<Li>Disconnect the output speed sensor wiring connector.</Li>
+									<Li>Measure the resistance between terminal 1 of the output speed sensor wiring connector and terminal 1 of the transaxle wiring connector.</Li>
+									<Li>Measure the resistance between terminal 2 of the output speed sensor wiring connector and terminal 2 of the transaxle wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal 1.</Li>
+									<Li>Measure the voltage of terminal 2.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Replace the input speed sensor.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div class="p"></div>
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Disconnect the transaxle wiring connector and TCM connector.</Li>
+									<Li>Measure the resistance between terminal 1 of the transaxle wiring connector and terminal B10 of the TCM wiring connector.</Li>
+									<Li>Measure the resistance between terminal 2 of the transaxle wiring connector and terminal B5 of the TCM wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal 1.</Li>
+									<Li>Measure the voltage of terminal 2.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK			</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+<div>Replace the TCM.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>After the repair, use a scan tool "clear info" function and road test the vehicle.</Li>
+									<Li>Review the "DTC info".</Li>
+								</OL>
+								<div>Has the last test failed or is the current DTC
+displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Begin diagnosis
+again
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair verified
+exit DTC chart
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V3B15A29" src="../../../../graphic-pool/V/3B/1/V3B15A29.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B15A29.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P0722"><font size="4"><b>Diagnostic Trouble Code(DTC) P0722 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0OSSCN"><font size="4"><b>Output Speed Sensor(OSS) Circuit No Signal</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD6"><b>Circuit Description</b></DIV>
+<P></P>
+			<div class="T1" align="left">The vehicle A/T OSS is a magnetic inductive pickup that relays information relative to vehicle speed to the TCM.</div>
+				<div class="T1" align="left">Vehicle speed information is used by the TCM to control shift timing, line pressure, and TCC apply and release.</div>
+				<div class="T1" align="left">The output speed sensor mounts in the case at the speed sensor rotor, which is pressed onto the spur gear. An air gap of 0.1mm~1.3mm(0.004~0.05in) is maintained between the sensor and the teeth on the spur gear teeth. The sensor consists of a permanent magnet surrounded by a coil of wire. As the differential rotates, an AC signal induces a higher frequency and voltage measurement at the sensor. Sensor resistance should measure ∞ at 20°C (68°F). Sensor can measure from 20HZ~8,000HZ.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD6"><b>Conditions for Setting The DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>If the gear shift is not in progress and the selector lever position is "1", "2", "3", "D", or "Z3" and the transaxle output speed is less than the limit value of transaxle output speed for plausibility check of transaxle output speed and the turbine speed is greater than the limit value of turbine speed for plausibility check of transaxle output speed then the error bit will be set.</Li>
+					<Li>System voltage is greater than 7 volts.</Li>
+					<Li>Engine is running.</Li>
+					<Li>No input speed error DTCs P0715, P0716, and P0717.</Li>
+					<Li>No park/neutral position switch error DTC P0705.</Li>
+					<Li>TCM or ECM is defective.</Li>
+					<Li>Immediately after the above condition occurs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD6"><b>Action Taken When The DTC Sets</b></DIV>
+<P></P>
+			<UL>
+<Li>The Malfunction Indicator Lamp(MIL) will illuminate.</Li>
+					<Li>The TCM will record operating conditions at the time the diagnostic fails. This information will be stored in the Failure Records buffer.</Li>
+					<Li>Vehicle running remains actual gear.</Li>
+					<Li>Open lock up clutch.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD6"><b>Conditions for Clearing The MIL/DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The MIL will turn OFF when the malfunction has not occurred after three-ignition cycles.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm up cycles without a fault.</Li>
+					<Li>Using a scan tool can clear history DTCs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA6"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			<UL>
+<Li>When DTC P0722 sets, the possible cause of fault could be OSS(Output speed sensor).</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P07221"><font size="4"><b>DTC P0722 - Output Speed Sensor(OSS) Circuit No Signal</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the check completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Install the scan tool.</Li>
+									<Li>Turn the ignition ON and record then clear DTC(s), then turn the ignition OFF.</Li>
+									<Li>Raise and support the drive wheels, then start the engine.</Li>
+									<Li>Gear position is D and observe the output speed on the scan tool.</Li>
+								</OL>
+								<div>Is the speed within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>190~9,762rpm</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition LOCK.</Li>
+									<Li>Disconnect the transaxle wiring connector.</Li>
+									<Li>Measure the resistance between terminals 1 and 2 of the transaxle wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Remove the oil pan.</Li>
+									<Li>Disconnect the output speed sensor wiring connector.</Li>
+									<Li>Measure the resistance between terminal 1 of the output speed sensor wiring connector and terminal 1 of the transaxle wiring connector.</Li>
+									<Li>Measure the resistance between terminal 2 of the output speed sensor wiring connector and terminal 2 of the transaxle wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal 1.</Li>
+									<Li>Measure the voltage of terminal 2.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Replace the output speed sensor.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div class="p"></div>
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Disconnect the transaxle wiring connector and TCM connector.</Li>
+									<Li>Measure the resistance between terminal 1 of the transaxle wiring connector and terminal B10 of the TCM wiring connector.</Li>
+									<Li>Measure the resistance between terminal 2 of the transaxle wiring connector and terminal B5 of the TCM wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal 1.</Li>
+									<Li>Measure the voltage of terminal 2.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK			</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+<div>Replace the TCM.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>After the repair, use a scan tool "clear info" function and road test the vehicle.</Li>
+									<Li>Review the "DTC info".</Li>
+								</OL>
+								<div>Has the last test failed or is the current DTC
+displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Begin diagnosis
+again
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair verified
+exit DTC chart
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V4B15A05" src="../../../../graphic-pool/V/4B/1/V4B15A05.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B15A05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P0725"><font size="4"><b>Diagnostic Trouble Code(DTC) P0725 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0ESICM"><font size="4"><b>Engine Speed Input Circuit Malfunction</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD7"><b>Circuit Description</b></DIV>
+<P></P>
+			<div class="T1" align="left">The transaxle control module(TCM) is an electronic device which monitors inputs to control various transaxle functions including shift quality and transaxle sensors, switches, and components to process for use within its' control program. Based on this input information, the TCM controls various transaxle output functions and devices.</div>
+				<div class="T1" align="left">DTC's P0725, P0726 and P0727 are related to the same circuit. These DTC's will not illuminate the MIL, however, the DTC will be stored in memory.</div>
+				<div class="T1" align="left">Information transmit between TCM and ECM through the CAN line. information is as follows :</div>
+				<UL>
+<Li>Engine Malfunction Signal.</Li>
+					<Li>Engine Speed.</Li>
+					<Li>Engine Output Torque Reduction Signal.</Li>
+					<Li>Engine Coolant Temperature.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD7"><b>Conditions for Setting The DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The engine speed is greater than 7,000rpm.</Li>
+					<Li>System voltage is too high or too low.</Li>
+					<Li>CAN transmitting wiring harness shorted or open.</Li>
+					<Li>TCM or ECM is defective.</Li>
+					<Li>Immediately after the above condition occurs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD7"><b>Action Taken When The DTC Sets</b></DIV>
+<P></P>
+			<UL>
+<Li>No lamp control required but diagnostic information should be stored immediately when malfunction is detected.</Li>
+					<Li>Adopt Emergency/ Substitute mode and constant 4th gear.</Li>
+					<Li>Open lock up clutch.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD7"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The MIL will turn OFF when the malfunction has not occurred after three-ignition cycles.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm up cycles without a fault.</Li>
+					<Li>Using a scan tool can clear history DTCs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA7"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			<UL>
+<Li>Inspect the poor wiring harness connection for TCM connectors and transaxle wiring connectors.</Li>
+					<Li>Inspect the improperly formed or damaged terminals.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P07251"><font size="4"><b>DTC P0725 - Engine Speed Input Circuit Malfunction</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the check completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Install the scan tool.</Li>
+									<Li>Turn the ignition ON and record then clear DTC(s), then turn the ignition OFF.</Li>
+									<Li>Observe the engine speed on the scan tool.</Li>
+								</OL>
+								<div>Is the speed within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>Engine speed</div>
+							<div>0-7,000rpm</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the TCM wiring connector. And ECM wiring connector.</Li>
+									<Li>Measure the resistance between terminal A8 of the TCM wiring connector and terminal K14 of the ECM wiring connector.</Li>
+									<Li>Measure the resistance between terminal A16 of the TCM wiring connector and terminal K15 of the ECM wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal A8.</Li>
+									<Li>Measure the voltage of terminal A16.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Repair the short to power.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Inspect the "Engine Speed". Refer to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0SD">Section 1F, System Diagnosis.</A></I>
+								</div>
+								<div>Was a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Refer to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0SD">Section 1F, System Diagnosis.</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Replace the TCM.</Li>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Check if P0725 DTC is set.</Li>
+									<Li>Is The DTC set?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Replace the ECM.</Li>
+									<Li>Is the action complete?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>After the repair, use a scan tool "clear info" function and road test the vehicle.</Li>
+									<Li>Review the "DTC info".</Li>
+								</OL>
+								<div>Has the last test failed or is the current DTC displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Begin diagnosis
+again							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair verified
+exit DTC chart</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V4B15A05" src="../../../../graphic-pool/V/4B/1/V4B15A05.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B15A05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P0726"><font size="4"><b>Diagnostic Trouble Code(DTC) P0726 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0ESICR"><font size="4"><b>Engine Speed Input Circuit Range/Performance</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD8"><b>Circuit Description</b></DIV>
+<P></P>
+			<div class="T1" align="left">The transaxle control module(TCM) is an electronic device which monitors inputs to control various transaxle functions including shift quality and transaxle sensors, switches, and components to process for use within its' control program. Based on this input information, the TCM controls various transaxle output functions and devices.</div>
+				<div class="T1" align="left">DTC's P0725, P0726 and P0727 are related to the same circuit. These DTC's will not illuminate the MIL, however, the DTC will be stored in memory.</div>
+				<div class="T1" align="left">Information transmit between TCM and ECM through the CAN line. information is as follows :</div>
+				<UL>
+<Li>Engine Malfunction Signal.</Li>
+					<Li>Engine Speed.</Li>
+					<Li>Engine Output Torque Reduction Signal.</Li>
+					<Li>Engine Coolant Temperature.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD8"><b>Conditions for Setting The DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Gear position is D.</Li>
+					<Li>The engine speed is greater than 7,000rpm.</Li>
+					<Li>System voltage is greater than 8.5 volts.</Li>
+					<Li>Engine is running.</Li>
+					<Li>No engine speed error DTCs P0727, P0725.</Li>
+					<Li>CAN transmitting wiring harness shorted or open.</Li>
+					<Li>TCM or ECM is defective.</Li>
+					<Li>Immediately after the above condition occurs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD8"><b>Action Taken When The DTC Sets</b></DIV>
+<P></P>
+			<UL>
+<Li>Hold lamp will blink.</Li>
+					<Li>The TCM will record operating conditions at the time the diagnostic fails. This information will be stored in the Failure Records buffer.</Li>
+					<Li>Adopt Emergency/ Substitute mode and constant 4th gear.</Li>
+					<Li>Open lock up clutch.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD8"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>The hold lamp will turn OFF when the malfunction has not occurred after three-ignition cycles.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm up cycles without a fault.</Li>
+					<Li>Using a scan tool can clear history DTCs.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P07261"><font size="4"><b>DTC P0726 - Engine Speed Input Circuit Range/Performance</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Is the check completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0ODSC">"On-Board Diagnostic System Check"</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Install the scan tool.</Li>
+									<Li>Turn the ignition ON and record then clear DTC(s), then turn the ignition OFF.</Li>
+									<Li>Observe the engine speed on the scan tool.</Li>
+								</OL>
+								<div>Is the speed within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>Engine speed</div>
+							<div>0-7,000rpm</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0DA">"Diagnostic Aids"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the TCM wiring connector and ECM wiring connector.</Li>
+									<Li>Measure the resistance between terminal A8 of the TCM wiring connector and terminal K14 of the ECM wiring connector.</Li>
+									<Li>Measure the resistance between terminal A16 of the TCM wiring connector and terminal K15 of the ECM wiring connector.</Li>
+								</OL>
+								<div>Is the resistance within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈0Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Repair the malfunctioning terminals as necessary.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Turn the ignition ON.</Li>
+									<Li>Measure the voltage of terminal A8.</Li>
+									<Li>Measure the voltage of terminal A16.</Li>
+								</OL>
+								<div>Is the voltage within the values shown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Repair the short to power.</div>
+								<div>Is the action complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>System OK
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Inspect the "Engine Speed". Refer to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0SD">Section 1F, System Diagnosis.</A></I>
+								</div>
+								<div>Was a problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Refer to   <I><A target="_blank" href="5V2_1F02.en.html#V1F0SD">Section 1F, System Diagnosis.</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Replace the TCM.</Li>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Check if P0726 DTC is set.</Li>
+									<Li>Is The DTC set?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Replace the ECM.</Li>
+									<Li>Is the action complete?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>After the repair, use a scan tool "clear info" function and road test the vehicle.</Li>
+									<Li>Review the "DTC info".</Li>
+								</OL>
+								<div>Has the last test failed or is the current DTC displayed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Begin diagnosis
+again							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Repair verified
+exit DTC chart</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="5V2_5A02.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="5V2_5A04.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Daewoo Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

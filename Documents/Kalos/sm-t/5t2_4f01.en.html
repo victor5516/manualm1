@@ -1,0 +1,4548 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2005 KALOS C1101 Battery Voltage Too High</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="5T2_4F01.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">KALOS</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="5T2_4F0.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="5T2_4F02.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_KALOS.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_KALOS_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	
+		<P></P>
+<DIV align="center" id="T4F0C1101"><font size="4"><b>C1101 Battery Voltage Too High </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="T4B34F46" src="../../../../graphic-pool/T/4B/3/T4B34F46.png"><BR><A target="_blank" href="../../../../graphic-pool/T/4B/3/T4B34F46.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CD"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">This circuit is used to monitor the voltage level available to the HECU. If the voltage rises above a certain level, damage to the system may occur.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CSD"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">DTC C1101 can only be set if the vehicles speed is greater than 8kph (5mph), if the voltage supplied to terminals 9 and/or 25 is greater than 17 volts for 1 second.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0ATWDS"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The solenoid relay opens, removing voltage from the solenoids and pump motor. </Li>
+					<Li>DTC C1101 is stored.</Li>
+					<Li>ABS disabled, ABS Warning Lamp turns on.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CCD"><b>Conditions for Clearing the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>If the conditions that set DTC C1101 is no longer present, the DTC may be cleared by using the proper scan tool.</Li>
+					<Li>The DTC that has not occurred in 100 drive cycles will be cleared from history data.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0DA"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Typical causes for DTC C1101 to set.</div>
+				<OL>
+					<Li>Charging system malfunction.</Li>
+					<Li>Poor connection.</Li>
+					<Li>HECU malfunction.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T4F0C11011"><font size="4"><b>C1101 Battery Voltage Too High</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Was the Diagnostic Circuit Check Completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic Circuit Check. </div>
+								<div>Did you find any problem?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the HECU connector.</Li>
+									<Li>Ignition switch "ON".</Li>
+									<Li>Check the voltage between the terminal 4 and 8 of the HECU connector.</Li>
+									<Li>Check the voltage between the terminal 4 and 24 of the HECU connector.</Li>
+								</OL>
+								<div>Were the voltages within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>9.4~17V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the HECU.</div>
+								<div>Check again the dDiagnostic circuit. Did you find any problem?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 1</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the battery voltae between the terminal (+) and (-) of the battery.</div>
+								<div>Was the voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>9.4~17V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the Battery.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 1</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the resistance between the terminal 4 of the HECU connector and the terminal (+) of the battery.</div>
+								<div>Was the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>less than 1 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Check the both terminals mentioned step 7.</Li>
+									<Li>Repair the terminals, as needed.</Li>
+									<Li>Check the HECU connector and wiring harness.</Li>
+									<Li>Repair or replace the wiring harness, as needed.</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the resistance between the terminal 8, 24 and G104.</div>
+								<div>Was the resistance specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>less than 1 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair or replace the HECU connector or G104.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 1</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Connect a voltmeter to the positive and negative terminal of the battery.</Li>
+									<Li>Turn OFF all accessories.</Li>
+									<Li>Start the engine.</Li>
+									<Li>Monitor the voltage on the meter with the engine running at 2000 rpm for several seconds.</Li>
+									<Li>And also check the voltage between the terminal 4 and 8. And also check the voltage between the terminal 4 and 24. For all the volts in the step 11.</Li>
+								</OL>
+								<div>Was the within specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>less than 17V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 1</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the Alternator.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 1</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="T4F0C1102"><font size="4"><b>C1102 Battery Voltage Too Low </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="T4B34F46" src="../../../../graphic-pool/T/4B/3/T4B34F46.png"><BR><A target="_blank" href="../../../../graphic-pool/T/4B/3/T4B34F46.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CD1"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">This circuit is used to monitor the voltage level available to the HECU. If the voltage drops below a certain level, full performance of the system cannot be guaranteed. During ABS operation, there are several current requirements that will cause battery voltage to drop. Because of this, voltage is monitored prior to ABS operation to indicate good charging system condition and also during ABS operation when voltage may drop significantly.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CSD1"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">C1102 can only be set if the vehicles speed is greater than 8kph (5mph), if the ignition voltage to terminal 4 and battery voltage to terminal 9 and 25 are less than 10.5 volts during non ABS or initialization. The DTC will also set if the ignition voltage is below 10.5 volts and the battery voltage is below 9.0 volts during ABS.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0ATWDS1"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The solenoid relay opens, removing voltage from the solenoids and pump motor. </Li>
+					<Li>DTC C1102 is stored.</Li>
+					<Li>ABS disabled, ABS Warning Lamp turns on.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CCD1"><b>Conditions for Clearing the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>If the conditions that set DTC C1102 are no longer present, the DTC may be cleared by using the proper scan tool.</Li>
+					<Li>The DTC that has not occurred in 100 drive cycles will be cleared from history data.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0DA2"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Typical causes for DTC C1102 to set.</div>
+				<OL>
+					<Li>Weak or discharged battery.</Li>
+					<Li>Poor battery terminal contact.</Li>
+					<Li>Excessive battery draws from factory or after-market equipment (parasitic load).</Li>
+					<Li>Poor battery ground at block or chassis.</Li>
+					<Li>Poor terminal contact at HECU.</Li>
+					<Li>Poor HECU ground connection.</Li>
+					<Li>Charging system malfunction (generator).</Li>
+				</OL>
+				<UL>
+<Li>Thoroughly inspect the wiring and the connectors. Failure to inspect the wiring and the connectors carefully and fully can cause replacement of parts without repairing the malfunction. </Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T4F0C11021"><font size="4"><b>C1102 Battery Voltage Too Low</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Was the Diagnostic Circuit Check Completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic Circuit Check. </div>
+								<div>Did you find any problem?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the HECU connector.</Li>
+									<Li>Ignition switch "ON".</Li>
+									<Li>Check the voltage between the terminal 4 and 8 of the HECU connector.</Li>
+									<Li>Check the voltage between the terminal 4 and 24 of the HECU connector.</Li>
+								</OL>
+								<div>Were the voltages within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>9.4~17V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the HECU.</div>
+								<div>Check again the dDiagnostic circuit. Did you find any problem?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 1</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the battery voltae between the terminal (+) and (-) of the battery.</div>
+								<div>Was the voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>9.4~17V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the Battery.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 1</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the resistance between the terminal 4 of the HECU connector and the terminal (+) of the battery.</div>
+								<div>Was the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>less than 1 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Check the both terminals mentioned step 7.</Li>
+									<Li>Repair the terminals, as needed.</Li>
+									<Li>Check the HECU connector and wiring harness.</Li>
+									<Li>Repair or replace the wiring harness, as needed.</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the resistance between the terminal 8, 24 and G104.</div>
+								<div>Was the resistance specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>less than 1 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair or replace the HECU connector or G104.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 1</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Connect a voltmeter to the positive and negative terminal of the battery.</Li>
+									<Li>Turn OFF all accessories.</Li>
+									<Li>Start the engine.</Li>
+									<Li>Monitor the voltage on the meter with the enginer running at 2000 rpm for several seconds.</Li>
+									<Li>And also check the voltage between the terminal 4 and 8. And also check the voltage between the terminal 4 and 24. For all the volts int he step 11.</Li>
+								</OL>
+								<div>Was the within specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>less than 17V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 1</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the Alternator.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 1</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="T4F0C1200"><font size="4"><b>C1200 Left Front Wheel Speed Sensor Circuit Open or Shorted </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="T4B34F55" src="../../../../graphic-pool/T/4B/3/T4B34F55.png"><BR><A target="_blank" href="../../../../graphic-pool/T/4B/3/T4B34F55.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CD2"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">As the wheel is rotated, the speed sensor produces an AC voltage that increases with wheel speed. The HECU uses the frequency of the AC signal to calculate wheel speed.  The speed sensor is connected to the HECU by a "twisted pair" of wires. Twisting reduces noise susceptibility that may cause a DTC to set.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CSD2"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">DTC C1200 can be set anytime the key is on and the HECU has detected an open, short to ground or a short to battery on the left front wheel speed circuit.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0ATWDS2"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The solenoid relay opens, removing power to the pump motor and solenoids.</Li>
+					<Li>DTC C1200 is stored.</Li>
+					<Li>ABS disabled, ABS Warning Lamp turns on.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CCD2"><b>Conditions for Clearing the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>If the conditions that set DTC C1200 are no longer present, the DTC may be cleared by using the proper scan tool.</Li>
+					<Li>The DTC that has not occurred in 100 drive cycles will be cleared from history data.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0DA02"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Thoroughly inspect the wiring and connectors when diagnosing intermittent DTC(s). This will include the following.</div>
+				<UL>
+					<Li>Removal of the protective conduit and inspection for wiring for damage, shorts and contamination.</Li>
+					<Li>Inspection for improperly formed and/or damaged terminals.</Li>
+					<Li>Checking terminal contact (retention force) by using a spare male/female terminal.</Li>
+					<Li>Removal of the terminals from the connectors to check for proper terminal to wire crimp.</Li>
+				</UL>
+				<div class="T1" align="left">If the drivers comments reflect that the ABS Warning Lamp is on only during moist environmental changes (rain, snow, vehicle wash), all wheel speed sensor circuitry should be thoroughly inspected for signs of water intrusion. If the DTC is not current, simulate the effects of water intrusion. Use the following procedure. Spray the suspected area with a 5 percent salt-water solution. Then test-drive the vehicle over various road surfaces such as (bumps, turns, etc) above 24 kph (15 mph). If the DTC sets then replace the suspected harness and or sensor. </div>
+				<div class="T1" align="left">When measuring wheel speed sensor resistance insure the vehicle is at room temperature, since resistance will increase with temperature</div>
+				<div class="T1" align="left">Failure to perform the previous steps carefully and fully can result in misdiagnosis, unnecessary component replacement and reoccurrence of DTC C1200.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T4F0C12001"><font size="4"><b>C1200 Left Front Wheel Speed Sensor Circuit Open or Shorted</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Was the diagnostic circuit check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic Circuit Check. </div>
+								<div>Did you find problem?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Ignition switch "OFF".</Li>
+									<Li>Inspect the left front wheel speed sensor, jumper harness and the toothed ring for physical damage.</Li>
+								</OL>
+								<div>Is any physical damage noted?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the damage to the left front wheel speed sensor, jumper harness and/or toothed ring.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test-drive vehicle at various speeds and over various road surfaces.</div>
+								<div>Did C1200 reset?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%"> - </TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>DTC C1200 is intermittent. Refer to Diagnostic Aids.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Ignition switch "OFF", vehicle in park.</Li>
+									<Li>Raise and suitably support the vehicle.</Li>
+									<Li>Disconnect the left front jumper harness from the Left Front Wheel Speed Sensor.</Li>
+									<Li>Connect an ohmmeter to terminals 2 and 1 of the Left Front Wheel Speed Sensor.</Li>
+								</OL>
+								<div>Is the resistance with in specified range?.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800-1600 Ohms (Resistance will vary with temperature)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the left front wheel speed sensor.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Left front jumper harness still disconnected from the speed sensor.</Li>
+									<Li>Connect an ohmmeter to terminal 2 of the left front wheel speed sensor and then to body ground.</Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the HECU harness from the HECU.</Li>
+									<Li>Disconnect the left front jumper harness from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 20 and then the left front wheel speed sensor terminal 2.</Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance between terminals 20 and 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Left front jumper harness still disconnected from the ABS body harness.
+</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 19 and then to left front wheel speed sensor terminal 1.</Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance between terminals 19 and 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14
+</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Left front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect a voltmeter to HECU harness terminal 20 and then to body ground.</Li>
+								</OL>
+								<div>Is the voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than 1volt</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the source open or high resistance between terminals 20 and 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Left front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect a voltmeter to HECU harness terminal 19 and then to body ground.</Li>
+								</OL>
+								<div>Is the voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than 1volt</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to voltage between terminals 19 and 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Left front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 20 and then to body ground.</Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to ground between terminals 20 and 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Left front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 19 and then to body ground.</Li>
+									<Li>Left front jumper harness still disconnected from the ABS body harness. Connect an ohmmeter to HECU harness terminal 19 and then to body ground. Is the resistance within the specified range?</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 22</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 21</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">21</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to ground between terminals 19 and 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">22</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 19 and 20.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 24</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 23</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">23</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short between the 2 circuits.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">24</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the Left Front Wheel Speed Sensor Jumper Harness.</Li>
+									<Li>Test-drive the vehicle at various speeds and various road surfaces.</Li>
+									<Li>
+								</OL>
+								<div>Did C1200 reset?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 25</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">25</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="T4F0C1201"><font size="4"><b>C1201 Left Front Wheel Speed Excessive Variation </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="T4B34F55" src="../../../../graphic-pool/T/4B/3/T4B34F55.png"><BR><A target="_blank" href="../../../../graphic-pool/T/4B/3/T4B34F55.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CD3"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">As the wheel is rotated, the speed sensor produces an AC voltage that increases with wheel speed. The HECU uses the frequency of the AC signal to calculate wheel speed.  The speed sensor is connected to the HECU by a "twisted pair" of wires. Twisting reduces noise susceptibility that may cause a DTC to set.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CSD3"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">All of the following must be true for C1201 to set.</div>
+				<UL>
+					<Li>C1200 or C1203 or C1206 or C1209 not current.</Li>
+					<Li>Brake switch off.</Li>
+					<Li>The left front wheel speed is accelerating or decelerating beyond reasonable limits.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0ATWDS3"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The solenoid relay opens, removing power from the pump motor and solenoids.</Li>
+					<Li>DTC C1201 is stored.</Li>
+					<Li>ABS disabled, ABS Warning Lamp turns on.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CCD3"><b>Conditions for Clearing the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>If the conditions that set DTC C1201 are no longer present, the DTC may be cleared by using the proper scan tool.</Li>
+					<Li>The DTC that has not occurred in 100 drive cycles will be cleared from history data.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0DA3"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Thoroughly inspect the wiring and connectors when diagnosing intermittent DTC(s).  This will include the following.</div>
+				<UL>
+					<Li>Removal of the protective conduit and inspection for wiring for damage, shorts and contamination.</Li>
+					<Li>Inspection for improperly formed and/or damaged terminals.</Li>
+					<Li>Checking terminal contact (retention force) by using a spare male/female terminal.</Li>
+					<Li>Removal of the terminals from the connectors to check for proper terminal to wire crimp.</Li>
+				</UL>
+				<div class="T1" align="left">If the drivers comments reflect that the ABS Warning Lamp is on only during moist environmental changes (rain, snow, vehicle wash), all wheel speed sensor circuitry should be thoroughly inspected for signs of water intrusion. If the DTC is not current, simulate the effects of water intrusion. Use the following procedure. Spray the suspected area with a 5 percent salt-water solution. Then test-drive the vehicle over various road surfaces such as (bumps, turns, etc) above 24 kph (15 mph). If the DTC sets then replace the suspected harness and/or sensor. </div>
+				<div class="T1" align="left">A careful visual inspection of the toothed ring for damaged such as cracks and tooth damage should be performed. If the DTC sets at the same speed every drive cycle, the toothed ring is most likely damaged.</div>
+				<div class="T1" align="left">Failure to perform the previous steps carefully and fully can result in misdiagnosis, unnecessary component replacement and reoccurrence of DTC C1201.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T4F0C12011"><font size="4"><b>C1201 Left Front Wheel Speed Excessive Variation</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Was the Diagnostic Circuit Check Completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic Circuit Check prior to performing DTC C1201 trouble chart.</div>
+								<div>Did you find problem?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Was C1200 set as a current or history DTC?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform C1200 diagnostic chart prior to performing DTC C1201 trouble chart.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Ignition switch "OFF".</Li>
+									<Li>Inspect the left front wheel speed sensor and the jumper harness for damage.</Li>
+									<Li>Perform a complete and thorough inspection of the left front toothed ring for damage. (cracks, missing teeth, looseness)</Li>
+								</OL>
+								<div>Is any physical damage noted?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the damage to the left front wheel speed sensor, jumper harness and/or the toothed ring.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Vehicle in park.</Li>
+									<Li>Connect a Scan Tool and select data list.</Li>
+									<Li>Monitor the wheel speed sensors.</Li>
+									<Li>Start the vehicle, and monitor wheel speed sensors with engine running but vehicle not moving. </Li>
+									<Li>Lightly depress the accelerator pedal to increase engine idle speed. </Li>
+								</OL>
+								<div>Did C1201 reset or did the left front wheel speed read above 0 mph when the vehicle was in park with the engine running.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>The cause of C1201 is ignition noise coupled onto the Left Front Speed Sensor circuits.</div>
+								<div>Inspect the routing of the left front ABS body harness and/or jumper harness for potential ignition noise sources such as spark plug wires. Reroute wiring as needed.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Scan tool still connected.</Li>
+									<Li>Monitor the wheel speed sensors.</Li>
+									<Li>Test-drives the vehicle up to the maximum-posted speed limit, and slowly decelerates to zero. Do this several times.</Li>
+								</OL>
+								<div>Did C1201 reset or did the left front wheel speed vary more than 5 kph (3 mph) when compared to any one of the other wheels during the drive?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>DTC C1201 is intermittent, refer to Diagnostic Aids.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Vehicle in park, Ignition switch "OFF".</Li>
+									<Li>Raise and suitably support the vehicle. </Li>
+									<Li>Disconnect the left front jumper harness from the Left Front Wheel Speed sensor.</Li>
+									<Li>Connect an ohmmeter to terminals 2 and 1 of the Left Front Wheel Speed sensor. </Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800-1600 Ohms (Resistance will vary with temperature)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the left front wheel speed sensor.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Speed sensor still disconnected from the jumper harness.</Li>
+									<Li>Connect a voltmeter to terminals 2 and 1 of the left front speed sensor.</Li>
+									<Li>Select the AC milli-volt scale.</Li>
+									<Li>Spin the left front wheel while observing the voltage on the meter.</Li>
+								</OL>
+								<div>Is the AC voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>At least 100mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14
+</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the HECU harness from the HECU.</Li>
+									<Li>Disconnect the left front jumper harness from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 20 and then to ABS body harness terminal 2.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the source open or high resistance between terminals 20 and 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Jumper harness still disconnected from the body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 19 and then to ABS body harness terminal 1.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance between terminals 19 and 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Jumper harness still disconnected from the body harness.</Li>
+									<Li>Connect an ohmmeter between HECU harness terminals 20 and 19.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short between the 2 wires.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the left front jumper harness.</Li>
+									<Li>Test-drive the vehicle at various speeds and road surfaces.</Li>
+								</OL>
+								<div>Did C1201 reset?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">21</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="T4F0C1202"><font size="4"><b>C1202 Left Front Wheel Speed Sensor No Signal </b></font></DIV>
+<P></P>
+		
+			<BR><IMG alt="T4B34F55" src="../../../../graphic-pool/T/4B/3/T4B34F55.png"><BR><A target="_blank" href="../../../../graphic-pool/T/4B/3/T4B34F55.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CD4"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">As the wheel is rotated, the speed sensor produces an AC voltage that increases with wheel speed. The HECU uses the frequency of the AC signal to calculate wheel speed.  The speed sensor is connected to the HECU by a "twisted pair"of wires. Twisting reduces noise susceptibility that may cause a DTC to set.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CSD4"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">All of the following must be true for C1202 to set.</div>
+				<UL>
+					<Li>C1200 or C1203 or C1206 or C1209 not current</Li>
+					<Li>ABS not active.</Li>
+					<Li>Brake switch off.</Li>
+				</UL>
+				<div class="T1" align="left">The left front wheel speed equals 0, and all of the remaining Wheel Speed Sensors are greater than 8 km/hr (5 mph) for at least 2.5 seconds.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0ATWDS4"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The solenoid relay opens, removing power from the pump motor and solenoids.</Li>
+					<Li>DTC C1202 is stored.</Li>
+					<Li>ABS disabled, ABS Warning Lamp turns on.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CCD4"><b>Conditions for Clearing the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>If the conditions that set DTC C1202 are no longer present, the DTC may be cleared by using the proper scan tool.</Li>
+					<Li>The DTC that has not occurred in 100 drive cycles will be cleared from history data.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0DA4"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Thoroughly inspect the wiring and connectors when diagnosing intermittent DTC(s).  This will include the following.</div>
+				<UL>
+					<Li>Removal of the protective conduit and inspection of wiring for damage, shorts and contamination.</Li>
+					<Li>Inspection for improperly formed and/or damaged terminals.</Li>
+					<Li>Checking terminal contact (retention force) by using a spare male/female terminal.</Li>
+					<Li>Removal of the terminals from the connectors to check for proper terminal to wire crimp.</Li>
+				</UL>
+				<div class="T1" align="left">If the drivers comments reflect that the ABS warning lamp is on only during moist environmental changes (rain, snow, vehicle wash), all wheel speed sensor circuitry should be thoroughly inspected for signs of water intrusion. If the DTC is not current, simulate the effects of water intrusion. Use the following procedure. Spray the suspected area with a 5 percent salt-water solution. Then test-drive the vehicle over various road surfaces such as (bumps, turns, etc) above 24 kph (15 mph). If the DTC sets then replace the suspected harness and/or sensor.</div>
+				<div class="T1" align="left">When measuring wheel speed sensor resistance insures the vehicle is at room temperature, since resistance will increase with temperature.</div>
+				<div class="T1" align="left">Failure to perform the previous steps carefully and fully can result in misdiagnosis, unnecessary component replacement and reoccurrence of DTC C1202.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T4F0C12021"><font size="4"><b>C1202 Left Front Wheel Speed Sensor No Signal</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Was the Diagnostic Circuit Check Completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic Circuit Check prior to performing this trouble tree.</div>
+								<div>Did you find problem?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Ignition switch "OFF".</Li>
+									<Li>Inspect the left front wheel speed sensor, jumper harness and toothed ring for physical damage.</Li>
+								</OL>
+								<div>Is any physical damage noted?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the damage to the left front wheel speed sensor, jumper harness and/or toothed ring.</div>
+								<div>Check the Airgap.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0.2~0.8mm</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Was DTC C1200 set as a current or history code?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform diagnostics for DTC C1200 prior to performing this table.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect a Scan Tool and select data list.</Li>
+									<Li>Monitor the wheel speed sensors.</Li>
+									<Li>Test-drives vehicle above 24 kph (15 mph) and slowly decelerates to zero, do this several times.</Li>
+								</OL>
+								<div>Did C1202 reset or did the left front wheel speed suddenly drop to zero prior to the vehicle coming to a complete stop?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>DTC C1202 is intermittent. Refer to diagnostic aids.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Ignition switch "OFF".</Li>
+									<Li>Raise and suitably support the vehicle.</Li>
+									<Li>Disconnect the HECU harness from the HECU.</Li>
+									<Li>Connect a voltmeter to HECU harness terminals 19 and 20.</Li>
+									<Li>Select the AC mill volt scale.</Li>
+									<Li>Spin the left front wheel while observing the voltmeter. (voltage should increase as wheel speed increases)</Li>
+								</OL>
+								<div>Is the AC voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>At least 100mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the left front jumper harness from the Left Front Wheel Speed Sensor.</Li>
+									<Li>Connect an ohmmeter to terminals 2 and 1 of the Left Front Wheel Speed Sensor.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800-1600 Ohms (Resistance will vary with temperature)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the left front wheel speed sensor.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Left front jumper harness still disconnected from the left front speed sensor.</Li>
+									<Li>Connect a voltmeter to terminals 2 and 1 of the left front wheel speed sensor.</Li>
+									<Li>Select the AC mill volt scale.</Li>
+									<Li>Spin the left front wheel while observing the voltmeter. (voltage should increase as wheel speed increases)</Li>
+								</OL>
+								<div>Is the AC voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>At least 100mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14
+</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the left front jumper harness from the ABS body harness.</Li>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminals 19 and 20.</Li>
+								</OL>
+								<div>Is the Resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Find and repair the short between the 2 circuits.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Left front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 20 and then to ABS body harness terminal 2.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance between terminals 20 and 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Left front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 19 and then to ABS body harness terminal 1.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance between terminal 19 and 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the left front wheel speed jumper harness.</Li>
+									<Li>Test-drive the vehicle at various speeds and road surfaces.</Li>
+								</OL>
+								<div>Did C1202 reset?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="T4F0C1203"><font size="4"><b>C1203 Right Front Wheel Speed Sensor Circuit Open or Shorted </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="T4B34F56" src="../../../../graphic-pool/T/4B/3/T4B34F56.png"><BR><A target="_blank" href="../../../../graphic-pool/T/4B/3/T4B34F56.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CD5"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">As the wheel is rotated, the speed sensor produces an AC voltage that increases with wheel speed. The HECU uses the frequency of the AC signal to calculate wheel speed.  The speed sensor is connected to the HECU by a "twisted pair" of wires. Twisting reduces noise susceptibility that may cause a DTC to set.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CSD5"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">DTC C1203 can be set anytime the key is on and the HECU has detected an open, short to ground or a short to battery on the right front wheel speed circuit.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0ATWDS5"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The solenoid relay opens, removing power to the pump motor and solenoids.</Li>
+					<Li>DTC C1203 is stored.</Li>
+					<Li>ABS disabled, ABS Warning Lamp turns on.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CCD5"><b>Conditions for Clearing the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>If the conditions that set DTC C1203 are no longer present, the DTC may be cleared by using the proper scan tool.</Li>
+					<Li>The DTC that has not occurred in 100 drive cycles will be cleared from history data.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0DA5"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Thoroughly inspect the wiring and connectors when diagnosing intermittent DTC(s). This will include the following.</div>
+				<UL>
+					<Li>Removal of the protective conduit and inspection for wiring for damage, shorts and contamination.</Li>
+					<Li>Inspection for improperly formed and/or damaged terminals.</Li>
+					<Li>Checking terminal contact (retention force) by using a spare male/female terminal.</Li>
+					<Li>Removal of the terminals from the connectors to check for proper terminal to wire crimp.</Li>
+				</UL>
+				<div class="T1" align="left">If the drivers comments reflect that the ABS Warning Lamp is on only during moist environmental changes (rain, snow, vehicle wash), all wheel speed sensor circuitry should be thoroughly inspected for signs of water intrusion. If the DTC is not current, simulate the effects of water intrusion. Use the following procedure. Spray the suspected area with a 5 percent salt-water solution. Then test-drive the vehicle over various road surfaces such as (bumps, turns, etc) above 24 kph (15 mph). If the DTC sets then replace the suspected harness and or sensor. </div>
+				<div class="T1" align="left">When measuring wheel speed sensor resistance insure the vehicle is at room temperature, since resistance will increase with temperature.</div>
+				<div class="T1" align="left">Failure to perform the previous steps carefully and fully can result in misdiagnosis, unnecessary component replacement and reoccurrence of DTC C1203.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T4F0C12031"><font size="4"><b>C1203 Right Front Wheel Speed Sensor Circuit Open or Shorted</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Was the diagnostic circuit check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic Circuit Check. </div>
+								<div>Did you find problem?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Ignition switch "OFF".</Li>
+									<Li>Inspect the right front wheel speed sensor, jumper harness and the toothed ring for physical damage.</Li>
+								</OL>
+								<div>Is any physical damage noted?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the damage to the right front wheel speed sensor, jumper harness and/or toothed ring.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test-drive vehicle at various speeds and over various road surfaces.</div>
+								<div>Did C1203 reset?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>DTC C1203 is intermittent. Refer to Diagnostic Aids.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Ignition switch "OFF". vehicle in park.</Li>
+									<Li>Raise and suitably support the vehicle.</Li>
+									<Li>Disconnect the right front jumper harness from the Right Front Wheel Speed Sensor.</Li>
+									<Li>Connect an ohmmeter to terminals 2 and 1 of the Right Front Wheel Speed Sensor.</Li>
+								</OL>
+								<div>Is the resistance with in specified range?.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800-1600 Ohms (Resistance will vary with temperature)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the right front wheel speed sensor. </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Right front jumper harness still disconnected from the speed sensor.</Li>
+									<Li>Connect an ohmmeter to terminal 1 of the right front wheel speed sensor and then to body ground.</Li>
+									<Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the HECU harness from the HECU.</Li>
+									<Li>Disconnect the right front jumper harness from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 2 and then the ABS body harness terminal 1.</Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance between terminals 2 and 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Right front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 1 and then to ABS body harness terminal 2.</Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance between terminals 1 and 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14
+</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Right front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect a voltmeter to HECU harness terminal 2 and then to body ground.</Li>
+								</OL>
+								<div>Is the voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than 1volt</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to voltage between terminals 2 and 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Right front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect a voltmeter to HECU harness terminal 1 and then to body ground.</Li>
+								</OL>
+								<div>Is the voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than 1volt</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to voltage between terminals 1 and 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Right front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 2 and then to body ground.</Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to ground between terminals 2 and 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Right front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 1 and then to body ground. Left front jumper harness still disconnected from the ABS body harness. Connect an ohmmeter to HECU harness terminal 1 and then to body ground. Is the resistance within the specified range?</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 22</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 21</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">21</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to ground between terminals 1 and 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">22</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Right front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 1 and 2.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 24</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 23</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">23</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short between the 2 circuits.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">24</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the Right Front Wheel Speed Sensor Jumper Harness.</Li>
+									<Li>Test-drive the vehicle at various speeds and various road surfaces.</Li>
+									<Li>
+								</OL>
+								<div>Did C1203 reset?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%"> - </TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 25</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">25</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="T4F0C1204"><font size="4"><b>C1204 Right Front Wheel Speed Excessive Variation </b></font></DIV>
+<P></P>
+		
+			<BR><IMG alt="T4B34F56" src="../../../../graphic-pool/T/4B/3/T4B34F56.png"><BR><A target="_blank" href="../../../../graphic-pool/T/4B/3/T4B34F56.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CD6"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">As the wheel is rotated, the speed sensor produces an AC voltage that increases with wheel speed. The HECU uses the frequency of the AC signal to calculate wheel speed.  The speed sensor is connected to the HECU by a "twisted pair" of wires. Twisting reduces noise susceptibility that may cause a DTC to set.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CSD6"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">All of the following must be true for C1204 to set.</div>
+				<UL>
+					<Li>C1200 or C1203 or C1206 or C1209 not current.</Li>
+					<Li>Brake switch off.</Li>
+					<Li>The right front wheel speed is accelerating or decelerating beyond reasonable limits.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0ATWDS6"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The solenoid relay opens, removing power from the pump motor and solenoids.</Li>
+					<Li>DTC C1204 is stored.</Li>
+					<Li>ABS disabled, ABS Warning Lamp turns on.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CCD6"><b>Conditions for Clearing the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>If the conditions that set DTC C1204 are no longer present, the DTC may be cleared by using the proper scan tool.</Li>
+					<Li>The DTC that has not occurred in 100 drive cycles will be cleared from history data.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0DA6"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Thoroughly inspect the wiring and connectors when diagnosing intermittent DTC(s). This will include the following.</div>
+				<UL>
+					<Li>Removal of the protective conduit and inspection for wiring for damage, shorts and contamination.</Li>
+					<Li>Inspection for improperly formed and/or damaged terminals.</Li>
+					<Li>Checking terminal contact (retention force) by using a spare male/female terminal.</Li>
+					<Li>Removal of the terminals from the connectors to check for proper terminal to wire crimp.</Li>
+				</UL>
+				<div class="T1" align="left">If the drivers comments reflect that the ABS Warning Lamp is on only during moist environmental changes (rain, snow, vehicle wash), all wheel speed sensor circuitry should be thoroughly inspected for signs of water intrusion. If the DTC is not current, simulate the effects of water intrusion. Use the following procedure. Spray the suspected area with a 5 percent salt-water solution. Then test-drive the vehicle over various road surfaces such as (bumps, turns, etc) above 24 kph (15 mph). If the DTC sets then replace the suspected harness and/or sensor. </div>
+				<div class="T1" align="left">A careful visual inspection of the toothed ring for damaged such as cracks and tooth damage should be performed. If the DTC sets at the same speed every drive cycle, the toothed ring is most likely damaged.</div>
+				<div class="T1" align="left">Failure to perform the previous steps carefully and fully can result in misdiagnosis, unnecessary component replacement and reoccurrence of DTC C1204.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T4F0C12041"><font size="4"><b>C1204 Right Front Wheel Speed Excessive Variation</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Was the Diagnostic Circuit Check Completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic Circuit Check prior to performing DTC C1204 trouble chart.</div>
+								<div>Did you find problem?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Was C1203 set as a current or history DTC?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform C1203 diagnostic chart prior to performing DTC C1204 trouble chart.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Ignition switch "OFF".</Li>
+									<Li>Ispect the right front wheel speed sensor and the jumper harness for damage.</Li>
+									<Li>Perform a complete and thorough inspection of the right front toothed ring for damage. (cracks, missing teeth, looseness)</Li>
+								</OL>
+								<div>Is any physical damage noted?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the damage to the right front wheel speed sensor, jumper harness and/or the toothed ring.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Vehicle in park.</Li>
+									<Li>Connect a Scan Tool and select data list.</Li>
+									<Li>Monitor the wheel speed sensors.</Li>
+									<Li>Start the vehicle, and monitor wheel speed sensors with engine running but vehicle not moving. </Li>
+									<Li>Lightly depress the accelerator pedal to increase engine idle speed. </Li>
+								</OL>
+								<div>Did C1204 reset or did the right front wheel speed read above 0 mph when the vehicle was in park with the engine running.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>The cause of C1204 is ignition noise coupled onto the Right Front Speed Sensor circuits.</div>
+								<div>Inspect the routing of the right front ABS body harness and/or jumper harness for potential ignition noise sources such as spark plug wires. Reroute wiring as needed.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Scan tool still connected.</Li>
+									<Li>Monitor the wheel speed sensors.</Li>
+									<Li>Test-drives the vehicle up to the maximum-posted speed limit, and slowly decelerates to zero. Do this several times.</Li>
+								</OL>
+								<div>Did C1204 reset or did the right front wheel speed vary more than 5 kph (3 mph) when compared to any one of the other wheels during the drive?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>DTC C1204 is intermittent, refer to Diagnostic Aids.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Vehicle in park, Ignition switch "OFF".</Li>
+									<Li>Raise and suitably support the vehicle. </Li>
+									<Li>Disconnect the right front jumper harness from the Right Front Wheel Speed sensor.</Li>
+									<Li>Connect an ohmmeter to terminals 2 and 1 of the Right Front Wheel Speed sensor. </Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800-1600 Ohms (Resistance will vary with temperature)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the right front wheel speed sensor.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Speed sensor still disconnected from the jumper harness.</Li>
+									<Li>Connect a voltmeter to terminals 2 and 1 of the right front speed sensor.</Li>
+									<Li>Select the AC milli-volt scale.</Li>
+									<Li>Spin the right front wheel while observing the voltage on the meter.</Li>
+								</OL>
+								<div>Is the AC voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>At least 100mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14
+</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the HECU harness from the HECU.</Li>
+									<Li>Disconnect the right front jumper harness from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 2 and then to ABS body harness terminal 1.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the source open or high resistance between terminals 2 and 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Jumper harness still disconnected from the body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 1 and then to ABS body harness terminal 2.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance between terminals 1 and 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Jumper harness still disconnected from the body harness.</Li>
+									<Li>Connect an ohmmeter between HECU harness terminals 1 and 2.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short between the 2 wires.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the right front jumper harness.</Li>
+									<Li>Test-drive the vehicle at various speeds and road surfaces.</Li>
+								</OL>
+								<div>Did C1204 reset?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">21</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="T4F0C1205"><font size="4"><b>C1205 Right Front Wheel Speed Sensor No Signal </b></font></DIV>
+<P></P>
+		
+			<BR><IMG alt="T4B34F56" src="../../../../graphic-pool/T/4B/3/T4B34F56.png"><BR><A target="_blank" href="../../../../graphic-pool/T/4B/3/T4B34F56.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CD7"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">As the wheel is rotated, the speed sensor produces an AC voltage that increases with wheel speed. The HECU uses the frequency of the AC signal to calculate wheel speed.  The speed sensor is connected to the HECU by a"twisted pair" of wires. Twisting reduces noise susceptibility that may cause a DTC to set.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CSD7"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">All of the following must be true for C1205 to set.</div>
+				<UL>
+					<Li>C1200 or C1203 or C1206 or C1209 not current.</Li>
+					<Li>ABS not active.</Li>
+					<Li>Brake switch off.</Li>
+					<Li>The right front wheel speed equals 0, and all of the remaining Wheel Speed Sensors are greater than 8 km/hr (5 mph) for at least 2.5 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0ATWDS7"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The solenoid relay opens, removing power from the pump motor and solenoids.</Li>
+					<Li>DTC C1205 is stored.</Li>
+					<Li>ABS disabled, ABS Warning Lamp turns on.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CCD7"><b>Conditions for Clearing the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>If the conditions that set DTC C1205 are no longer present, the DTC may be cleared by using the proper scan tool.</Li>
+					<Li>The DTC that has not occurred in 100 drive cycles will be cleared from history data.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0DA7"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Thoroughly inspect the wiring and connectors when diagnosing intermittent DTC(s).  This will include the following.</div>
+				<UL>
+					<Li>Removal of the protective conduit and inspection of wiring for damage, shorts and contamination.</Li>
+					<Li>Inspection for improperly formed and/or damaged terminals.</Li>
+					<Li>Checking terminal contact (retention force) by using a spare male/female terminal.</Li>
+					<Li>Removal of the terminals from the connectors to check for proper terminal to wire crimp.</Li>
+				</UL>
+				<div class="T1" align="left">If the drivers comments reflect that the ABS Warning Lamp is on only during moist environmental changes (rain, snow, vehicle wash), all wheel speed sensor circuitry should be thoroughly inspected for signs of water intrusion. If the DTC is not current, simulate the effects of water intrusion. Use the following procedure. Spray the suspected area with a 5 percent salt-water solution. Then test-drive the vehicle over various road surfaces such as (bumps, turns, etc) above 24 kph (15 mph). If the DTC sets then replace the suspected harness and/or sensor. </div>
+				<div class="T1" align="left">When measuring wheel speed sensor resistance insures the vehicle is at room temperature, since resistance will increase with temperature.</div>
+				<div class="T1" align="left">Failure to perform the previous steps carefully and fully can result in misdiagnosis, unnecessary component replacement and reoccurrence of DTC C1205.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T4F0C12051"><font size="4"><b>C1205 Right Front Wheel Speed Sensor No Signal</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Was the Diagnostic Circuit Check Completed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic Circuit Check prior to performing this trouble tree.</div>
+								<div>Did you find problem?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Ignition switch "OFF".</Li>
+									<Li>Inspect the righ front wheel speed sensor, jumper harness and toothed ring for physical damage.</Li>
+								</OL>
+								<div>Is any physical damage noted?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the damage to the right front wheel speed sensor, jumper harness and/or toothed ring.</div>
+								<div>Check the airgap.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0.2~0.8mm</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Was DTC C1203 set as a current or history code?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform diagnostics for DTC C1203 prior to performing this table.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect a Scan Tool and select data list.</Li>
+									<Li>Monitor the wheel speed sensors.</Li>
+									<Li>Test-drives vehicle above 24 kph (15 mph) and slowly decelerates to zero, do this several times.</Li>
+								</OL>
+								<div>Did C1205 reset or did the right front wheel speed suddenly drop to zero prior to the vehicle coming to a complete stop?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>DTC C1205 is intermittent. Refer to diagnostic aids.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Ignition switch "OFF".</Li>
+									<Li>Raise and suitably support the vehicle.</Li>
+									<Li>Disconnect the HECU harness from the HECU.</Li>
+									<Li>Connect a voltmeter to HECU harness terminals 1 and 2.</Li>
+									<Li>Select the AC mill volt scale.</Li>
+									<Li>Spin the right front wheel while observing the voltmeter. (voltage should increase as wheel speed increases)</Li>
+								</OL>
+								<div>Is the AC voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>At least 100mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the left front jumper harness from the Right Front Wheel Speed Sensor.</Li>
+									<Li>Connect an ohmmeter to terminals 2 and 1 of the Right Front Wheel Speed Sensor.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800-1600 Ohms (Resistance will vary with temperature)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the right front wheel speed sensor.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Right front jumper harness still disconnected from the right front speed sensor.</Li>
+									<Li>Connect a voltmeter to terminals 2 and 1 of the left front wheel speed sensor.</Li>
+									<Li>Select the AC mill volt scale.</Li>
+									<Li>Spin the right front wheel while observing the voltmeter. (voltage should increase as wheel speed increases)</Li>
+								</OL>
+								<div>Is the AC voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>At least 100mV</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14
+</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the right front jumper harness from the ABS body harness.</Li>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminals 9 and 10.</Li>
+								</OL>
+								<div>Is the Resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Find and repair the short between the 2 circuits.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Right front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 12 and then to ABS body harness terminal 1.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance between terminals 2 and 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Right front jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 1 and then to ABS body harness terminal 2.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance between terminal 1 and 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the right front wheel speed jumper harness</Li>
+									<Li>Test-drive the vehicle at various speeds and road surfacess.</Li>
+								</OL>
+								<div>Did C1205 reset?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="T4F0C1206"><font size="4"><b>C1206 Left Rear Wheel Speed Sensor Circuit Open or Shorted </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="T4B34F57" src="../../../../graphic-pool/T/4B/3/T4B34F57.png"><BR><A target="_blank" href="../../../../graphic-pool/T/4B/3/T4B34F57.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CD8"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">As the wheel is rotated, the speed sensor produces an AC voltage that increases with wheel speed. The HECU uses the frequency of the AC signal to calculate wheel speed.  The speed sensor is connected to the HECU by a "twisted pair" of wires. Twisting reduces noise susceptibility that may cause a DTC to set.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CSD8"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">DTC C1206 can be set anytime the key is on and the HECU has detected an open, short to ground or a short to battery on the left rear wheel speed circuit.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0ATWDS8"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The solenoid relay opens, removing power to the pump motor and solenoids.</Li>
+					<Li>DTC C1206 is stored.</Li>
+					<Li>ABS disabled, ABS Warning Lamp turns on.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0CCD8"><b>Conditions for Clearing the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>If the conditions that set DTC C1206 are no longer present, the DTC may be cleared by using the proper scan tool.</Li>
+					<Li>The DTC that has not occurred in 100 drive cycles will be cleared from history data.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T4F0DA8"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Thoroughly inspect the wiring and connectors when diagnosing intermittent DTC(s). This will include the following.</div>
+				<UL>
+					<Li>Removal of the protective conduit and inspection for wiring for damage, shorts and contamination.</Li>
+					<Li>Inspection for improperly formed and/or damaged terminals.</Li>
+					<Li>Checking terminal contact (retention force) by using a spare male/female terminal.</Li>
+					<Li>Removal of the terminals from the connectors to check for proper terminal to wire crimp.</Li>
+				</UL>
+				<div class="T1" align="left">If the drivers comments reflect that the ABS Warning Lamp is on only during moist environmental changes (rain, snow, vehicle wash), all wheel speed sensor circuitry should be thoroughly inspected for signs of water intrusion. If the DTC is not current, simulate the effects of water intrusion. Use the following procedure. Spray the suspected area with a 5 percent salt-water solution. Then test-drive the vehicle over various road surfaces such as (bumps, turns, etc) above 24 kph (15 mph). If the DTC sets then replace the suspected harness and or sensor. </div>
+				<div class="T1" align="left">When measuring wheel speed sensor resistance insure the vehicle is at room temperature, since resistance will increase with temperature.</div>
+				<div class="T1" align="left">Failure to perform the previous steps carefully and fully can result in misdiagnosis, unnecessary component replacement and reoccurrence of DTC 1206.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T4F0C12061"><font size="4"><b>C1206 Left Rear Wheel Speed Sensor Circuit Open or Shorted</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Was the diagnostic circuit check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic Circuit Check. </div>
+								<div>Did you find problem?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Ignition switch "OFF".</Li>
+									<Li>Inspect the left rear wheel speed sensor, jumper harness and the toothed ring for physical damage.</Li>
+								</OL>
+								<div>Is any physical damage noted?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the damage to the left rear wheel speed sensor, jumper harness and/or toothed ring.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test-drive vehicle at various speeds and over various road surfaces.</div>
+								<div>Did C1206 reset?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>DTC C1206 is intermittent. Refer to Diagnostic Aids.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Ignition switch "OFF". vehicle in park.</Li>
+									<Li>Raise and suitably support the vehicle.</Li>
+									<Li>Disconnect the left rear jumper harness from the left rear Wheel Speed Sensor.</Li>
+									<Li>Connect an ohmmeter to terminals 2 and 1 of the left rear Wheel Speed Sensor.</Li>
+								</OL>
+								<div>Is the resistance with in specified range?.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800-1600 Ohms (Resistance will vary with temperature)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the right front wheel speed sensor. </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Left rear jumper harness still disconnected from the speed sensor.</Li>
+									<Li>Connect an ohmmeter to terminal 1 of the left rear wheel speed sensor and then to body ground.</Li>
+									<Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the HECU harness from the HECU.</Li>
+									<Li>Disconnect the left rear jumper harness from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 5 and then the ABS body harness terminal 1.</Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance between terminals 5 and 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Left rear jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 6 and then to ABS body harness terminal 2.</Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than
+2 ohms</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or high resistance between terminals 6 and 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14
+</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Left rear jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect a voltmeter to HECU harness terminal 5 and then to body ground.</Li>
+								</OL>
+								<div>Is the voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than 1volt</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to voltage between terminals 5 and 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Left rear jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect a voltmeter to HECU harness terminal 6 and then to body ground.</Li>
+								</OL>
+								<div>Is the voltage within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Less than 1volt</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to voltage between terminals 6 and 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Left rear jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 5 and then to body ground.</Li>
+								</OL>
+								<div>Is the resistance within the specified range? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to ground between terminals 5 and 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Left rear jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 10 and then to body ground. Left rear jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 6 and then to body ground. Is the resistance within the specified range?</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 22</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 21</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">21</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short to ground between terminals 6 and 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">22</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>HECU harness still disconnected from the HECU.</Li>
+									<Li>Left rear jumper harness still disconnected from the ABS body harness.</Li>
+									<Li>Connect an ohmmeter to HECU harness terminal 5 and 6.</Li>
+								</OL>
+								<div>Is the resistance within the specified range?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>OL
+(open circuit)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 24</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 23</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">23</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the short between the 2 circuits.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">24</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the Left Rear Wheel Speed Sensor Jumper Harness.</Li>
+									<Li>Test-drive the vehicle at various speeds and various road surfaces.</Li>
+									<Li>
+								</OL>
+								<div>Did C1206 reset?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%"> - </TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 25</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">25</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="5T2_4F0.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="5T2_4F02.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Daewoo Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,2257 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2004 KALOS Diagnostic Trouble Code (DTC) P0401</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="5T2_1F17.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">KALOS</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="5T2_1F16.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="5T2_1F18.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_KALOS.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_KALOS_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	
+		<P></P>
+<DIV align="center" id="T1F0P0401"><font size="4"><b>Diagnostic Trouble Code (DTC) P0401 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T1F0EGRIF"><font size="4"><b>Exhaust Gas Recirculation Insufficient Flow</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="T1F0CD"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An Exhaust Gas Recirculation (EGR) system is used to lower Nitrogen Oxide (NOx) emission levels caused by high combustion temperatures. It accomplishes this by feeding small amounts of exhaust gases back into the combustion chamber. When the air/fuel mixture is diluted with the exhaust gases, combustion temperatures are reduced</div>
+				<div class="T1" align="left">A linear EGR valve is used on this system. The linear EGR valve is designed to accurately supply exhaust gases to the engine without the use of intake manifold vacuum. The valve controls exhaust flow going into the intake manifold from the exhaust manifold through an orifice with an Engine Control Module (ECM) controlled pintle. The ECM controls the pintle position using inputs from the Throttle Position (TP) and Manifold Absolute Pressure (MAP) sensors. The ECM then commands the EGR valve to operate when necessary by controlling an ignition signal through the ECM. This can be monitored on a scan tool as the Desired EGR Position.</div>
+				<div class="T1" align="left">The ECM monitors the results of its command through a feedback signal. By sending a 5 volt reference and a ground to the EGR valve, a voltage signal representing the EGR valve pintle position is sent to the ECM. This feedback signal can also be monitored on a scan tool and is the actual position of the EGR pintle. The Actual EGR Position should always be near the commanded or Desired EGR Position.</div>
+				<div class="T1" align="left">This diagnostic will determine if there is a reduction in EGR flow.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CSDT"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>DTCs P0106, P0107, P0108, P0117, P0118, P0122, P0123, P0201, P0202, P0203, P0204, P0351, P0352, P0402, P0404, P1404, P0405, P0406 and P0502 are not set.</Li>
+					<Li>Test in Decel Fuel Cutoff (DFCO) mode.</Li>
+					<UL>
+						<Li>Barometric Pressure (BARO) is greater than 72 kPa (10.4 psi).</Li>
+						<Li>Vehicle speed is greater than 20 km/h (12.4 mph) (SOHC).</Li>
+						<Li>Vehicle speed is greater than 18 km/h (11.2 mph) (DOHC).</Li>
+						<Li>A/C clutch/transmission clutch are unchanged.</Li>
+						<Li>Rpm is between 1600 and 3200 for manual transaxle (SOHC).</Li>
+						<Li>Rpm is between 1400 and 3000 for manual transaxle (DOHC).</Li>
+						<Li>Rpm is between 1300 and 2900 for automatic transaxle (DOHC).</Li>
+						<Li>Compensated MAP is with 10 to 50 kpa (1.5 to 7.3 psi) range (SOHC).</Li>
+						<Li>Compensated MAP is with 10.3 to 32 kpa (1.5 to 4.6 psi) range (DOHC).</Li>
+					</UL>
+					<Li>Start test</Li>
+					<UL>
+						<Li>Throttle position (TP) sensor is less then 1%.</Li>
+						<Li>EGR is less than 1%.</Li>
+						<Li>Change in MAP is less than 1.0 kpa (0.15 psi)</Li>
+						<Li>Idle airflow is less than 15 kpa (2.2 psi) (SOHC).</Li>
+					</UL>
+				</UL>
+				
+					<P></P>
+<DIV><FONT color="#336600"><B>Note : Test will be aborted when:</B></FONT></DIV>
+					<UL>
+						<Li>Change in vehicle speed is greater than 8km/h (4.9 mph) (SOHC).</Li>
+						<Li>Change in vehicle speed is greater than 4km/h (2.5 mph) (DOHC).</Li>
+						<Li>Rpm is increased more than 50.</Li>
+						<Li>EGR opened less than 90% commanded position.</Li>
+					</UL>
+				
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0ATWD"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will not illuminate.</Li>
+					<Li>The ECM will store conditions which were present when the DTC set as Failure Records data only. This information will not be stored in the Freeze Frame data.</Li>
+					<Li>A history Diagnostic Trouble Code (DTC) is stored.</Li>
+					<Li>EGR is disabled.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CCMD"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0DA"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The EGR Decel Filter value can be a great aid in determining if a problem exists and to verify repairs. The EGR Decel Filter is an average of the difference in the expected MAP change and the actual MAP change caused by opening the EGR valve during a deceleration, and is used to determine when the MIL is illuminated. By driving the vehicle up to approximately 97 km/h (60 mph) and decelerating to 32 km/h (20 mph), it can be determined if the EGR system is OK, partially restricted, or fully restricted.</div>
+				<div class="T1" align="left">A more negative number (less than -3) indicates that the system is working normally, whereas a positive number indicates that the system is being restricted and that the expected amount of EGR flow is was not seen. A number that falls between negative 3 and positive 2 indicates that the system is partially restricted but not restricted enough to cause an emissions impact.</div>
+				<div class="T1" align="left">The EGR Decel Filter value should always be at -3 or lower. If the EGR Decel Filter number becomes more positive (towards 0 or more), then the EGR system is becoming restricted. Look for possible damage to the EGR pipe or for a restriction caused by carbon deposits in the EGR passages or on the EGR valve.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0TD"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">Commanding the EGR valve open determines whether the EGR system is totally restricted or partially restricted.</Li>
+					<Li value="3">Visually and physically inspect the EGR passages and valve for excessive carbon deposits or damage.</Li>
+					<Li value="4">Be sure all gasket material is removed from the EGR mounting surface. Even a small amount of material may cause a DTC P0401 to set.</Li>
+					<Li value="5">This step verifies if the fault is present and also verifies if a repair corrected the problem. If the EGR Deceleration Filter value stays near 0 or a positive number after several tests have been run, then a small restriction may still exist. Be sure to check the EGR pipe for damage or dents and the EGR valve for any excessive carbon build up. Only 1 test per ignition cycle will run unless a DTC P0401 has been cleared or the battery has been disconnected.</Li>
+					<Li value="6">Clearing DTCs is a very important step for this diagnostic. The clearing function allows the EGR valve to relearn a new pintle position as the old pintle position was inaccurate due to the failure that caused the DTC. The DTC must be cleared with the ignition ON, engine OFF or when the engine is idling. If the ECM sees a EGR command, the new pintle will not be learned.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T1F0P04011"><font size="4"><b>DTC P0401 - Exhaust Gas Recirculation Insufficient Flow</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to </div>
+							<div>  <A target="_blank" href="5T2_1F02.en.html#T1F0ODSC1">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Start the engine and allow the engine to idle.</Li>
+									<Li>Command the Exhaust Gas Recirculation (EGR) valve to the specific value.</Li>
+								</OL>
+								<div>Does the engine stall or attempt to stall?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>50%</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the EGR valve connector and remove the EGR valve.</Li>
+									<Li>Inspect the EGR valve passages and pipe for a restriction or damages and repair as needed.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the EGR valve.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the battery for more than 10 seconds.</Li>
+									<Li>Drive the vehicle up to 97 km/h (60mph)</Li>
+									<Li>Release the throttle and allow the vehicle to decelerate to 32 km/h (20mph).</Li>
+								</OL>
+								<div>Is the EGR Decel Filter value greater than specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to</div>
+							<div>Applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="T3B11F52" src="../../../../graphic-pool/T/3B/1/T3B11F52.png"><BR><A target="_blank" href="../../../../graphic-pool/T/3B/1/T3B11F52.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="T1F0P0402"><font size="4"><b>Diagnostic Trouble Code (DTC) P0402 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T1F0EGREF"><font size="4"><b>Exhaust Gas Recirculation Excessive Flow</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="T1F0CD1"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An Exhaust Gas Recirculation (EGR) system is used to lower Nitrogen Oxide (NOx) emission levels caused by high combustion temperatures. It accomplishes this by feeding small amounts of exhaust gases back into the combustion chamber. When the air/fuel mixture is diluted with the exhaust gases, combustion temperatures are reduced</div>
+				<div class="T1" align="left">A linear EGR valve is used on this system. The linear EGR valve is designed to accurately supply exhaust gases to the engine without the use of intake manifold vacuum. The valve controls exhaust flow going into the intake manifold from the exhaust manifold through an orifice with an Engine Control Module (ECM) controlled pintle. The ECM controls the pintle position using inputs from the Throttle Position (TP) and Manifold Absolute Pressure (MAP) sensors. The ECM then commands the EGR valve to operate when necessary by controlling an ignition signal through the ECM. This can be monitored on a scan tool as the Desired EGR Position.</div>
+				<div class="T1" align="left">The ECM monitors the results of its command through a feedback signal. By sending a 5 volt reference and a ground to the EGR valve, a voltage signal representing the EGR valve pintle position is sent to the ECM. This feedback signal can also be monitored on a scan tool and is the actual position of the EGR pintle. The Actual EGR Position should always be near the commanded or Desired EGR Position.</div>
+				<div class="T1" align="left">This Diagnostic Trouble Code (DTC) will detect an EGR open to a large valve during crank. Crank time may be excessive with an open EGR valve.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CSDT1"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>EGR position is greater than 40% for more than 0.25 seconds during cranking (SOHC).</Li>
+					<Li>EGR position is greater than 70% for more than 3 seconds during cranking (DOHC).</Li>
+					<Li>Engine cranking (not running).</Li>
+					<Li>Ignition voltage is between 10 and 16 volts.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0ATWD1"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate after three consecutive with a fail.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history Diagnostic Trouble Code (DTC) is stored.</Li>
+					<Li>EGR is disabled.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CCMD1"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turns off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0DA1"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Due to moisture associated with exhaust systems, the EGR valve may freeze and stick in cold weather at times. After the vehicle is brought into a warm shop for repairs, the valve warms and the problem disappears. By watching the Actual EGR and Desired EGR Positions on a cold vehicle with a scan tool, the fault can be easily verified. Check the freeze frame data to determine if the DTC set when the vehicle was cold by viewing the Engine Coolant Temperature (ECT).</div>
+				<div class="T1" align="left">The EGR Decel Filter value should always be at -3 or lower. If the EGR Decel Filter number becomes more positive (towards 0 or more), then the EGR system is becoming restricted. Look for possible damage to the EGR pipe or for a restriction caused by carbon deposits in the EGR passages or on the EGR valve.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0TD1"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">Commanding the EGR valve open determines whether the EGR system can control the EGR valve accurately and if the fault is present. The difference between the current and commanded position is greater than 15%.</Li>
+					<Li value="3">When the EGR valve electrical connector is disconnected, the scan tool should display the Actual EGR Position as 0%. If it does not, the fault lies either in the EGR signal circuit or the ECM.</Li>
+					<Li value="4">There may be a slight delay for the voltage displayed on the DVM to change after the scan tool commands the EGR valve to operate.</Li>
+					<Li value="5">An open or poor connection condition may have caused this DTC to set. Be sure to check the terminals for being backed out, improperly formed or damaged, and for poor tension.</Li>
+					<Li value="7">The test light will have glowed brightly in the previous step if the EGR control circuit was shorted to B+ and the Actual EGR Position on the scan tool will display 100%. A test light that did not illuminate, indicates that the circuit may be open or shorted to ground.</Li>
+					<Li value="9">If the EGR valve 5 volt reference is shorted to voltage, the digital voltmeter (DVM) will read battery voltage and additional DTCs may be set and the engine performance will be poor.</Li>
+					<Li value="12">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+					<Li value="13">Although the circuitry acted correctly when checked, a problem may still lie within the terminals which would not show up in probe type testing. Be sure to check the terminals for being backed out, improperly formed or damaged, and for poor tension.</Li>
+					<Li value="17">All circuits to the EGR valve are OK at this point. The fault lies internally in the EGR valve and, therefore, must be replaced. Be sure all gasket material is removed from the EGR mounting surface. Even a small amount of material may cause a DTC P0401 to set.</Li>
+					<Li value="18">Check the terminals for being backed out, improperly formed or damaged, and for poor tension.</Li>
+					<Li value="19">Clearing DTCs is a very important step for this diagnostic. The clearing function allows the EGR valve to relearn a new pintle position as the old pintle position was inaccurate due to the failure that caused the DTC. The DTC must be cleared with the ignition ON, engine OFF or when the engine is idling. If the ECM sees a EGR command, the new pintle will not be learned.</Li>
+					<Li value="20">If no malfunctions have been found at this point and no additional DTCs were set, refer to   <A target="_blank" href="5T2_1F02.en.html#T1F0DA">"Diagnostic Aids" </A> in this section for additional checks and information.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T1F0P04021"><font size="4"><b>DTC P0402 - Exhaust Gas Recirculation Excessive Flow</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to </div>
+							<div>  <A target="_blank" href="5T2_1F02.en.html#T1F0ODSC1">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data link Connector (DLC).</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Command the Exhaust Gas Recirculation (EGR) valve to the specific values.</Li>
+								</OL>
+								<div>Does the Actual EGR Position follow the Desired EGR Position?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>25%, 50%, 75%, 100%</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the EGR valve.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>With a test light connected to B+, probe the EGR valve wiring harness connector terminal 2.</Li>
+								</OL>
+								<div>Does the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using a voltmeter, measure the voltage at the EGR valve wiring harness connector terminal 1.</Li>
+									<Li>Command the EGR valve open with the scan tool.</Li>
+								</OL>
+								<div>After command is raised, is the voltage displayed on the voltmeter vary between specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 to ≈ 5 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or poor connection in the EGR ground circuit as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="middle" align="center" width="15%"> - </TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With a test light connected to ground, probe the EGR valve wiring harness connector terminal 3.</div>
+								<div>Does the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With a test light connected to ground, probe the EGR valve wiring harness connector terminal 1, without commanding the EGR valve with scan tool.</div>
+								<div>Dose the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the signal circuit for a short to voltage and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With a voltmeter connected to the ground, probe the 5 volt reference circuit at terminal 4 of the EGR valve wiring harness connector.</div>
+								<div>Is the voltage near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>5 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the control circuit for a short to voltage and repair as needed.</div>
+								<div>Is a repair necessary.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With a test light connected to B+ and again probe the control circuit at terminal 1.</div>
+								<div>Dose the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the Engine Control Module (ECM).</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the EGR ground circuit for poor connection or proper terminal tension at the ECM and repair as needed.</div>
+								<div>Is a repair necessary?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the 5 volt reference circuit for a short to voltage and repair as needed.</div>
+								<div>Is the repair necessary?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the control circuit 1 for short to ground and repair as needed.</div>
+								<div>Is the repair necessary?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the control circuit at terminal 1 for an open or poor connection at EGR valve connector and repair as needed.</div>
+								<div>Is a repair necessary?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the EGR valve.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the ECM connector for a poor connection and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to</div>
+							<div>Applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="T3B11F52" src="../../../../graphic-pool/T/3B/1/T3B11F52.png"><BR><A target="_blank" href="../../../../graphic-pool/T/3B/1/T3B11F52.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="T1F0P0404"><font size="4"><b>Diagnostic Trouble Code (DTC) P0404 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T1F0EGROP"><font size="4"><b>Exhaust Gas Recirculation Open Valve Position Error
+</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="T1F0CD2"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An Exhaust Gas Recirculation (EGR) system is used to lower Nitrogen Oxide (NOx) emission levels caused by high combustion temperatures. It accomplishes this by feeding small amounts of exhaust gases back into the combustion chamber. When the air/fuel mixture is diluted with the exhaust gases, combustion temperatures are reduced</div>
+				<div class="T1" align="left">A linear EGR valve is used on this system. The linear EGR valve is designed to accurately supply exhaust gases to the engine without the use of intake manifold vacuum. The valve controls exhaust flow going into the intake manifold from the exhaust manifold through an orifice with an Engine Control Module (ECM) controlled pintle. The ECM controls the pintle position using inputs from the Throttle Position (TP) and Manifold Absolute Pressure (MAP) sensors. The ECM then commands the EGR valve to operate when necessary by controlling an ignition signal through the ECM. This can be monitored on a scan tool as the Desired EGR Position.</div>
+				<div class="T1" align="left">The ECM monitors the results of its command through a feedback signal. By sending a 5 volt reference and a ground to the EGR valve, a voltage signal representing the EGR valve pintle position is sent to the ECM. This feedback signal can also be monitored on a scan tool and is the actual position of the EGR pintle. The Actual EGR Position should always be near the commanded or Desired EGR Position.</div>
+				<div class="T1" align="left">This Diagnostic Trouble Code (DTC) will detect an open valve position.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CSDT2"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Difference between current and commended position is greater than 15%.</Li>
+					<Li>Desired EGR position is greater than 0.</Li>
+					<Li>Change in Desired EGR is less than 3%.</Li>
+					<Li>Engine is running.</Li>
+					<Li>Intake Air Temperature (IAT) is between  3°C (37.4°F) and 120°C (248°F).</Li>
+					<Li>Ignition voltage is between 11 and 15.8 volts (SOHC).</Li>
+					<Li>Ignition voltage is between 11.7 and 16 volts (DOHC).</Li>
+					<Li>Start up coolant temperature is greater than 10°C (50°F).</Li>
+					<Li>Coolant temperature is greater than 65°C (149°F).</Li>
+					<Li>Airfuel ratio is greater than 14.5.</Li>
+					<Li>Air temperature is greater than 3°C.</Li>
+					<Li>DTCs P0112, P0113 P0405, P0406, and P0502 are not set.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0ATWD2"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate, after three concecutive ignition cycle with a fail.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history Diagnostic Trouble Code (DTC) is stored.</Li>
+					<Li>EGR is disabled.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CCMD2"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turns off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0DA2"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Due to moisture associated with exhaust systems, the EGR valve may freeze and stick in cold weather at times. After the vehicle is brought into a warm shop for repairs, the valve warms and the problem disappears. By watching the Actual EGR and Desired EGR Positions on a cold vehicle with a scan tool, the fault can be easily verified. Check the freeze frame data to determine if the DTC set when the vehicle was cold by viewing the Engine Coolant Temperature (ECT).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0TD2"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">Commanding the EGR valve open determines whether the EGR system can control the EGR valve accurately and if the fault is present. The difference between the current and commanded position is greater than 15%.</Li>
+					<Li value="3">When the EGR valve electrical connector is disconnected, the scan tool should display the Actual EGR Position as 0%. If it does not, the fault lies either in the EGR signal circuit or the ECM.</Li>
+					<Li value="4">There may be a slight delay for the voltage displayed on the DVM to change after the scan tool commands the EGR valve to operate.</Li>
+					<Li value="5">An open or poor connection condition may have caused this DTC to set. Be sure to check the terminals for being backed out, improperly formed or damaged, and for poor tension.</Li>
+					<Li value="7">The test light will have glowed brightly in the previous step if the EGR control circuit was shorted to B+ and the Actual EGR Position on the scan tool will display 100%. A test light that did not illuminate, indicates that the circuit may be open or shorted to ground.</Li>
+					<Li value="9">If the EGR valve 5 volt reference is shorted to voltage, the digital voltmeter (DVM) will read battery voltage and additional DTCs may be set and the engine performance will be poor.</Li>
+					<Li value="12">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+					<Li value="13">Although the circuitry acted correctly when checked, a problem may still lie within the terminals which would not show up in probe type testing. Be sure to check the terminals for being backed out, improperly formed or damaged, and for poor tension.</Li>
+					<Li value="17">All circuits to the EGR valve are OK at this point. The fault lies internally in the EGR valve and, therefore, must be replaced. Be sure all gasket material is removed from the EGR mounting surface. Even a small amount of material may cause a DTC P0401 to set.</Li>
+					<Li value="18">Check the terminals for being backed out, improperly formed or damaged, and for poor tension.</Li>
+					<Li value="19">Clearing DTCs is a very important step for this diagnostic. The clearing function allows the EGR valve to relearn a new pintle position as the old pintle position was inaccurate due to the failure that caused the DTC. The DTC must be cleared with the ignition ON, engine OFF or when the engine is idling. If the ECM sees a EGR command, the new pintle will not be learned.</Li>
+					<Li value="20">If no malfunctions have been found at this point and no additional DTCs were set, refer to   <A target="_blank" href="5T2_1F02.en.html#T1F0DA">"Diagnostic Aids" </A> in this section for additional checks and information.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T1F0P04041"><font size="4"><b>DTC P0404 - Exhaust Gas Recirculation Open Valve Position Error</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to </div>
+							<div>  <A target="_blank" href="5T2_1F02.en.html#T1F0ODSC1">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Command the Exhaust Gas Recirculation (EGR) valve to the specific values.</Li>
+								</OL>
+								<div>Does the Actual EGR Position follow the Desired EGR Position?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>25%, 50%, 75%, 100%</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the EGR valve.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>With a test light connected to B+, probe the EGR valve wiring harness connector terminal 2.</Li>
+								</OL>
+								<div>Does the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using a voltmeter, measure the voltage at the EGR valve wiring harness connector terminal 1.</Li>
+									<Li>Command the EGR valve open with the scan tool.</Li>
+								</OL>
+								<div>After command is raised, is the voltage displayed on the voltmeter vary between specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 to ≈ 5 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open or poor connection in the EGR ground circuit as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With a test light connected to ground, probe the EGR valve wiring harness connector terminal 3.</div>
+								<div>Dose the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With a test light connected to ground, probe the EGR valve wiring harness connector terminal 1, without commanding the EGR valve with scan tool.</div>
+								<div>Dose the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the signal circuit for a short to voltage and repair as needed.</div>
+								<div>Is a repair necessary?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With a voltmeter connected to the ground, probe the 5 volt reference circuit at terminal 4 of the EGR valve wiring harness connector.</div>
+								<div>Is the voltage near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>5 v</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the control circuit for a short to voltage and repair as needed.</div>
+								<div>Is a repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With a test light connected to B+ and again probe the control circuit at terminal 1.</div>
+								<div>Dose the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the Engine Control Module (ECM).</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the EGR ground circuit for poor connection or proper terminal tension at the ECM and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the 5 volt reference circuit for a short to voltage and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the control circuit at terminal 1 for short to ground and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the control circuit at terminal 1 for an open or poor connection at EGR valve connector and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 18</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the EGR valve.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the ECM connector for a poor connection and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to</div>
+							<div>Applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="T3B11F52" src="../../../../graphic-pool/T/3B/1/T3B11F52.png"><BR><A target="_blank" href="../../../../graphic-pool/T/3B/1/T3B11F52.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="T1F0P0405"><font size="4"><b>Diagnostic Trouble Code (DTC) P0405 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T1F0EGRPP"><font size="4"><b>Exhaust Gas Recirculation Pintle Position Low Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="T1F0CD3"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An Exhaust Gas Recirculation (EGR) system is used to lower Nitrogen Oxide (NOx) emission levels caused by high combustion temperatures. It accomplishes this by feeding small amounts of exhaust gases back into the combustion chamber. When the air/fuel mixture is diluted with the exhaust gases, combustion temperatures are reduced</div>
+				<div class="T1" align="left">A linear EGR valve is used on this system. The linear EGR valve is designed to accurately supply exhaust gases to the engine without the use of intake manifold vacuum. The valve controls exhaust flow going into the intake manifold from the exhaust manifold through an orifice with an Engine Control Module (ECM) controlled pintle. The ECM controls the pintle position using inputs from the Throttle Position (TP) and Manifold Absolute Pressure (MAP) sensors. The ECM then commands the EGR valve to operate when necessary by controlling an ignition signal through the ECM. This can be monitored on a scan tool as the Desired EGR Position.</div>
+				<div class="T1" align="left">The ECM monitors the results of its command through a feedback signal. By sending a 5 volt reference and a ground to the EGR valve, a voltage signal representing the EGR valve pintle position is sent to the ECM. This feedback signal can also be monitored on a scan tool and is the actual position of the EGR pintle. The Actual EGR Position should always be near the commanded or Desired EGR Position. This diagnostic Trouble Code (DTC) will detect an open or short circuit.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CSDT3"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>EGR position signal is less than 2%.</Li>
+					<Li>Ignition voltage is between 11.7 and 16 volts.</Li>
+					<Li>Fail condition last more than 10 seconds.</Li>
+					<Li>Engine is running.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0ATWD3"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate after three consecutive ignition cycle with a fail.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history Diagnostic Trouble Code (DTC) is stored.</Li>
+					<Li>EGR is disabled.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CCMD3"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turns off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0DA3"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Due to moisture associated with exhaust systems, the EGR valve may freeze and stick in cold weather at times. After the vehicle is brought into a warm shop for repairs, the valve warms and the problem disappears. By watching the Actual EGR and Desired EGR Positions on a cold vehicle with a scan tool, the fault can be easily verified. Check the freeze frame data to determine if the DTC set when the vehicle was cold by viewing the Engine Coolant Temperature (ECT).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0TD3"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">Commanding the EGR valve open determines whether the EGR system can control the EGR valve accurately and if the fault is present.</Li>
+					<Li value="3">If the EGR valve 5 volt reference is shorted to ground, the digital voltmeter (DVM) will read no voltage and additional DTCs may be set and the engine performance will be poor. When this circuit is open, only a DTC P0405 will be set.</Li>
+					<Li value="4">Jumpering the 5 volt reference circuit to the signal circuit checks the signal circuit and the ECM. The scan tool should display the Actual EGR Position as 100% if the signal circuit and ECM are OK.</Li>
+					<Li value="6">Although the ECM and circuitry acted correctly in the previous step, a problem may still lie within the terminals which would not show up in probe type testing. Be sure to check the terminals for being backed out, improperly formed or damaged, and for poor tension.</Li>
+					<Li value="10">All circuits to the EGR valve are OK at this point. The fault lies internally in the EGR valve and therefore must be replaced. Be sure all gasket material is removed from the EGR mounting surface. Even a small amount of material may cause a DTC P0401 to set.</Li>
+					<Li value="13">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+					<Li value="14">Check the terminals for being backed out, improperly formed or damaged, and for poor tension.</Li>
+					<Li value="15">Clearing DTCs is a very important step for this diagnostic. The clearing function allows the EGR valve to relearn a new pintle position as the old pintle position was inaccurate due to the failure that caused the DTC. The DTC must be cleared with the ignition ON, engine OFF or when the engine is idling. If the ECM sees an EGR command, the new pintle will not be learned.</Li>
+					<Li value="16">If no malfunctions have been found at this point and no additional DTCs were set, refer to   <A target="_blank" href="5T2_1F02.en.html#T1F0DA">"Diagnostic Aids" </A> in this section for additional checks and information.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T1F0P04051"><font size="4"><b>DTC P0405 - Exhaust Gas Recirculation Pintle Position Low Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to </div>
+							<div>  <A target="_blank" href="5T2_1F02.en.html#T1F0ODSC1">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>Command the Exhaust Gas Recirculation (EGR) valve to the specific values.</Li>
+								</OL>
+								<div>Does the Actual EGR Position follow the Desired EGR Position?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>25%, 50%, 75%, 100%</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the EGR valve.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>With a voltmeter connected to the ground, probe the 5 volt reference circuit at terminal 4 of the EGR valve wiring harness connector.</Li>
+								</OL>
+								<div>Is the voltage near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>5 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Jumper the 5 volt reference circuit to the signal circuit at terminal 4 and C at the EGR valve wiring harness connector.</div>
+								<div>Does the Actual EGR Position display the specific value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>100%</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With a test light connected to B+, probe the 5 volt reference circuit at the EGR valve wiring harness connector terminal 4.</div>
+								<div>Dose the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the 5 volt reference and signal circuit for a poor connection or proper terminal tension and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With a test light connected to B+, probe the signal circuit at terminal 3 of the EGR valve wiring harness connector.</div>
+								<div>Dose the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a short to ground in EGR valve 5 volt reference circuit and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open in EGR valve 5 volt reference circuit and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the EGR valve.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a short to ground in the EGR valve signal circuit and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open in the EGR valve signal circuit and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the Engine Control Module (ECM).</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the ECM connector for a poor connection and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to</div>
+							<div>Applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="T3B11F52" src="../../../../graphic-pool/T/3B/1/T3B11F52.png"><BR><A target="_blank" href="../../../../graphic-pool/T/3B/1/T3B11F52.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="T1F0P0406"><font size="4"><b>Diagnostic Trouble Code (DTC) P0406 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T1F0EGRPP1"><font size="4"><b>Exhaust Gas Recirculation Pintle Position High Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="T1F0CD4"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An Exhaust Gas Recirculation (EGR) system is used to lower Nitrogen Oxide (NOx) emission levels caused by high combustion temperatures. It accomplishes this by feeding small amounts of exhaust gases back into the combustion chamber. When the air/fuel mixture is diluted with the exhaust gases, combustion temperatures are reduced</div>
+				<div class="T1" align="left">A linear EGR valve is used on this system. The linear EGR valve is designed to accurately supply exhaust gases to the engine without the use of intake manifold vacuum. The valve controls exhaust flow going into the intake manifold from the exhaust manifold through an orifice with an Engine Control Module (ECM) controlled pintle. The ECM controls the pintle position using inputs from the Throttle Position (TP) and Manifold Absolute Pressure (MAP) sensors. The ECM then commands the EGR valve to operate when necessary by controlling an ignition signal through the ECM. This can be monitored on a scan tool as the Desired EGR Position.</div>
+				<div class="T1" align="left">The ECM monitors the results of its command through a feedback signal. By sending a 5 volt reference and a ground to the EGR valve, a voltage signal representing the EGR valve pintle position is sent to the ECM. This feedback signal can also be monitored on a scan tool and is the actual position of the EGR pintle. The Actual EGR Position should always be near the commanded or Desired EGR Position. This diagnostic Trouble Code (DTC) will detect short circuit.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CSDT4"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>EGR position signal is greater than 98%.</Li>
+					<Li>Ignition voltage is between 11.7 and 16 volts.</Li>
+					<Li>Fail condition last more than 10 seconds.</Li>
+					<Li>Engine is running.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0ATWD4"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate after three consecutive ignition cycle with a fail.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history Diagnostic Trouble Code (DTC) is stored.</Li>
+					<Li>EGR is disabled.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CCMD4"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turns off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+					<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0DA4"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Due to moisture associated with exhaust systems, the EGR valve may freeze and stick in cold weather at times. After the vehicle is brought into a warm shop for repairs, the valve warms and the problem disappears. By watching the Actual EGR and Desired EGR Positions on a cold vehicle with a scan tool, the fault can be easily verified. Check the freeze frame data to determine if the DTC set when the vehicle was cold by viewing the Engine Coolant Temperature (ECT).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0TD4"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+				<OL>
+					<Li value="1">The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+					<Li value="2">Commanding the EGR valve open determines whether the EGR system can control the EGR valve accurately and if the fault is present.</Li>
+					<Li value="3">If the EGR valve 5 volt reference is shorted to ground, the digital voltmeter (DVM) will read no voltage and additional DTCs may be set and the engine performance will be poor. When this circuit is open, only a DTC P0405 will be set.</Li>
+					<Li value="4">Jumpering the 5 volt reference circuit to the signal circuit checks the signal circuit and the ECM. The scan tool should display the Actual EGR Position as 100% if the signal circuit and ECM are OK.</Li>
+					<Li value="6">Although the ECM and circuitry acted correctly in the previous step, a problem may still lie within the terminals which would not show up in probe type testing. Be sure to check the terminals for being backed out, improperly formed or damaged, and for poor tension.</Li>
+					<Li value="10">All circuits to the EGR valve are OK at this point. The fault lies internally in the EGR valve and, therefore, must be replaced. Be sure all gasket material is removed from the EGR mounting surface. Even a small amount of material may cause a DTC P0401 to set.</Li>
+					<Li value="12">The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+					<Li value="13">Check the terminals for being backed out, improperly formed or damaged, and for poor tension.</Li>
+					<Li value="14">Clearing DTCs is a very important step for this diagnostic. The clearing function allows the EGR valve to relearn a new pintle position as the old pintle position was inaccurate due to the failure that caused the DTC. The DTC must be cleared with the ignition ON, engine OFF or when the engine is idling. If the ECM sees an EGR command, the new pintle will not be learned.</Li>
+					<Li value="15">no malfunctions have been found at this point and no additional DTCs were set, refer to   <A target="_blank" href="5T2_1F02.en.html#T1F0DA">"Diagnostic Aids" </A> in this section for additional checks and information.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T1F0P04061"><font size="4"><b>DTC P0406 - Exhaust Gas Recirculation Pintle Position High Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+								<div>Was the check performed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to </div>
+							<div>  <A target="_blank" href="5T2_1F02.en.html#T1F0ODSC1">"On-Board Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+									<Li>Command the Exhaust Gas Recirculation (EGR) valve to the specific values.</Li>
+								</OL>
+								<div>Does the Actual EGR Position follow the Desired EGR Position?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>25%, 50%, 75%, 100%</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Disconnect the EGR valve.</Li>
+									<Li>Turn the ignition ON.</Li>
+									<Li>With a voltmeter connected to the ground, probe the 5 volt reference circuit at terminal 4 of the EGR valve wiring harness connector.</Li>
+								</OL>
+								<div>Is the voltage near the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>5 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Jumper the 5 volt reference circuit to the signal circuit at terminal 4 and C at the EGR valve wiring harness connector.</div>
+								<div>Does the Actual EGR Position display the specific value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>100%</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With a test light connected to B+, probe the 5 volt reference circuit at the EGR valve wiring harness connector terminal 4.</div>
+								<div>Dose the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the 5 volt reference and signal circuit for a poor connection or proper terminal tension and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>With a test light connected to B+, probe the signal circuit at terminal 3 of the EGR valve wiring harness connector.</div>
+								<div>Dose the test light illuminate?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a short to ground in EGR valve 5 volt reference circuit and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open in EGR valve 5 volt reference circuit and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the EGR valve.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a short to ground in the EGR valve signal circuit and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition OFF.</Li>
+									<Li>Replace the Engine Control Module (ECM).</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the ECM connector for a poor connection and repair as needed.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+									<Li>Start the engine and idle at normal operating temperature.</Li>
+									<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+								</OL>
+								<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displayed that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to</div>
+							<div>Applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="5T2_1F16.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="5T2_1F18.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Daewoo Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

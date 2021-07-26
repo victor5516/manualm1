@@ -1,0 +1,145 @@
+.header {
+	background: #030D59;
+	color: #FFFFFF;
+}
+
+.header_item {
+	font-size: 18;
+	font-family: arial;
+	text-decoration: none;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.header_language {
+	font-size: 10;
+	font-family: verdana;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.header_language a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.header_language a {
+	color: #FFFFFF;
+	text-decoration: none;	
+}
+
+.bottom_copyright {
+	font-size: 10;
+	font-family: verdana;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.no_js_tree {
+	font-size: 10;
+	font-family: verdana;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: none;
+}
+
+.no_js_tree a:hover {
+	font-size: 10;
+	font-family: verdana;
+	text-decoration: underline;
+
+	color: #000000;
+}
+
+.no_js_tree a {
+	font-size: 10;
+	font-family: verdana;
+	text-decoration: none;	
+
+	color: #000000;
+}
+
+.scrollbar {
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-arrow-color: #484C4C;
+	scrollbar-base-color: #DFE3EA;
+	scrollbar-darkshadow-color: #555656;
+	scrollbar-face-color: #DFE3EA;
+	scrollbar-highlight-color: #E7EAEA;
+	scrollbar-shadow-color: #A8AAAA;
+}
+
+.webfx-tree-container {
+	margin: 0px;
+	padding: 0px;
+	font: icon;
+	white-space: nowrap;
+}
+
+.webfx-tree-item {
+	font-size: 10;
+	font-family: verdana;
+	text-decoration: none;
+	font-style: normal;
+
+	padding: 0px;
+	margin: 0px;
+	font: icon;
+	color: black;
+	white-space: nowrap;
+}
+
+.webfx-tree-item a, .webfx-tree-item a:active, .webfx-tree-item a:hover {
+	margin-left: 3px;
+	padding: 1px 2px 1px 2px;
+}
+
+.webfx-tree-item a {
+	font-size: 10;
+	font-family: verdana;
+	text-decoration: none;
+	font-style: normal;
+
+	color: black;
+}
+
+.webfx-tree-item a:hover {
+	font-size: 10;
+	font-family: verdana;
+	font-style: normal;
+	text-decoration: underline;
+	color: #030D59;
+}
+
+.webfx-tree-item a:active {
+	font-size: 10;
+	font-family: verdana;
+	text-decoration: none;
+	font-style: normal;
+
+	background: highlight;
+	color: highlighttext;
+}
+
+.webfx-tree-item img {
+	vertical-align: middle;
+	border: 0px;
+}
+
+.webfx-tree-icon {
+	width: 16px;
+	height: 16px;
+}
+
+.webfx-tree-item a.selected {
+	color: selectedtext;
+	background: selected;
+}
+
+.webfx-tree-item a.selected-inactive {
+	color: windowtext;
+	background: buttonface;
+}
+

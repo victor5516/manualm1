@@ -1,0 +1,1099 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2004  IMMOBILIZER ANTI-THEFT SYSTEM</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="5M2_9T3.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Matiz</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="5M2_9T2.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="5M2_9T3.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_Matiz.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_Matiz_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+<DIV>
+	
+	<BR><DIV align="center"><B><FONT size="5">SECTION   9T</FONT></B></DIV>
+	<BR><DIV align="center" id="M9T0IATS"><B><FONT size="6">IMMOBILIZER ANTI-THEFT SYSTEM</FONT></B></DIV>
+	
+		
+			<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Disconnect the negative battery cable before removing or installing any electrical unit or when a tool or equipment could easily come in contact with exposed electrical terminals. Disconnecting this cable will help prevent personal injury and damage to the vehicle. The ignition must also be in LOCK unless otherwise noted.</FONT></I></B></DIV>
+<P></P>
+		
+	
+	
+		<P></P>
+<DIV align="center" id="M9T0DO"><B><FONT size="5">DESCRIPTION AND OPERATION</FONT></B></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="left" id="M9T0IS"><font size="4"><b>IMMOBILIZER SYSTEM </b></font></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The purpose of the Immobilizer system is to provide additional theft deterrence to the vehicle in which it is installed and to prevent it from being stolen or driven by unauthorized users.</div>
+				<div class="T1" align="left">The verification of the user authorization is done by an ignition key with integrated transponder.</div>
+				<div class="T1" align="left">The external LED displays the Immobilizer status and has an additional theft deterrence function.</div>
+				<div class="T1" align="left">To secure the communication, the status is exchanged between the Immobilizer and the ECM in a 5 byte of encoded data.</div>
+				<div class="T1" align="left">These 5 bytes are composed by a mixture of random data and two types of fixed code</div>
+				<UL>
+					<Li>a vehicle model identification number : MIN</Li>
+					<Li>a vehicle specific identification : VIN</Li>
+				</UL>
+				<div class="T1" align="left">The MIN is known from the first supply of the system. The VIN is realized by ICU on the special order from the key coding (reading of transponder code and storing it as valid key code in Immobilizer EEPROM).</div>
+				<div class="T1" align="left">A different random data is computed at each key transition.</div>
+				<div class="T1" align="left">All the immobilization communication between the ECM and ICU is made on K-line (K line : Serial data line '7').</div>
+				<div class="T1" align="left">Due to the learning of the Vehicle specific identification Number, both ICU and ECM can stay in 3 stable modes</div>
+				<UL>
+					<Li>Virgin mode (VIN not learnt)</Li>
+					<Li>Learnt mode (VIN learnt)</Li>
+					<Li>Neutral mode (for a new VIN learning)</Li>
+				</UL>
+				<div class="T1" align="left">In case of using valid key, the release message communication with the ECM take place and the LED displays the Immobilizer status valid key In case of using invalid key, the ECM disables the fuel injector circuit with coded intervention and sets DTC(Diagnostic Trouble Code)</div>
+				<div class="T1" align="left">The above conditions are maintained until the ignition is switched off.</div>
+				<div class="T1" align="left">An ECM without an immobilizer control unit cannot be interchanged for an ECM that is used with an immobilizer control unit system. The Immobilizer control unit and ECM must have a matching ID code. ID coding and key coding are accomplished by using Scanner-100</div>
+				<div class="T1" align="left">The Immobilizer system consists of</div>
+				<UL>
+					<Li>a maximum or 5 ignition keys with integrated transponder</Li>
+					<Li>the toroidal coil (Detection coil) for energizing and reading the transponder mounted at the ignition lock.</Li>
+					<Li>the Immobilizer control unit(ICU) with :</Li>
+					<DT>
+						<DD>– power supply</DD>
+						<DD>– ignition input circuit</DD>
+						<DD>– transponder modulation and demodulation unit</DD>
+						<DD>– EEPROM</DD>
+						<DD>– driver electronic for the external status LED</DD>
+						<DD>– serial data link hardware</DD>
+					</DT>
+					<Li>the external status LED for displaying the Immobilizer status</Li>
+					<Li>the serial data link between Immobilizer and ECM</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M9T0ECK"><font size="4"><b>ELECTRONICALLY CODED KEYS </b></font></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Each valid ignition key has an internal transponder which is a read /write transponder.</div>
+				<div class="T1" align="left">The transponder contains an implementation of a cryp-to-algorithm with 96 bits of user configurable s cret-key contained in EEPROM and transmits data to the ICU by modulating the amplitude of the ele tromagnetic field, and receives data and commands in a similar way.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M9T0DC"><font size="4"><b>DETECTION COIL </b></font></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The toroidal coil is mounted at the ignition lock in front of the key barrel.</div>
+				<div class="T1" align="left">It is connected to the ICU with a four terminal connector fixed at the body of the coil.</div>
+				<div class="T1" align="left">The length of the connection between coil and Immobilizer is restricted to 50cm. The correct placement on the ignition lock and the exact electrical data is very important for the reading distance of transponder.</div>
+				<div class="T1" align="left">The toroidal coil and receiving coil inside the transponder built a transformer. During the readingprocess the coil induces energy into the transponder. The transponder charges the field and generates an amplitude modulated signal with the manchester coded data. This charge of the field is demodulated inside the Immobilizer.</div>
+				<div class="T1" align="left">The Immobilizer contains the coil driver hardware for direct connection of the toroidal coil.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M9T0ICU"><font size="4"><b>IMMOBILIZER CONTROL UNIT </b></font></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The function of the Immobilizer System is shared between the ICU and the ECM.</div>
+				<div class="T1" align="left">The task of the Immobilizer Electronic Control unit (ICU) are:</div>
+				<UL>
+					<Li>Reading of the input information "ignition ON/OFF"</Li>
+					<Li>Controlling the states LED</Li>
+					<Li>Controlling the transponder read/write process (modulation, demodulation, decoding, comparison of the read code with the code of the valid keys).</Li>
+					<Li>Communication with the ECM after ignition ON (receiving of the ECM-request and transmission of release message).</Li>
+					<Li>Special functions for calculation and handling of the VIN-code.</Li>
+				</UL>
+				<div class="T1" align="left">The VIN code is calculated by the Immobilizer using a random generator.</div>
+				<div class="T1" align="left">The VIN code is transmitted from the Immobilizer in the release message communication only incase of using an authorized key. Without an authorized key it is not possible to getthe system VIN code.In case of ECM internal state is in Virgin mode or neutral mode the ECM learns the system VIN code automatically after receiving the first release response message.</div>
+				<div class="T1" align="left">To get a synchronized Immobilizer system (same VIN-code in Immobilizer and ECM,authorized key) the DLC test equipment has to be used for authorization of the keys(first key coding). The usage of this test equipment is restricted to authorized persons.</div>
+				<UL>
+					<Li>Communication with the DLC-test equipment. Main functions are the key coding procedure, the VIN-code handling and the support for system test functions.</Li>
+					<Li>Handling of the software watchdog</Li>
+				</UL>
+			
+			
+				<P></P>
+<DIV align="left" id="M9T0OPERA"><font size="4"><b>Operation</b></font></DIV>
+<P></P>
+				
+					<div class="T1" align="left">In the active mode of immobilizer (engine OFF, IG key OFF) the status LED is blinking as mode A. When ignition is turned ON, the system wakes up and tries to read out the transponder.</div>
+					<div class="T1" align="left">In case of the detection of a valid key , The release message communication with the ECM takes place. The status LED displays the Immobilizer state "valid key".</div>
+					<div class="T1" align="left">After turning off the ignition(ignition OFF detection similar to the ECM ignition OFF detection), the Immobilizer changes to the active mode. The status LED is blinking as Mode A.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="M9T0DLCM"><font size="4"><b>Data Link Connector (DLC) Mode</b></font></DIV>
+<P></P>
+				
+					<div class="T1" align="left">When the ignition is on, a scan tool can switch the immobilizer control unit to the DLC mode for diagnostics, key coding and ID coding.</div>
+					<UL>
+						<Li>The status LED is turned off during DLC-mode</Li>
+						<Li>The Immobilizer will answer all correct messages, which are defined as Immobilizer messages.</Li>
+					</UL>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="M9T0ICH"><font size="4"><b>ID Code Handling</b></font></DIV>
+<P></P>
+				
+					<div class="T1" align="left">One of 65,535 VIN codes is stored in the immobilizer EEPROM.</div>
+					<div class="T1" align="left">The VIN code can be erased by using "Reset VIN code" command of the scan tool.</div>
+					<div class="T1" align="left">When the immobilizer control unit calculates a new VIN code, ECM VIN code should be reset to get identical with the immobilizer control unit's.</div>
+					<div class="T1" align="left">During diagnostic procedures, the VIN code can be read for comparison with the ECM VIN code by using the scan tool's "Read immobilizer control unit VIN code" command.</div>
+				
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M9T0SDL"><font size="4"><b>SERIAL DATA LINK </b></font></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Serial data can be exchanged between a scan tool and the ECM and the Immobilizer control unit. The scan tool connection is the data link connector (DLC).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M9T0ECM"><font size="4"><b>ELECTRONIC CONTROL MOUDLE (ECM) </b></font></DIV>
+<P></P>
+			
+				<UL>
+					<Li>ECM in Virgin mode</Li>
+					<DT>
+						<DD>In this mode, the ECM knows only the model vehicle identifier code.</DD>
+						<DD>The engine can be locked/unlocked.</DD>
+						<DD>ECM requests to ICU the VIN number. As soon as the ECM receives two correct consecutive communication frames with the same VIN code the ECM learns it.</DD>
+						<DD>The VIN code will be stored in non-volatile memory at the end of power latch phase. ECM enters in Learnt mode.</DD>
+					</DT>
+					<Li>ECM in Learnt mode</Li>
+					<DT>
+						<DD>In such a state, ECM checks on every communication, the correct encoding of the ICU.</DD>
+						<DD>If the code received is not correct, then the vehicle is immobilized.</DD>
+						<DD>The coded 5 bytes of data emitted by ECM are a mixture of MIN code and random.</DD>
+						<DD>The coded 5 bytes of data emitted by ICU are a mixture of VIN code and random.</DD>
+					</DT>
+					<Li>ECM in Neutral mode</Li>
+					<DT>
+						<DD>This mode is a special intermediate mode, used for ICU replacement or immobilizer option installation.</DD>
+						<DD>ECM request to ICU the VIN number. As soon as the ECM receives two correct consecutive communication frames with the same VIN code the ECM learns it. The VIN code will be stored in non-volatile memory at the end of power latch phase. ECM enters in Learnt mode.</DD>
+					</DT>
+					<Li>After turning on the ignition the ECM will control the engine in a normal way for starting and running while waiting for a valid release response message from the Immobilizer.</Li>
+				</UL>
+				<OL>
+					<Li>After receiving a response message including the information "ICU in learnt mode" and the correct system VIN-code</Li>
+					<DT>
+						<DD>→ the ECM enters the release state, which allows to continue the running of the engine.</DD>
+					</DT>
+					<Li>After receiving a response message including the information "ICU in learnt mode" and a wrong system VIN-code</Li>
+					<DT>
+						<DD>→ the ECM does not send a new request and enters the blocked state, which causes the activation of the immobilization actions of the engine.</DD>
+					</DT>
+					<Li>If the ECM doesn't receive a response message within a defined time from beginning of the release time period or the ECM receives a no release answer</Li>
+					<DT>
+						<DD>→ the ECM enters the blocked state, which causes the activation of the immobilization actions of the engine.</DD>
+					</DT>
+				</OL>
+				<UL>
+					<Li>The inactive state of the Immobilizer (valid key/invalid key) ends with turning off the ignition.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M9T0SI"><font size="4"><b>SECURITY INDICATOR </b></font></DIV>
+<P></P>
+			
+				<div class="T1" align="left">There is a security indicator on the instrument panel.</div>
+			
+			
+				<P></P>
+<DIV align="left" id="M9T0SL"><font size="4"><b>Status LED</b></font></DIV>
+<P></P>
+				
+					<div class="T1" align="left">An external LED displays the immobilizer system status. The immobilizer contains the LED driver hardware for direct connection of one LED.</div>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="M9T0SLM"><font size="4"><b>Status LED Modes</b></font></DIV>
+<P></P>
+				
+					<Table border="1" width="100%" cellspacing="0">
+						<Thead bgcolor="eeeeee">
+							<tr>
+								<td align="center" valign="middle" width="15%" class="T1"><b>
+									
+										<div>Status LED</div>
+									
+								</b></td>
+								<td align="center" valign="middle" width="15%" class="T1"><b>
+									
+										<div>Immobilizer System Status</div>
+									
+								</b></td>
+								<td align="center" valign="middle" width="20%" class="T1"><b>
+									
+										<div>Note</div>
+									
+								</b></td>
+							</tr>
+						</Thead>
+						<Tbody align="left" valign="top">
+							<tr colspan="">
+								<td class="T1" width="15%" colspan="" rowspan="" align="left" valign="top">
+									
+										<div>Blinking</div>
+									
+								</td>
+								<td class="T1" width="15%" colspan="" rowspan="" align="left" valign="top">
+									
+										<div>Active</div>
+									
+								</td>
+								<td class="T1" width="20%" colspan="" rowspan="" align="left" valign="top">
+									
+										<DT>
+											<DD>– Ignition OFF</DD>
+										</DT>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="15%" colspan="" rowspan="" align="left" valign="top">
+									
+										<div>Blinking</div>
+									
+								</td>
+								<td class="T1" width="15%" colspan="" rowspan="" align="left" valign="top">
+									
+										<div>Active</div>
+									
+								</td>
+								<td class="T1" width="20%" colspan="" rowspan="" align="left" valign="top">
+									
+										<DT>
+											<DD>– Invalid key detected</DD>
+											<DD>– Ignition ON</DD>
+										</DT>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="15%" colspan="" rowspan="" align="left" valign="top">
+									
+										<div>OFF</div>
+									
+								</td>
+								<td class="T1" width="15%" colspan="" rowspan="" align="left" valign="top">
+									
+										<div>Inactive</div>
+									
+								</td>
+								<td class="T1" width="20%" colspan="" rowspan="" align="left" valign="top">
+									
+										<DT>
+											<DD>– Valid key detected</DD>
+											<DD>– Ignition ON</DD>
+										</DT>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="15%" colspan="" rowspan="" align="left" valign="top">
+									
+										<div>Blinking</div>
+									
+								</td>
+								<td class="T1" width="15%" colspan="" rowspan="" align="left" valign="top">
+									
+										<div>Active</div>
+									
+								</td>
+								<td class="T1" width="20%" colspan="" rowspan="" align="left" valign="top">
+									
+										<DT>
+											<DD>– VIN-code is different between ICU and ECM in learnt state</DD>
+											<DD>– Ignition ON</DD>
+										</DT>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="15%" colspan="" rowspan="" align="left" valign="top">
+									
+										<div>ON</div>
+									
+								</td>
+								<td class="T1" width="15%" colspan="" rowspan="" align="left" valign="top">
+									
+										<div>Active</div>
+									
+								</td>
+								<td class="T1" width="20%" colspan="" rowspan="" align="left" valign="top">
+									
+										<DT>
+											<DD>– Transponder reading error</DD>
+											<DD>– Ignition ON</DD>
+										</DT>
+									
+								</td>
+							</tr>
+							<tr colspan="">
+								<td class="T1" width="15%" colspan="" rowspan="" align="left" valign="top">
+									
+										<div>Blinking</div>
+									
+								</td>
+								<td class="T1" width="15%" colspan="" rowspan="" align="left" valign="top">
+									
+										<div>Active</div>
+									
+								</td>
+								<td class="T1" width="20%" colspan="" rowspan="" align="left" valign="top">
+									
+										<DT>
+											<DD>– Reader exciter ASIC error</DD>
+											<DD>– Ignition OFF</DD>
+										</DT>
+									
+								</td>
+							</tr>
+						</Tbody>
+					</Table>
+				
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="M9T0DIP"><B><FONT size="5">DIAGNOSTIC INFORMATION AND PROCEDURES</FONT></B></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="left" id="M9T0ISS"><font size="4"><b>IMMOBILIZER SYSTEM (SIRIUS D4) </b></font></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The immobilizer anti-theft system requires diagnosis when it is not possible to start the engine. If the no-start condition occurs because of the immobilizer system, a diagnostic trouble code (P) 1628, 1629 should be set.</div>
+				<div class="T1" align="left">The immobilizer control unit monitors the detection and the reading of the ignition key. The self-test capacity is limited to those functions. Faults are communicated to a scan tool during diagnosis, but they are not stored in the immobilizer control unit's memory.</div>
+				<div class="T1" align="left">Unauthorized use of a scan tool could be a method of defeating the immobilizer anti-theft system, so certain scan tool procedures require the use of a password. The following functions are password protected:</div>
+				<UL>
+					<Li>Coding of an additional key.</Li>
+					<Li>Deleting all key codes.</Li>
+				</UL>
+				<div class="T1" align="left">The following functions do not require a password:</div>
+				<UL>
+					<Li>Reading an ignition key to determine if the transponder is working or if a key is authorized.</Li>
+					<Li>Reading the immobilizer ID code to verify that it matches the ECM ID code.</Li>
+				</UL>
+				<BR><div align="center">
+<IMG alt="M3C19T02" src="../../../../graphic-pool/M/3C/1/M3C19T02.png"><BR><A target="_blank" href="../../../../graphic-pool/M/3C/1/M3C19T02.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M9T0ECMIE"><font size="4"><b>DIAGNOSTIC TROUBLE CODE (P) 1628 (SIRIUS D4) ECM IMMOBILIZER ERROR (NO SUCCESSFUL COMMUNICATION) </b></font></DIV>
+<P></P>
+			
+				<P></P>
+<DIV align="left" id="M9T0CD"><font size="4"><b>Circuit Description</b></font></DIV>
+<P></P>
+				
+					<div class="T1" align="left">When the ignition is turned ON, the key is tested by the immobilizer anti-theft system. While the key code is being read by the immobilizer control unit, the engine can start and run with any key that will turn the lock cylinder. The key code is read and compared with key codes that have been stored in the memory of the immobilizer control unit. If a valid key is detected, the immobilizer control unit sends a serial data release message to the electronic control module (ECM). Included in the release message is an identification (ID) code which assures that neither the immobilizer control unit nor the ECM has been substituted to defeat the system. If the ECM receives an invalid release message, the ECM performs the following actions:</div>
+					<UL>
+						<Li>Disables the fuel injector circuit.</Li>
+					</UL>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="M9T0WSW"><font size="4"><b>P 1628 Will Set When</b></font></DIV>
+<P></P>
+				
+					<UL>
+						<Li>The ECM does not receive the signal from the immobilizer control module within 1.260 seconds after the ignition is turned on.</Li>
+						<Li>The above conditions are maintained until the ignition is switched OFF.</Li>
+					</UL>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="M9T0WCW"><font size="4"><b>P 1628 Will Clear When</b></font></DIV>
+<P></P>
+				
+					<UL>
+						<Li>The ignition switch is turned OFF or the scan tool TROUBLE CODE CLEAR command is issued.</Li>
+					</UL>
+				
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M9T0ECMIE1"><font size="4"><b>P 1628 - ECM Immobilizer Error (No Successful Communication) </b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Connect the scan tool using the following procedure:</div>
+								<OL>
+									<Li>Insert the cartridge into the scan tool.</Li>
+									<Li>Turn the ignition switch to the OFF position.</Li>
+									<Li>Connect the scan tool to the data link connector (DLC).</Li>
+									<Li>Connect the scan tool's power cord to the cigar lighter socket.</Li>
+									<Li>Select immobilizer mode on the scan tool.</Li>
+									<Li>Turn the ignition ON, but do not start the engine.</Li>
+								</OL>
+								<div>Is communication established between the scan tool and the immobilizer control unit?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "Communication Between Immobilizer and Test Equipment"</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Read the IMMO &amp; ECM ID CODE message that was displayed after requesting DIAGNOSIS.</div>
+								<div>Did the message differ from normal message?</div>
+								<div>Normal Message - ECM MODE: LEARNT</div>
+								<div>IMMO. MODE: LEARNT</div>
+								<div>VIN CODE: SAME</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5M2_9T3.en.html#M6E0ICR">"Identification (ID) Code Reprogramming"</A>
+</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for an open serial data wire between the immobilizer control unit and the ECM.</div>
+								<div>Was the circuit open?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open serial data wire between the ECM and the immobilizer control unit.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the immobilizer.</Li>
+									<Li>Reprogram the identification (ID) code. Refer to   <A target="_blank" href="5M2_9T3.en.html#M9T0ICR">"Identification (ID) Code Reprogramming"</A> in this section.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+							<div>Go to   <I>Step 6</I>
+</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the ECM.</Li>
+									<Li>Turn the ignition ON, OFF for more than 4 seconds.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+				<BR><div align="center">
+<IMG alt="M3C19T02" src="../../../../graphic-pool/M/3C/1/M3C19T02.png"><BR><A target="_blank" href="../../../../graphic-pool/M/3C/1/M3C19T02.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M9T0EIEIA"><font size="4"><b>DIAGNOSTIC TROUBLE CODE (P) 1629 (SIRIUS D4) ECM IMMOBILIZER ERROR (INCORRECT ANSWER) </b></font></DIV>
+<P></P>
+			
+				<P></P>
+<DIV align="left" id="M9T0CD1"><b>Circuit Description</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">When the ignition is turned ON, the key is tested by the immobilizer anti-theft system. While the key code is being read by the immobilizer control unit, the engine can start and run with any key that will turn the lock cylinder. The key code is read and compared with key codes that have been stored in the memory of the immobilizer control unit. If a valid key is detected, the immobilizer control unit sends a serial data release message to the electronic control module (ECM). Included in the release message is an identification (ID) code which assures that neither the immobilizer control unit nor the ECM has been substituted to defeat the system. If the ECM receives an invalid release message, the ECM performs the following actions:</div>
+					<UL>
+						<Li>Disables the fuel injector circuit.</Li>
+					</UL>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="M9T0WSW1"><b>P 1629 Will Set When</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>The ECM receives an incorrect release message from the immobilizer control unit more than five times.</Li>
+					</UL>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="M9T0WCW1"><b>P 1629 Will Clear When</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>The ignition switch is turned OFF or the scan tool TROUBLE CODE CLEAR command is issued.</Li>
+					</UL>
+				
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M9T0EIEIA1"><font size="4"><b>P 1629 - ECM Immobilizer Error (Incorrect Answer) </b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Connect the scan tool using the following procedure:</div>
+								<OL>
+									<Li>Insert the cartridge into the scan tool.</Li>
+									<Li>Turn the ignition switch to the OFF.</Li>
+									<Li>Connect the scan tool to the data link connector (DLC).</Li>
+									<Li>Connect the scan tool's power cord to the cigar lighter socket.</Li>
+									<Li>Turn the ignition ON, but do not start the engine.</Li>
+								</OL>
+								<div>Is communication established between the scan tool and the immobilizer control unit?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5M2_9T3.en.html#M6E0CBITE">"Communication Between Immobilizer and Test Equipment"</A>
+</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Select DIAGNOSIS from the scan tool menu.</Li>
+									<Li>Read the IMMO &amp; ECM ID CODE (immobilization and electronic control module identification code) message.</Li>
+								</OL>
+								<div>Did the message differ from normal message?</div>
+								<div>Normal Message - ECM MODE: LEARNT IMMO. MODE: LEARNT VIN CODE: SAME</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="5M2_9T3.en.html#M9E0ICR">"Identification (ID) Code Reprogramming"</A>
+</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the ECM.</Li>
+									<Li>Reprogram the ID code.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+							<div>Go to   <I>Step 4</I>
+</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the ECM.</Li>
+									<Li>Turn the ignition ON, OFF for more than 4 seconds.</Li>
+									<Li>Turn the ignition ON.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M9T0KSE"><font size="4"><b>KEY STATUS ERRORS (SIRIUS D4) </b></font></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The following KEY STATUS messages may be shown on the scan tool after commanding FIRST KEY CODING and KEY ADD:</div>
+				<UL>
+					<Li>IGNITION OFF STATUS. This message informs the technician that the ignition is off during the key coding process. Turn the ignition ON during key coding, but do not start the engine.</Li>
+					<Li>KEY IS OCCUPIED. Only five keys may be coded. If a new key is desired, the previous key codes must be deleted. Up to five keys may then be authorized.</Li>
+					<Li>ALREADY AUTHORIZED. Key coding is being attempted with a key that is already authorized.</Li>
+					<Li>ERROR NO. A3, A4, A5. There is no communication between the transponder in the ignition key and the detection coil. Follow the steps below to diagnose the problem:</Li>
+					<OL>
+						<Li>Try a different key. If a different key works, the problem was in the original key.</Li>
+						<Li>If trying a different key resulted in the same error message, replace the detection coil.</Li>
+					</OL>
+					<Li>INVALID KEY. The communication between the immobilizer control unit and the key transponder has not validated the key. Follow the steps below to diagnose the problem:</Li>
+					<OL>
+						<Li>Code the key. Refer to   <A target="_blank" href="5M2_9T3.en.html#M9T0KCP">"Key Coding Procedure"</A> in this section.</Li>
+						<Li>If the same message is received after key coding, check the connection of the detection coil.</Li>
+						<Li>If the detection coil is okay, replace the immobilizer. Refer to   <A target="_blank" href="5M2_9T3.en.html#M9E0ICU">"Immobilizer Control Unit"</A> in this section.</Li>
+					</OL>
+					<Li>NO TRANSPONDER DETECTED. The fault may be in ignition key transponder, the detection coil, or the Immobilizer. Follow the steps below to diagnose the problem</Li>
+					<OL>
+						<Li>Try a different key. If a different key works, the problem was in the original key.</Li>
+						<Li>If trying a different key resulted in the same error message, check the connection of the detection coil.</Li>
+						<Li>If the connection of the detection coil is okay, disconnect the detection coil and use an ohmmeter to check for an open detection coil.</Li>
+						<Li>If the detection coil was not open, replace the immobilizer control unit. Refer to   <A target="_blank" href="5M2_9T3.en.html#M9T0ICU">"Immobilizer Control Unit"</A> in this section.</Li>
+					</OL>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M9T0CBICU"><font size="4"><b>COMMUNICATION BETWEEN IMMOBILIZER CONTROL UNIT AND TEST EQUIPMENT (SIRIUS D4) </b></font></DIV>
+<P></P>
+			
+				<OL>
+					<Li>Connect the test equipment as described in the   <I>Scan Tool Equipment Manual</I>.</Li>
+					<Li>If communication between the scan tool and the test equipment was unsuccessful, wait 30 seconds and try again.</Li>
+					<Li>If communication was not successful on the second try, turn the ignition OFF and check the wire and connectors between the immobilizer control unit terminal 10 and the data link connector (DLC) terminal 8.</Li>
+					<Li>If the wire and connectors between the DLC and the immobilizer control unit are okay, replace the immobilizer control unit. Refer to   <A target="_blank" href="5M2_9T3.en.html#M9T0ICU">"Immobilizer Control Unit"</A> in this section.</Li>
+				</OL>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="M9T0RI"><B><FONT size="5">REPAIR INSTRUCTIONS</FONT></B></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="center" id="M9T0OVS"><B><FONT size="4">ON-VEHICLE SERVICE</FONT></B></DIV>
+<P></P>
+			
+				<p></p>
+				<P></P>
+<DIV align="left" id="M9T0KCP"><font size="4"><b>KEY CODING PROCEDURE </b></font></DIV>
+<P></P>
+				<OL>
+					
+						<Li>Install the immobilizer control unit cartridge in the scan tool.</Li>
+						<Li>Turn the ignition OFF</Li>
+						<Li>Connect the scan tool.</Li>
+						<Li>Turn the ignition ON with the key to be coded.</Li>
+						<Li>Enter the four-digit password that enables service personnel to use the scan tool for coding keys.</Li>
+						<Li>A lost key can be deleted only by deleting all keys and reauthorizing the remaining keys as new keys. If a key is lost, go to the next step. If no keys have been lost but an additional key is desired, go to Step</Li>
+						<Li>Use the scan tool command DELETE ALL KEY CODES.</Li>
+						<Li>Use the scan tool command AUTHORIZE ONE ADDITIONAL KEY.</Li>
+						<Li>Repeat Steps 4, 5, and 6 until the immobilizer control unit has recorded all of the new keys or, after a deletion, has reauthorized all of the remaining keys. The immobilizer control unit can record a maximum of five keys.</Li>
+						<Li>Return the system to the normal mode.</Li>
+						<Li>Turn OFF the ignition.</Li>
+						<Li>Turn ON the ignition.</Li>
+						<Li>Crank to start the engine.</Li>
+					
+				</OL>
+			
+			
+				<P></P>
+<DIV align="left" id="M9T0ICR"><font size="4"><b>ID CODE REPROGRAMMING </b></font></DIV>
+<P></P>
+				<OL>
+					<div class="T1" align="left">Reprogram the identification (ID) code in the following situations:</div>
+					<UL>
+						<Li>An immobilizer control unit has been replaced.</Li>
+						<Li>An electronic control module (ECM) has been replaced.</Li>
+					</UL>
+					<div class="T1" align="left">If a valid key has been lost, refer to   <A target="_blank" href="5M2_9T3.en.html#M9T0KCP">"Key Coding Procedure"</A> in this section.</div>
+				</OL>
+				
+					<P></P>
+<DIV align="left" id="M9T0RP"><font size="4"><b>Reprogramming Procedure</b></font></DIV>
+<P></P>
+					<OL>
+						
+							<Li>Turn the ignition OFF. Reprogramming is not allowed while the engine is running.</Li>
+							<Li>Insert the immobilizer control unit cartridge into the scan tool.</Li>
+							<Li>Do not start the vehicle, but turn the ignition ON.</Li>
+							<Li>Enter the four-digit password that enables service personnel to use the scan tool for ID code reprogramming.</Li>
+							<Li>Use the scan tool to command RESET ID CODE.</Li>
+						
+						<p></p>
+						
+							<Li>Turn the ignition OFF and ON again, but do not crank or start the engine. The ECM will reset the ECM ID code to match the new ID code that was calculated and sent by the immobilizer control unit when the ignition was first turned ON after the reset command.</Li>
+							<Li>Return the system to the normal mode.</Li>
+							<Li>Turn OFF the ignition.</Li>
+							<Li>Turn ON the ignition.</Li>
+							<Li>Start the engine.</Li>
+						
+						<div class="T1" align="left">After reprogramming the ID code, the scan tool SYSTEM DIAGNOSIS command can verify that the ECM ID code matches the immobilizer control unit ID code.</div>
+						<div class="T1" align="left">If the reprogramming procedure does not result in matching ID codes, check the electrical connectors for the serial data wire between the immobilizer control unit and the ECM.</div>
+					</OL>
+				
+			
+			
+				<P></P>
+<DIV align="left" id="M9T0TRANS"><font size="4"><b>TRANSPONDER </b></font></DIV>
+<P></P>
+				
+					<div class="T1" align="left">Each valid ignition key has an internal transponder which is a read /write transponder.</div>
+					<div class="T1" align="left">The transponder contains an implementation of a cryp-to-algorithm with 96 bits of user configurable secret-key contained in EEPROM and transmits data to the ICU by modulating the amplitude of the electromagnetic field, and receives data and commands in a similar way.</div>
+				
+			
+			
+				<BR><HR>
+<IMG alt="D105A504" src="../../../../graphic-pool/D/10/5/D105A504.png"><BR><A target="_blank" href="../../../../graphic-pool/D/10/5/D105A504.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+				<P></P>
+<DIV align="left" id="M9T0DC1"><font size="4"><b>DETECTION COIL </b></font></DIV>
+<P></P>
+				
+					<div class="p" align="left">  <B>(Left-Hand Drive Shown, Right-Hand Drive Similar)</B>
+</div>
+				
+				
+					<P></P>
+<DIV align="left" id="M9T0RP1"><font size="4"><b>Removal Procedure</b></font></DIV>
+<P></P>
+					<OL>
+						
+							<Li>Remove the steering column covers. Refer to   <I><A target="_blank" href="5M2_6E.en.html#M6E0SWC">Section 6E, Steering Wheel and Column</A></I>.</Li>
+						
+						<BR><HR>
+<IMG alt="D29T001" src="../../../../graphic-pool/D/29/T/D29T001.png"><BR><A target="_blank" href="../../../../graphic-pool/D/29/T/D29T001.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+						
+							<Li>Remove the detection coil.</Li>
+							<UL>
+								<Li>Disconnect the two-pin connector from the detection coil (1).</Li>
+								<Li>Pry the detection coil away from the lock cylinder (2).</Li>
+							</UL>
+						
+						
+							<P></P>
+<DIV><B><FONT color="navy">Important : If the detection coil will be replaced with a new one, it does not matter if the key position trim ring is damaged during removal. A new trim ring is part of the new detection coil.</FONT></B></DIV>
+<P></P>
+						
+					</OL>
+				
+				
+					<BR><HR>
+<IMG alt="D29T002" src="../../../../graphic-pool/D/29/T/D29T002.png"><BR><A target="_blank" href="../../../../graphic-pool/D/29/T/D29T002.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+					<P></P>
+<DIV align="left" id="M9T0IP"><font size="4"><b>Installation Procedure</b></font></DIV>
+<P></P>
+					<OL>
+						
+							<Li>Install the detection coil by pressing it onto the lock cylinder until it snaps in place.</Li>
+							<Li>Connect the two-pin connector to the immobilizer.</Li>
+						
+						<BR><HR>
+<IMG alt="D105A505" src="../../../../graphic-pool/D/10/5/D105A505.png"><BR><A target="_blank" href="../../../../graphic-pool/D/10/5/D105A505.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+						
+							<Li>Install the steering column covers with the screws. Refer to   <I><A target="_blank" href="5M2_6E.en.html#M6E0SWC">Section 6E, Steering Wheel and Column.</A></I>
+</Li>
+						
+					</OL>
+				
+			
+			
+				<BR><HR>
+<IMG alt="D105A504" src="../../../../graphic-pool/D/10/5/D105A504.png"><BR><A target="_blank" href="../../../../graphic-pool/D/10/5/D105A504.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+				<P></P>
+<DIV align="left" id="M9T0ICU1"><font size="4"><b>IMMOBILIZER CONTROL UNIT </b></font></DIV>
+<P></P>
+				
+					<div class="p" align="left">  <B>Left-Hand Drive Shown, Right-Hand Drive Similar)</B>
+</div>
+				
+				
+					<P></P>
+<DIV align="left" id="M9T0RP2"><font size="4"><b>Removal Procedure</b></font></DIV>
+<P></P>
+					<OL>
+						
+							<Li>Disconnect the negative battery cable.</Li>
+							<Li>Remove the steering column covers. Refer to   <I>Section 6E, Steering Wheel and Column</I>.</Li>
+						
+						<BR><HR>
+<IMG alt="D29T003" src="../../../../graphic-pool/D/29/T/D29T003.png"><BR><A target="_blank" href="../../../../graphic-pool/D/29/T/D29T003.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+						
+							<Li>Slide the immobilizer control unit toward steering wheel until it slides off its mounting bracket.</Li>
+							<Li>Disconnect the electrical connectors from the immobilizer control unit (1).</Li>
+						
+					</OL>
+				
+				
+					<BR><HR>
+<IMG alt="D29T004" src="../../../../graphic-pool/D/29/T/D29T004.png"><BR><A target="_blank" href="../../../../graphic-pool/D/29/T/D29T004.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+					<P></P>
+<DIV align="left" id="M9T0IP1"><font size="4"><b>Installation Procedure</b></font></DIV>
+<P></P>
+					<OL>
+						<div class="T1" align="left">After replacing the immobilizer control unit, the keys must be re-authorized using the key coding procedure. Refer to   <A target="_blank" href="5M2_9T3.en.html#M9T0KCP">"Key Coding Procedure"</A> in this section. Also, the electronic control module (ECM) identification (ID) code must be reset. Refer to   <A target="_blank" href="5M2_9T3.en.html#M9T0ICR">"Identification (ID) Code Reprogramming"</A> in this section.</div>
+						
+							<Li>Connect the electrical connectors to the immobilizer control unit.</Li>
+							<Li>Slide the immobilizer control unit onto its mounting bracket.</Li>
+						
+						<BR><HR>
+<IMG alt="D105A505" src="../../../../graphic-pool/D/10/5/D105A505.png"><BR><A target="_blank" href="../../../../graphic-pool/D/10/5/D105A505.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+						
+							<Li>Install the steering column covers. Refer to   <I>Section 6E, Steering Wheel and Column</I>.</Li>
+							<Li>Connect the negative battery cable.</Li>
+						
+					</OL>
+				
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="M9T0SPECI"><B><FONT size="5">SPECIFICATIONS</FONT></B></DIV>
+<P></P>
+		
+			<P></P>
+<DIV align="center" id="M9T0FTS"><font size="4"><b>FASTENER TIGHTENING SPECIFICATIONS </b></font></DIV>
+<P></P>
+			
+				<Table border="1" width="100%" cellspacing="0">
+					<Thead bgcolor="eeeeee">
+						<tr>
+							<td align="center" valign="middle" width="40%" class="T1"><b>
+								
+									<div>Application</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="15%" class="T1"><b>
+								
+									<div>N•m</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="15%" class="T1"><b>
+								
+									<div>Lb-Ft</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="15%" class="T1"><b>
+								
+									<div>Lb-In</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="left" valign="top">
+						<tr colspan="">
+							<td class="T1" width="40%" colspan="" rowspan="" align="left" valign="middle">
+								
+									<div>Immobilizer Control Unit Mounting Bolts</div>
+								
+							</td>
+							<td class="T1" width="15%" colspan="" rowspan="" align="center" valign="middle">
+								
+									<div>4</div>
+								
+							</td>
+							<td class="T1" width="15%" colspan="" rowspan="" align="center" valign="middle">
+								
+									<div>-</div>
+								
+							</td>
+							<td class="T1" width="15%" colspan="" rowspan="" align="center" valign="middle">
+								
+									<div>35</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M9T0SRD"><font size="4"><b>SCHEMATIC AND ROUTING DIAGRAMS </b></font></DIV>
+<P></P>
+			
+				<P></P>
+<DIV align="center" id="M9T0IATS1"><font size="4"><b>IMMOBILIZER ANTI-THEFT SYSTEM</b></font></DIV>
+<P></P>
+				
+					<BR><div align="center">
+<IMG alt="M3C19T03" src="../../../../graphic-pool/M/3C/1/M3C19T03.png"><BR><A target="_blank" href="../../../../graphic-pool/M/3C/1/M3C19T03.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+				
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M9T0SRD1"><font size="4"><b>SCHEMATIC AND ROUTING DIAGRAMS </b></font></DIV>
+<P></P>
+			
+				<P></P>
+<DIV align="center" id="M9T0RKEIA"><font size="4"><b>REMOTE KEYLESS ENTRY AND IMMOBILIZER ANTI-THEFT SYSTEM</b></font></DIV>
+<P></P>
+				
+					<BR><div align="center">
+<IMG alt="M3C19T02" src="../../../../graphic-pool/M/3C/1/M3C19T02.png"><BR><A target="_blank" href="../../../../graphic-pool/M/3C/1/M3C19T02.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+				
+			
+		
+	
+	</DIV>
+<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="5M2_9T2.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="5M2_9T3.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Daewoo Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>
